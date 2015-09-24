@@ -1,0 +1,42 @@
+<?php
+namespace Fortifi\Rwd\Country\Countries;
+
+use Fortifi\Rwd\Country\Country;
+
+class MLCountry implements Country
+{
+  public function getName()
+  {
+    return 'Mali';
+  }
+
+  public function getIso2()
+  {
+    return 'ML';
+  }
+
+  public function getIso3()
+  {
+    return 'MLI';
+  }
+
+  public function getWmo()
+  {
+    return 'MI';
+  }
+
+  public function getNumericCode()
+  {
+    return 466;
+  }
+
+  public function getDialPrefix()
+  {
+    return 223;
+  }
+
+  public function getCurrencyCode()
+  {
+    return 'XOF';
+  }
+}

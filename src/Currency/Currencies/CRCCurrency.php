@@ -1,0 +1,47 @@
+<?php
+namespace Fortifi\Rwd\Currency\Currencies;
+
+use Fortifi\Rwd\Currency\AbstractCurrency;
+
+class CRCCurrency extends AbstractCurrency
+{
+  public function getSymbol()
+  {
+    return '₡';
+  }
+
+  public function getCode()
+  {
+    return 'CRC';
+  }
+
+  public function getNumericCode()
+  {
+    return 188;
+  }
+
+  public function getName()
+  {
+    return 'Costa Rican Colon';
+  }
+
+  public function getMajorUnit()
+  {
+    return 'colon';
+  }
+
+  public function getMinorUnit()
+  {
+    return 'centimo';
+  }
+
+  public function getDecimalSeparator()
+  {
+    return ',';
+  }
+
+  public function getThousandSeparator()
+  {
+    return '.';
+  }
+}

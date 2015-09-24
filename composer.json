@@ -1,0 +1,15 @@
+{
+  "name": "fortifi/rwd",
+  "description": "Fortifi Real World Data",
+  "homepage": "http://fortifi.co",
+  "license": "BSD-3-Clause",
+  "require": {
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Fortifi\\Rwd\\": "src/"
+    }
+  }
+}

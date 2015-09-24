@@ -1,0 +1,47 @@
+<?php
+namespace Fortifi\Rwd\Currency\Currencies;
+
+use Fortifi\Rwd\Currency\AbstractCurrency;
+
+class SITCurrency extends AbstractCurrency
+{
+  public function getSymbol()
+  {
+    return 'SIT';
+  }
+
+  public function getCode()
+  {
+    return 'SIT';
+  }
+
+  public function getNumericCode()
+  {
+    return 705;
+  }
+
+  public function getName()
+  {
+    return 'Slovenia, Tolar';
+  }
+
+  public function getMajorUnit()
+  {
+    return 'tolar';
+  }
+
+  public function getMinorUnit()
+  {
+    return 'stotin';
+  }
+
+  public function getDecimalSeparator()
+  {
+    return ',';
+  }
+
+  public function getThousandSeparator()
+  {
+    return '.';
+  }
+}

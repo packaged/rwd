@@ -1,0 +1,181 @@
+"Afghanistan, Afghani",AFN,971,afghani,pul,2, 
+"Albania, Lek",ALL,8,lek,qindarka,2, 
+Algerian Dinar,DZD,12,dinar,centime,2, 
+"Angola, Kwanza",AOA,973,kwanza,lwei,2, 
+Argentine Peso,ARS,32,peso,centavo,2,"#.###,##"
+Armenian Dram,AMD,51,dram,luma,2,"#,###.##"
+Aruban Guilder,AWG,533,guilder,cent,2,"#,###.##"
+Australian Dollar,AUD,36,dollar,cent,2,# ###.##
+Azerbaijanian Manat,AZN,944,manat,qäpik,2, 
+Bahamian Dollar,BSD,44,dollar,cent,2,"#,###.##"
+Bahraini Dinar,BHD,48,dinar,fils,3,"#,###.###"
+"Bangladesh, Taka",BDT,50,taka,paisa,2,"#,###.##"
+Barbados Dollar,BBD,52,dollar,cent,2, 
+Belarussian Ruble,BYR,974,ruble, ,0, 
+Belize Dollar,BZD,84,dollar,cent,2,"#,###.##"
+Bermudian Dollar,BMD,60,dollar,cent,2,"#,###.##"
+"Bhutan, Ngultrum",BTN,64,ngultrum,chetrum,2, 
+"Bolivia, Boliviano",BOB,68,boliviano,centavo,2,"#,###.##"
+"Bosnia and Herzegovina, Convertible Marks",BAM,977,marka,fenning,2,"#,###.##"
+"Botswana, Pula",BWP,72,pula,thebe,2,"#,###.##"
+Brazilian Real,BRL,986,real,centavo,2,"#.###,##"
+Brunei Dollar,BND,96,ringgit,sen,2,"#,###.##"
+Bulgarian Lev,BGN,975,leva,stotinki,2, 
+Burundi Franc,BIF,108,franc,centime,0, 
+"Cambodia, Riel",KHR,116,new riel,sen,2, 
+Canadian Dollar,CAD,124,dollar,cent,2,"#,###.##"
+Cape Verde Escudo,CVE,132,escudo,centavo, , 
+Cayman Islands Dollar,KYD,136,dollar,cent,2,"#,###.##"
+CFP Franc,XPF,953,franc,centime,0, 
+Chilean Peso,CLP,152,peso,centavo,0,#.###
+China Yuan Renminbi,CNY,156,yuan renminbi,jiao,2,"#,###.##"
+Colombian Peso,COP,170,peso,centavo,2,"#.###,##"
+Comoro Franc,KMF,174,franc, ,0, 
+Costa Rican Colon,CRC,188,colon,centimo,2,"#.###,##"
+Croatian Kuna,HRK,191,kuna,lipa,2,"#.###,##"
+Cuban Convertible Peso,CUC, ,peso,centavo,2,"#,###.##"
+Cuban Peso,CUP,192,peso,centavo,2,"#,###.##"
+Cyprus Pound,CYP,196,pound,cent,2,"#.###,##"
+Czech Koruna,CZK,203,koruna,haler,2,"#.###,##"
+Danish Krone,DKK,208,krone,øre,2,"#.###,##"
+Djibouti Franc,DJF,262,franc,centime,0, 
+Dominican Peso,DOP,214,peso,centavo,2,"#,###.##"
+East Caribbean Dollar,XCD,951,dollar,cent,2,"#,###.##"
+Egyptian Pound,EGP,818,pound,piaster,2,"#,###.##"
+El Salvador Colon,SVC,222,colon,centavo,2,"#,###.##"
+"Eritrea, Nakfa",ERN,232,nakfa,cent,2, 
+Ethiopian Birr,ETB,230,birr,cent,2, 
+Euro,ATS,978,euro,cent,2,"#,###.##"
+Euro,BEF,978,euro,cent,2,"#,###.##"
+Euro,DEM,978,euro,cent,2,"#,###.##"
+Euro,EEK,978,euro,cent,2,"#,###.##"
+Euro,ESP,978,euro,cent,2,"#,###.##"
+Euro,EUR,978,euro,cent,2,"#,###.##"
+Euro,FIM,978,euro,cent,2,"#,###.##"
+Euro,FRF,978,euro,cent,2,"#,###.##"
+Euro,GRD,978,euro,cent,2,"#,###.##"
+Euro,IEP,978,euro,cent,2,"#,###.##"
+Euro,ITL,978,euro,cent,2,"#,###.##"
+Euro,LUF,978,euro,cent,2,"#,###.##"
+Euro,NLG,978,euro,cent,2,"#,###.##"
+Euro,PTE,978,euro,cent,2,"#,###.##"
+Falkland Islands Pound,FKP,238,pound,pence,2, 
+Fiji Dollar,FJD,242,dollar,cent,2, 
+Franc Congolais,CDF,976,franc,centime,2, 
+Franc de la Communaute financi,XAF, , , , , 
+"Gambia, Dalasi",GMD,270,dalasi,butut,2, 
+"Georgia, Lari",GEL,981,lari,tetri,2, 
+Ghana Cedi,GHS,936,cedi, ,2, 
+"Ghana, Cedi",GHC,288,new cedi,psewa,2,"#,###.##"
+Gibraltar Pound,GIP,292,pound,pence,2,"#,###.##"
+"Guatemala, Quetzal",GTQ,320,quetzal,centavo,2,"#,###.##"
+Guyana Dollar,GYD,328,dollar,cent,2, 
+"Haiti, Gourde",HTG,332,gourde,centime,2, 
+"Honduras, Lempira",HNL,340,lempira,centavo,2,"#,###.##"
+Hong Kong Dollar,HKD,344,dollar,cent,2,"#,###.##"
+"Hungary, Forint",HUF,348,forint, ,0,#.###
+Iceland Krona,ISK,352,króna,aurar,0,#.###
+Indian Rupee,INR,356,rupee,paise,2,"#,##,###.##"
+"Indonesia, Rupiah",IDR,360,rupiah,sen,2,"#.###,##"
+Iranian Rial,IRR,364,rial,rials,2,"#,###.##"
+Iraqi Dinar,IQD,368,dinar,fil,3, 
+Jamaican Dollar,JMD,388,dollar,cent,2,"#,###.##"
+"Japan, Yen",JPY,392,yen,sen,0,"#,###"
+Jordanian Dinar,JOD,400,dinar,fil,3,"#,###.###"
+"Kazakhstan, Tenge",KZT,398,tenge,tiyn,2, 
+Kenyan Shilling,KES,404,shilling,cent,2,"#,###.##"
+Kuwaiti Dinar,KWD,414,dinar,fil,3,"#,###.###"
+"Kyrgyzstan, Som",KGS,417,som,tyyn,2, 
+"Laos, Kip",LAK,418,new kip,at,2, 
+Latvian Lats,LVL,428,lat,santim,2,"#,###.##"
+Lebanese Pound,LBP,422,pound (livre),piastre,2,# ###
+"Lesotho, Loti",LSL,426,"loti, pl., maloti",lisente,2, 
+Liberian Dollar,LRD,430,dollar,cent,2, 
+Libyan Dinar,LYD,434,dinar,dirham,3, 
+Lithuanian Litas,LTL,440,litas,centu,2,"# ###,##"
+"Macao, Pataca",MOP,446,pataca,avo,2, 
+"Macedonia, Denar",MKD,807,denar,deni,2,"#,###.##"
+Malagasy Ariary,MGA,969,ariary, ,0, 
+"Malawi, Kwacha",MWK,454,kwacha,tambala,2, 
+Malaysian Ringgit,MYR,458,ringgit,sen,2,"#,###.##"
+"Maldives, Rufiyaa",MVR,462,rufiyaa,lari,2, 
+Maltese Lira,MTL,470,"lira, pl., liri",cent,2,"#,###.##"
+"Mauritania, Ouguiya",MRO,478,ouguiya (5 khoums),khoum,2, 
+Mauritius Rupee,MUR,480,rupee,cent,2,"#,###"
+Mexican Peso,MXN,484,peso,centavo,2,"#,###.##"
+Moldovan Leu,MDL,498,"leu, pl., lei", ,2, 
+"Mongolia, Tugrik",MNT,496,tugrik,mongo,2, 
+Moroccan Dirham,MAD,504,dirham,centime,2, 
+Mozambique Metical,MZM,508,metical,centavo,2,"#.###,##"
+Mozambique Metical,MZN,943,metical, ,0, 
+"Myanmar, Kyat",MMK,104,kyat,pya,2, 
+Namibian Dollar,NAD,516,dollar,cent,2, 
+Nepalese Rupee,NPR,524,rupee,paise,2,"#,###.##"
+Netherlands Antillian Guilder,ANG,532,guilder,cent,2,"#.###,##"
+New Israeli Shekel,ILS,376,new shekel,agorot,2,"#,###.##"
+New Taiwan Dollar,TWD,901,new dollar, ,2, 
+New Turkish Lira,TRY,949,lira,kurus,2,"#,###.##"
+New Zealand Dollar,NZD,554,dollar,cent,2,"#,###.##"
+"Nicaragua, Cordoba Oro",NIO,558,gold cordoba,centavo,2, 
+"Nigeria, Naira",NGN,566,naira,kobo,2, 
+North Korean Won,KPW,408,won,chon,2, 
+Norwegian Krone,NOK,578,krone,øre,2,"#.###,##"
+Pakistan Rupee,PKR,586,rupee,paisa,2,"#,###.##"
+"Panama, Balboa",PAB,590,balboa,centesimo,2, 
+"Papua New Guinea, Kina",PGK,598,kina,toea,2, 
+"Paraguay, Guarani",PYG,600,guarani,centimo,0, 
+"Peru, Nuevo Sol",PEN,604,new sol,centimo,2,"#,###.##"
+Peso Uruguayo,UYU,858,peso uruguayo,centé,2,"#.###,##"
+Philippine Peso,PHP,608,peso,centavo,2,"#,###.##"
+"Poland, Zloty",PLN,985,zloty,grosz,2,"# ###,##"
+Pound Sterling,GBP,826,pound,pence,2,"#,###.##"
+Qatari Rial,QAR,634,riyal,dirham,2, 
+Rial Omani,OMR,512,rial,baiza,3,"#,###.###"
+"Romania, New Leu",RON,946,leu (pl. lei),bani,2,"#.###,##"
+"Romania, Old Leu",ROL,642,leu (pl. lei),bani,2,"#.###,##"
+Russian Ruble,RUB,643,ruble,kopeck,2,"#.###,##"
+Rwanda Franc,RWF,646,franc,centime,0, 
+S. African Rand Commerc.,SAC, , , , , 
+Saint Helena Pound,SHP,654,pound,new pence,2, 
+"Samoa, Tala",WST,882,tala,sene,2, 
+"Sao Tome and Principe, Dobra",STD,678,dobra,centimo,2, 
+Saudi Riyal,SAR,682,riyal,halalat,2,"#,###.##"
+Serbian Dinar,CSD,891,dinar,para,2, 
+Serbian Dinar,RSD,941,dinar, ,2, 
+Seychelles Rupee,SCR,690,rupee,cent,2, 
+"Sierra Leone, Leone",SLL,694,leone,cent,2, 
+Singapore Dollar,SGD,702,dollar,cent,2,"#,###.##"
+Slovak Koruna,SKK,703,koruna,haliere,2,"# ###,##"
+"Slovenia, Tolar",SIT,705,tolar,stotin,2,"#.###,##"
+Solomon Islands Dollar,SBD,90,dollar,cent,2, 
+Somali Shilling,SOS,706,shilling,centesimi,2, 
+"South Africa, Rand",ZAR,710,rand,cent,2,# ###.##
+"South Korea, Won",KRW,410,won,chon,0,"#,###"
+Sri Lanka Rupee,LKR,144,rupee,cent,2, 
+Sudanese Dinar,SDD,736,dinar, ,2, 
+Surinam Dollar,SRD,968,dollar,cent,2, 
+"Swaziland, Lilangeni",SZL,748,emalangeni,cent,2,"#, ###.##"
+Swedish Krona,SEK,752,krona (pl. kronor),öre,2,"# ###,##"
+Swiss Franc,CHF,756,franken,rappen,2,#'###.##
+Syrian Pound,SYP,760,pound,piaster,2, 
+"Tajikistan, Somoni",TJS,972,somoni, , , 
+Tanzanian Shilling,TZS,834,shilling,cent,2,"#,###.##"
+"Thailand, Baht",THB,764,baht,satang,2,"#,###.##"
+"Tonga, Paanga",TOP,776,pa'anga,seniti,2,"#,###.##"
+Trinidad and Tobago Dollar,TTD,780,dollar,cent,2, 
+Tunisian Dinar,TND,788,dinar,millime,3, 
+Turkmenistan Manat,TMM,795,manat,tenga,2, 
+Turkmenistani New Manat,TMT,934,manat,tenga,2, 
+UAE Dirham,AED,784,dirham,fil,2,"#,###.##"
+Uganda Shilling,UGX,800,shilling,cent,2, 
+"Ukraine, Hryvnia",UAH,980,Hryvnia,kopiyka,2,"# ###,##"
+Unidad de Fomento,CLF,990,UF, ,2, 
+US Dollar,USD,840,dollar,cent,2,"#,###.##"
+Uzbekistan Sum,UZS,860,som,tiyin,2, 
+"Vanuatu, Vatu",VUV,548,vatu,centime,0,"#,###"
+Venezuela Bolivares Fuertes,VEF,862,bolivar,centimo,2,"#.###,##"
+"Viet Nam, Dong",VND,704,new dong,"hao,xu",2,#.###
+Yemeni Rial,YER,886,rial,fil,2, 
+Zambia Kwacha,ZMK,894,kwacha,ngwee,2, 
+Zambia Kwacha,ZMW,894,kwacha,ngwee,2, 
+Zimbabwe Dollar,ZWD,716,dollar,cent,2,# ###.##

@@ -1,0 +1,47 @@
+<?php
+namespace Fortifi\Rwd\Currency\Currencies;
+
+use Fortifi\Rwd\Currency\AbstractCurrency;
+
+class CZKCurrency extends AbstractCurrency
+{
+  public function getSymbol()
+  {
+    return 'Kč';
+  }
+
+  public function getCode()
+  {
+    return 'CZK';
+  }
+
+  public function getNumericCode()
+  {
+    return 203;
+  }
+
+  public function getName()
+  {
+    return 'Czech Koruna';
+  }
+
+  public function getMajorUnit()
+  {
+    return 'koruna';
+  }
+
+  public function getMinorUnit()
+  {
+    return 'haler';
+  }
+
+  public function getDecimalSeparator()
+  {
+    return ',';
+  }
+
+  public function getThousandSeparator()
+  {
+    return '.';
+  }
+}

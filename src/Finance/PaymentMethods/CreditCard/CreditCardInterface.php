@@ -1,7 +1,9 @@
 <?php
 namespace Fortifi\Rwd\Finance\PaymentMethods\CreditCard;
 
-interface CreditCardInterface
+use Fortifi\Rwd\Finance\PaymentMethods\PaymentMethodInterface;
+
+interface CreditCardInterface extends PaymentMethodInterface
 {
   /**
    * @return string

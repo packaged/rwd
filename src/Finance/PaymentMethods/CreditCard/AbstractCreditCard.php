@@ -1,6 +1,8 @@
 <?php
 namespace Fortifi\Rwd\Finance\PaymentMethods\CreditCard;
 
+use Fortifi\Rwd\Finance\PaymentMethods\PaymentMethodType;
+
 abstract class AbstractCreditCard implements CreditCardInterface
 {
   protected $_cardNumber;
@@ -18,6 +20,11 @@ abstract class AbstractCreditCard implements CreditCardInterface
   public function __construct($number = null)
   {
     $this->_cardNumber = $number;
+  }
+
+  public function getPaymentType()
+  {
+    return PaymentMethodType::CREDIT_CARD;
   }
 
   /**
@@ -190,4 +197,8 @@ abstract class AbstractCreditCard implements CreditCardInterface
     return $sum % 10 === 0;
   }
 
+  public function getPaymentSubType()
+  {
+    return $this->getType();
+  }
 }

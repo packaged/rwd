@@ -44,4 +44,32 @@ class CreditCardHelper
     }
     return null;
   }
+
+  public static function getType($partialNumber)
+  {
+    switch($partialNumber[0])
+    {
+      case 4:
+        return CreditCardType::VISA;
+      case 5:
+        return CreditCardType::MASTER_CARD;
+      case 6:
+        return CreditCardType::DISCOVER;
+      case 3:
+        switch($partialNumber[1])
+        {
+          case 4:
+          case 7:
+            return CreditCardType::AMEX;
+          case 5:
+            return CreditCardType::JCB;
+          case 8:
+          case 9:
+          case 6:
+          case 0:
+            return CreditCardType::DINERS_CLUB;
+        }
+    }
+    return null;
+  }
 }

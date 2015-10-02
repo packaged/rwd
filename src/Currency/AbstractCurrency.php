@@ -1,5 +1,5 @@
 <?php
-namespace Fortifi\Rwd\Currency;
+namespace Packaged\Rwd\Currency;
 
 abstract class AbstractCurrency implements Currency
 {

@@ -1,8 +1,8 @@
 <?php
 $template = '<?php
-namespace Fortifi\Rwd\Currency\Currencies;
+namespace Packaged\Rwd\Currency\Currencies;
 
-use Fortifi\Rwd\Currency\AbstractCurrency;
+use Packaged\Rwd\Currency\AbstractCurrency;
 
 class {{alpha}}Currency extends AbstractCurrency
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Fortifi\Rwd\Currency;
+namespace Packaged\Rwd\Currency;
 
 interface Currency
 {

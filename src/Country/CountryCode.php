@@ -1,5 +1,5 @@
 <?php
-namespace Fortifi\Rwd\Country;
+namespace Packaged\Rwd\Country;
 
 final class CountryCode
 {

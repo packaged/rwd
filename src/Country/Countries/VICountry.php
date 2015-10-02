@@ -1,7 +1,7 @@
 <?php
-namespace Fortifi\Rwd\Country\Countries;
+namespace Packaged\Rwd\Country\Countries;
 
-use Fortifi\Rwd\Country\Country;
+use Packaged\Rwd\Country\Country;
 
 class VICountry implements Country
 {

@@ -1,8 +1,8 @@
 <?php
-namespace Fortifi\Rwd\Finance\PaymentMethods\CreditCard\Cards;
+namespace Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards;
 
-use Fortifi\Rwd\Finance\PaymentMethods\CreditCard\AbstractCreditCard;
-use Fortifi\Rwd\Finance\PaymentMethods\CreditCard\CreditCardType;
+use Packaged\Rwd\Finance\PaymentMethods\CreditCard\AbstractCreditCard;
+use Packaged\Rwd\Finance\PaymentMethods\CreditCard\CreditCardType;
 
 class Discover extends AbstractCreditCard
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Fortifi\Rwd\Finance\PaymentMethods\CreditCard;
+namespace Packaged\Rwd\Finance\PaymentMethods\CreditCard;
 
 interface CreditCardType
 {

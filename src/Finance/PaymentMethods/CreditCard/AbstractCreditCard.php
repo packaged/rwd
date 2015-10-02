@@ -1,7 +1,7 @@
 <?php
-namespace Fortifi\Rwd\Finance\PaymentMethods\CreditCard;
+namespace Packaged\Rwd\Finance\PaymentMethods\CreditCard;
 
-use Fortifi\Rwd\Finance\PaymentMethods\PaymentMethodType;
+use Packaged\Rwd\Finance\PaymentMethods\PaymentMethodType;
 
 abstract class AbstractCreditCard implements CreditCardInterface
 {
@@ -19,7 +19,7 @@ abstract class AbstractCreditCard implements CreditCardInterface
 
   public function __construct($number = null)
   {
-    $this->_cardNumber = $number;
+    $this->setCardNumber($number);
   }
 
   public function getPaymentType()
@@ -42,7 +42,7 @@ abstract class AbstractCreditCard implements CreditCardInterface
    */
   public function setCardNumber($cardNumber)
   {
-    $this->_cardNumber = $cardNumber;
+    $this->_cardNumber = preg_replace('/[^\d]/', '', $cardNumber);
     return $this;
   }
 

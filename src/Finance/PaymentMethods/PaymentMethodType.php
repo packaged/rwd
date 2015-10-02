@@ -1,5 +1,5 @@
 <?php
-namespace Fortifi\Rwd\Finance\PaymentMethods;
+namespace Packaged\Rwd\Finance\PaymentMethods;
 
 interface PaymentMethodType
 {

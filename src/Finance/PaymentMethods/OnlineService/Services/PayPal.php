@@ -1,13 +1,14 @@
 <?php
-namespace Fortifi\Rwd\Finance\PaymentMethods\OnlineService\Services;
+namespace Packaged\Rwd\Finance\PaymentMethods\OnlineService\Services;
 
-use Fortifi\Rwd\Finance\PaymentMethods\OnlineService\AbstractOnlineService;
+use Packaged\Rwd\Finance\PaymentMethods\OnlineService\AbstractOnlineService;
+use Packaged\Rwd\Finance\PaymentMethods\OnlineService\OnlineServiceType;
 
 class PayPal extends AbstractOnlineService
 {
   public function getPaymentSubType()
   {
-    return 'paypal';
+    return OnlineServiceType::PAYPAL;
   }
 
 }

@@ -1,7 +1,7 @@
 <?php
-namespace Fortifi\Rwd\Finance\PaymentMethods\OnlineService;
+namespace Packaged\Rwd\Finance\PaymentMethods\OnlineService;
 
-use Fortifi\Rwd\Finance\PaymentMethods\PaymentMethodType;
+use Packaged\Rwd\Finance\PaymentMethods\PaymentMethodType;
 
 abstract class AbstractOnlineService implements OnlineServiceInterface
 {

@@ -1,7 +1,7 @@
 <?php
 namespace Packaged\Rwd\Currency;
 
-final class CurrencyCode
+interface CurrencyCode
 {
   const CODE_AFN = 'AFN';
   const CODE_EUR = 'EUR';

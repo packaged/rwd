@@ -1,7 +1,7 @@
 <?php
 namespace Packaged\Rwd\Country;
 
-final class CountryCode
+interface CountryCode
 {
   const CODE_A1 = 'A1';
   const CODE_A2 = 'A2';

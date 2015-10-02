@@ -1,9 +1,9 @@
 <?php
 namespace Packaged\Rwd\Country\Countries;
 
-use Packaged\Rwd\Country\Country;
+use Packaged\Rwd\Country\CountryInterface;
 
-class ITCountry implements Country
+class ITCountry implements CountryInterface
 {
   public function getName()
   {

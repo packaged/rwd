@@ -1,7 +1,7 @@
 <?php
 namespace Packaged\Rwd\Country;
 
-interface Country
+interface CountryInterface
 {
   public function getName();
 

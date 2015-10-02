@@ -1,7 +1,7 @@
 <?php
 namespace Packaged\Rwd\Currency;
 
-abstract class AbstractCurrency implements Currency
+abstract class AbstractCurrency implements CurrencyInterface
 {
   public function getDecimalCount()
   {

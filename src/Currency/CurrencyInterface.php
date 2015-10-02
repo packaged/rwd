@@ -1,7 +1,7 @@
 <?php
 namespace Packaged\Rwd\Currency;
 
-interface Currency
+interface CurrencyInterface
 {
   public function getSymbol();
 

@@ -34,6 +34,11 @@ class {{alpha}}Currency extends AbstractCurrency
   public function getMinorUnit()
   {
     return \'{{minor}}\';
+  }
+
+  public function getUSDAverage()
+  {
+    return (float){{fixed}};
   }{{methods}}
 }
 ';
@@ -104,6 +109,8 @@ if(($handle = fopen("Untitled.csv", "r")) !== false)
       }
     }
 
+    $fixed = 'USD';
+
     $file = str_replace(
       [
         '{{name}}',
@@ -114,6 +121,7 @@ if(($handle = fopen("Untitled.csv", "r")) !== false)
         '{{decimal}}',
         '{{symbol}}',
         '{{methods}}',
+        '{{fixed}}',
       ],
       [
         $name,
@@ -124,6 +132,7 @@ if(($handle = fopen("Untitled.csv", "r")) !== false)
         $decimal,
         $symbol,
         $methods,
+        $fixed,
       ],
       $template
     );

@@ -34,4 +34,9 @@ class AEDCurrency extends AbstractCurrency
   {
     return 'fil';
   }
+
+  public function getUSDAverage()
+  {
+    return 3.6729;
+  }
 }

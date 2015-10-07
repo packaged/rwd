@@ -34,4 +34,9 @@ class BDTCurrency extends AbstractCurrency
   {
     return 'paisa';
   }
+
+  public function getUSDAverage()
+  {
+    return 73.3581;
+  }
 }

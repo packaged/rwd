@@ -34,4 +34,9 @@ class IRRCurrency extends AbstractCurrency
   {
     return 'rials';
   }
+
+  public function getUSDAverage()
+  {
+    return 14324.2868;
+  }
 }

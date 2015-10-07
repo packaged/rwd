@@ -34,4 +34,9 @@ class THBCurrency extends AbstractCurrency
   {
     return 'satang';
   }
+
+  public function getUSDAverage()
+  {
+    return 32.7776;
+  }
 }

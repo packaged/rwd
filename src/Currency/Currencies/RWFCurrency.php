@@ -34,4 +34,9 @@ class RWFCurrency extends AbstractCurrency
   {
     return 'centime';
   }
+
+  public function getUSDAverage()
+  {
+    return 603.6596;
+  }
 }

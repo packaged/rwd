@@ -35,6 +35,11 @@ class CZKCurrency extends AbstractCurrency
     return 'haler';
   }
 
+  public function getUSDAverage()
+  {
+    return 20.0167;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

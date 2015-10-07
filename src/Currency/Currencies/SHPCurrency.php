@@ -34,4 +34,9 @@ class SHPCurrency extends AbstractCurrency
   {
     return 'new pence';
   }
+
+  public function getUSDAverage()
+  {
+    return 0.6059;
+  }
 }

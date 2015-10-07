@@ -34,4 +34,9 @@ class BYRCurrency extends AbstractCurrency
   {
     return ' ';
   }
+
+  public function getUSDAverage()
+  {
+    return 6018.9822;
+  }
 }

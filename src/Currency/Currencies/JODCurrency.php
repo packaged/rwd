@@ -34,4 +34,9 @@ class JODCurrency extends AbstractCurrency
   {
     return 'fil';
   }
+
+  public function getUSDAverage()
+  {
+    return 0.7085;
+  }
 }

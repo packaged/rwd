@@ -35,6 +35,11 @@ class SEKCurrency extends AbstractCurrency
     return 'öre';
   }
 
+  public function getUSDAverage()
+  {
+    return 7.0624;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

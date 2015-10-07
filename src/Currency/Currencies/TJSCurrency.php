@@ -34,4 +34,9 @@ class TJSCurrency extends AbstractCurrency
   {
     return ' ';
   }
+
+  public function getUSDAverage()
+  {
+    return 3.6984;
+  }
 }

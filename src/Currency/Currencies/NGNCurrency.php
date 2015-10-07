@@ -34,4 +34,9 @@ class NGNCurrency extends AbstractCurrency
   {
     return 'kobo';
   }
+
+  public function getUSDAverage()
+  {
+    return 150.974;
+  }
 }

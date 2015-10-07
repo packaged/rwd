@@ -34,4 +34,9 @@ class YERCurrency extends AbstractCurrency
   {
     return 'fil';
   }
+
+  public function getUSDAverage()
+  {
+    return 206.4372;
+  }
 }

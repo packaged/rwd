@@ -34,4 +34,9 @@ class ALLCurrency extends AbstractCurrency
   {
     return 'qindarka';
   }
+
+  public function getUSDAverage()
+  {
+    return 101.7134;
+  }
 }

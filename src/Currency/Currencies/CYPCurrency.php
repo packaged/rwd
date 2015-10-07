@@ -35,6 +35,11 @@ class CYPCurrency extends AbstractCurrency
     return 'cent';
   }
 
+  public function getUSDAverage()
+  {
+    return 0.4065;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

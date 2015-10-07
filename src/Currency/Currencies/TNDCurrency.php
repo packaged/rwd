@@ -34,4 +34,9 @@ class TNDCurrency extends AbstractCurrency
   {
     return 'millime';
   }
+
+  public function getUSDAverage()
+  {
+    return 1.4853;
+  }
 }

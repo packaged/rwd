@@ -35,6 +35,11 @@ class CHFCurrency extends AbstractCurrency
     return 'rappen';
   }
 
+  public function getUSDAverage()
+  {
+    return 1.0285;
+  }
+
   public function getThousandSeparator()
   {
     return '\'';

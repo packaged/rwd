@@ -34,4 +34,9 @@ class PKRCurrency extends AbstractCurrency
   {
     return 'paisa';
   }
+
+  public function getUSDAverage()
+  {
+    return 84.236;
+  }
 }

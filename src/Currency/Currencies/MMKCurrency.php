@@ -34,4 +34,9 @@ class MMKCurrency extends AbstractCurrency
   {
     return 'pya';
   }
+
+  public function getUSDAverage()
+  {
+    return 371.5185;
+  }
 }

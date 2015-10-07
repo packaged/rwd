@@ -34,4 +34,9 @@ class SLLCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 3702.4836;
+  }
 }

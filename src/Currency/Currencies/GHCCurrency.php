@@ -34,4 +34,9 @@ class GHCCurrency extends AbstractCurrency
   {
     return 'psewa';
   }
+
+  public function getUSDAverage()
+  {
+    return 18113.8705;
+  }
 }

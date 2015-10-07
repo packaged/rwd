@@ -34,4 +34,9 @@ class WSTCurrency extends AbstractCurrency
   {
     return 'sene';
   }
+
+  public function getUSDAverage()
+  {
+    return 2.4962;
+  }
 }

@@ -34,4 +34,9 @@ class SYPCurrency extends AbstractCurrency
   {
     return 'piaster';
   }
+
+  public function getUSDAverage()
+  {
+    return 82.4777;
+  }
 }

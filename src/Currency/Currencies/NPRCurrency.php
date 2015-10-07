@@ -34,4 +34,9 @@ class NPRCurrency extends AbstractCurrency
   {
     return 'paise';
   }
+
+  public function getUSDAverage()
+  {
+    return 81.1216;
+  }
 }

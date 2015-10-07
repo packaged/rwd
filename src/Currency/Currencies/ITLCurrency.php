@@ -34,4 +34,9 @@ class ITLCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 1468.7616;
+  }
 }

@@ -34,4 +34,9 @@ class QARCurrency extends AbstractCurrency
   {
     return 'dirham';
   }
+
+  public function getUSDAverage()
+  {
+    return 3.6406;
+  }
 }

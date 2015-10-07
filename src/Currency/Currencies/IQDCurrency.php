@@ -34,4 +34,9 @@ class IQDCurrency extends AbstractCurrency
   {
     return 'fil';
   }
+
+  public function getUSDAverage()
+  {
+    return 1207.4342;
+  }
 }

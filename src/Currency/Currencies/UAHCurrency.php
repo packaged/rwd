@@ -35,6 +35,11 @@ class UAHCurrency extends AbstractCurrency
     return 'kopiyka';
   }
 
+  public function getUSDAverage()
+  {
+    return 8.8956;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

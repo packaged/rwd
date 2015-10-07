@@ -34,4 +34,9 @@ class BNDCurrency extends AbstractCurrency
   {
     return 'sen';
   }
+
+  public function getUSDAverage()
+  {
+    return 1.3716;
+  }
 }

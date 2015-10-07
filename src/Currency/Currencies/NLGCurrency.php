@@ -34,4 +34,9 @@ class NLGCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 1.6716;
+  }
 }

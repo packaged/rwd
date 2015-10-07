@@ -34,4 +34,9 @@ class LYDCurrency extends AbstractCurrency
   {
     return 'dirham';
   }
+
+  public function getUSDAverage()
+  {
+    return 1.2646;
+  }
 }

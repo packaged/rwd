@@ -34,4 +34,9 @@ class CUPCurrency extends AbstractCurrency
   {
     return 'centavo';
   }
+
+  public function getUSDAverage()
+  {
+    return 22.6505;
+  }
 }

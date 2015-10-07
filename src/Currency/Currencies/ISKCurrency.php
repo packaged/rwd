@@ -35,6 +35,11 @@ class ISKCurrency extends AbstractCurrency
     return 'aurar';
   }
 
+  public function getUSDAverage()
+  {
+    return 108.2554;
+  }
+
   public function getThousandSeparator()
   {
     return '.';

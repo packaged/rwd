@@ -34,4 +34,9 @@ class MADCurrency extends AbstractCurrency
   {
     return 'centime';
   }
+
+  public function getUSDAverage()
+  {
+    return 8.4505;
+  }
 }

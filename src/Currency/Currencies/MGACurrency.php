@@ -34,4 +34,9 @@ class MGACurrency extends AbstractCurrency
   {
     return ' ';
   }
+
+  public function getUSDAverage()
+  {
+    return 2177.7244;
+  }
 }

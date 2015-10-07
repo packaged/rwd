@@ -35,6 +35,11 @@ class PLNCurrency extends AbstractCurrency
     return 'grosz';
   }
 
+  public function getUSDAverage()
+  {
+    return 3.0672;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

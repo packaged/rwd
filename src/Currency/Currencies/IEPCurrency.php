@@ -34,4 +34,9 @@ class IEPCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 0.5974;
+  }
 }

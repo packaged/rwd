@@ -34,4 +34,9 @@ class BWPCurrency extends AbstractCurrency
   {
     return 'thebe';
   }
+
+  public function getUSDAverage()
+  {
+    return 7.4537;
+  }
 }

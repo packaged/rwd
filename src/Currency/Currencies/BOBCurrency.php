@@ -34,4 +34,9 @@ class BOBCurrency extends AbstractCurrency
   {
     return 'centavo';
   }
+
+  public function getUSDAverage()
+  {
+    return 7.186;
+  }
 }

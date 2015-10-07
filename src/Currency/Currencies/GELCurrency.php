@@ -34,4 +34,9 @@ class GELCurrency extends AbstractCurrency
   {
     return 'tetri';
   }
+
+  public function getUSDAverage()
+  {
+    return 1.7824;
+  }
 }

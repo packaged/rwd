@@ -34,4 +34,9 @@ class VUVCurrency extends AbstractCurrency
   {
     return 'centime';
   }
+
+  public function getUSDAverage()
+  {
+    return 99.3777;
+  }
 }

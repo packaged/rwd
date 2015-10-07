@@ -34,4 +34,9 @@ class KWDCurrency extends AbstractCurrency
   {
     return 'fil';
   }
+
+  public function getUSDAverage()
+  {
+    return 0.2844;
+  }
 }

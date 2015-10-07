@@ -34,4 +34,9 @@ class CNYCurrency extends AbstractCurrency
   {
     return 'jiao';
   }
+
+  public function getUSDAverage()
+  {
+    return 6.7426;
+  }
 }

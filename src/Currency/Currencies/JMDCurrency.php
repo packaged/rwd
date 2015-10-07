@@ -34,4 +34,9 @@ class JMDCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 88.0404;
+  }
 }

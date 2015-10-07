@@ -35,6 +35,11 @@ class COPCurrency extends AbstractCurrency
     return 'centavo';
   }
 
+  public function getUSDAverage()
+  {
+    return 2061.2864;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

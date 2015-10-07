@@ -34,4 +34,9 @@ class CLFCurrency extends AbstractCurrency
   {
     return ' ';
   }
+
+  public function getUSDAverage()
+  {
+    return 1;
+  }
 }

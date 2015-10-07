@@ -34,4 +34,9 @@ class TMMCurrency extends AbstractCurrency
   {
     return 'tenga';
   }
+
+  public function getUSDAverage()
+  {
+    return 11613.167;
+  }
 }

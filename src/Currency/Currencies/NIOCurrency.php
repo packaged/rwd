@@ -34,4 +34,9 @@ class NIOCurrency extends AbstractCurrency
   {
     return 'centavo';
   }
+
+  public function getUSDAverage()
+  {
+    return 21.99;
+  }
 }

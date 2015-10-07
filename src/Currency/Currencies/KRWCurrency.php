@@ -34,4 +34,9 @@ class KRWCurrency extends AbstractCurrency
   {
     return 'chon';
   }
+
+  public function getUSDAverage()
+  {
+    return 1092.2775;
+  }
 }

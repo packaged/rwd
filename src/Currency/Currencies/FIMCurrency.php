@@ -34,4 +34,9 @@ class FIMCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 4.5101;
+  }
 }

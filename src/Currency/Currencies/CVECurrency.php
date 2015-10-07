@@ -34,4 +34,9 @@ class CVECurrency extends AbstractCurrency
   {
     return 'centavo';
   }
+
+  public function getUSDAverage()
+  {
+    return 83.7304;
+  }
 }

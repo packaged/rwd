@@ -34,4 +34,9 @@ class NZDCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 1.3654;
+  }
 }

@@ -34,4 +34,9 @@ class ATSCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 10.4379;
+  }
 }

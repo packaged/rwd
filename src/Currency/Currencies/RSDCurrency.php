@@ -34,4 +34,9 @@ class RSDCurrency extends AbstractCurrency
   {
     return ' ';
   }
+
+  public function getUSDAverage()
+  {
+    return 76.9787;
+  }
 }

@@ -34,4 +34,9 @@ class PTECurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 152.076;
+  }
 }

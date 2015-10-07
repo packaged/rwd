@@ -34,4 +34,9 @@ class AZNCurrency extends AbstractCurrency
   {
     return 'qäpik';
   }
+
+  public function getUSDAverage()
+  {
+    return 0.8385;
+  }
 }

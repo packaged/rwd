@@ -34,4 +34,9 @@ class TRYCurrency extends AbstractCurrency
   {
     return 'kurus';
   }
+
+  public function getUSDAverage()
+  {
+    return 1.7349;
+  }
 }

@@ -35,6 +35,11 @@ class UYUCurrency extends AbstractCurrency
     return 'centé';
   }
 
+  public function getUSDAverage()
+  {
+    return 22.0512;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

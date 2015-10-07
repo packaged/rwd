@@ -34,4 +34,9 @@ class BGNCurrency extends AbstractCurrency
   {
     return 'stotinki';
   }
+
+  public function getUSDAverage()
+  {
+    return 1.4837;
+  }
 }

@@ -35,6 +35,11 @@ class ANGCurrency extends AbstractCurrency
     return 'cent';
   }
 
+  public function getUSDAverage()
+  {
+    return 1.7922;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

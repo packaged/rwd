@@ -34,4 +34,9 @@ class AMDCurrency extends AbstractCurrency
   {
     return 'luma';
   }
+
+  public function getUSDAverage()
+  {
+    return 388.2816;
+  }
 }

@@ -34,4 +34,9 @@ class GTQCurrency extends AbstractCurrency
   {
     return 'centavo';
   }
+
+  public function getUSDAverage()
+  {
+    return 7.7925;
+  }
 }

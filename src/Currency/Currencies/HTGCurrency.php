@@ -34,4 +34,9 @@ class HTGCurrency extends AbstractCurrency
   {
     return 'centime';
   }
+
+  public function getUSDAverage()
+  {
+    return 41.2424;
+  }
 }

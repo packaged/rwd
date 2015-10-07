@@ -34,4 +34,9 @@ class AFNCurrency extends AbstractCurrency
   {
     return 'pul';
   }
+
+  public function getUSDAverage()
+  {
+    return 51.6404;
+  }
 }

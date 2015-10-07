@@ -34,4 +34,9 @@ class OMRCurrency extends AbstractCurrency
   {
     return 'baiza';
   }
+
+  public function getUSDAverage()
+  {
+    return 0.385;
+  }
 }

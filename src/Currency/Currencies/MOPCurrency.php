@@ -34,4 +34,9 @@ class MOPCurrency extends AbstractCurrency
   {
     return 'avo';
   }
+
+  public function getUSDAverage()
+  {
+    return 8.0004;
+  }
 }

@@ -34,4 +34,9 @@ class HNLCurrency extends AbstractCurrency
   {
     return 'centavo';
   }
+
+  public function getUSDAverage()
+  {
+    return 19.4985;
+  }
 }

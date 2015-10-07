@@ -34,4 +34,9 @@ class AOACurrency extends AbstractCurrency
   {
     return 'lwei';
   }
+
+  public function getUSDAverage()
+  {
+    return 90.7871;
+  }
 }

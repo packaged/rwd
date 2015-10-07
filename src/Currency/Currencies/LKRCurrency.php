@@ -34,4 +34,9 @@ class LKRCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 118.266;
+  }
 }

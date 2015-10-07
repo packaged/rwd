@@ -34,4 +34,9 @@ class TTDCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 6.315;
+  }
 }

@@ -34,4 +34,9 @@ class MKDCurrency extends AbstractCurrency
   {
     return 'deni';
   }
+
+  public function getUSDAverage()
+  {
+    return 46.6925;
+  }
 }

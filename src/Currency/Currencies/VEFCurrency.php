@@ -35,6 +35,11 @@ class VEFCurrency extends AbstractCurrency
     return 'centimo';
   }
 
+  public function getUSDAverage()
+  {
+    return 3.5754;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

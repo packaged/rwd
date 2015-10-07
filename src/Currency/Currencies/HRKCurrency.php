@@ -35,6 +35,11 @@ class HRKCurrency extends AbstractCurrency
     return 'lipa';
   }
 
+  public function getUSDAverage()
+  {
+    return 5.64;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

@@ -34,4 +34,9 @@ class EEKCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 11.623;
+  }
 }

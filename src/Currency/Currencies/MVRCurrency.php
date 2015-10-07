@@ -34,4 +34,9 @@ class MVRCurrency extends AbstractCurrency
   {
     return 'lari';
   }
+
+  public function getUSDAverage()
+  {
+    return 13.99;
+  }
 }

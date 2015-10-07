@@ -35,6 +35,11 @@ class VNDCurrency extends AbstractCurrency
     return 'hao,xu';
   }
 
+  public function getUSDAverage()
+  {
+    return 19085.6682;
+  }
+
   public function getDecimalSeparator()
   {
     return '#';

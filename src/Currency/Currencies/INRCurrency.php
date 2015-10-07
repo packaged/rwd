@@ -34,4 +34,9 @@ class INRCurrency extends AbstractCurrency
   {
     return 'paise';
   }
+
+  public function getUSDAverage()
+  {
+    return 50.8483;
+  }
 }

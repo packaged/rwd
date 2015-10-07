@@ -35,6 +35,11 @@ class CRCCurrency extends AbstractCurrency
     return 'centimo';
   }
 
+  public function getUSDAverage()
+  {
+    return 522.5419;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

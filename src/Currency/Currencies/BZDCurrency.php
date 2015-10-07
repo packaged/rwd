@@ -34,4 +34,9 @@ class BZDCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 1.9734;
+  }
 }

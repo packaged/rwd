@@ -34,4 +34,9 @@ class LVLCurrency extends AbstractCurrency
   {
     return 'santim';
   }
+
+  public function getUSDAverage()
+  {
+    return 0.5327;
+  }
 }

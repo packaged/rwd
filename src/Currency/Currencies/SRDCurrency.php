@@ -34,4 +34,9 @@ class SRDCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 2.9991;
+  }
 }

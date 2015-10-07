@@ -35,6 +35,11 @@ class BRLCurrency extends AbstractCurrency
     return 'centavo';
   }
 
+  public function getUSDAverage()
+  {
+    return 2.1033;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

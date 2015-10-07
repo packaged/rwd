@@ -34,4 +34,9 @@ class ZMKCurrency extends AbstractCurrency
   {
     return 'ngwee';
   }
+
+  public function getUSDAverage()
+  {
+    return 4693.8665;
+  }
 }

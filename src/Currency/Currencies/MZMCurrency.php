@@ -35,6 +35,11 @@ class MZMCurrency extends AbstractCurrency
     return 'centavo';
   }
 
+  public function getUSDAverage()
+  {
+    return 29027.7594;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

@@ -35,6 +35,11 @@ class ZWDCurrency extends AbstractCurrency
     return 'cent';
   }
 
+  public function getUSDAverage()
+  {
+    return 266019414.73;
+  }
+
   public function getThousandSeparator()
   {
     return ' ';

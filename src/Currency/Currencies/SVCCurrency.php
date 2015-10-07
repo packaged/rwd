@@ -34,4 +34,9 @@ class SVCCurrency extends AbstractCurrency
   {
     return 'centavo';
   }
+
+  public function getUSDAverage()
+  {
+    return 8.7492;
+  }
 }

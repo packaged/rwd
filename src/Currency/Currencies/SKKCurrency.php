@@ -35,6 +35,11 @@ class SKKCurrency extends AbstractCurrency
     return 'haliere';
   }
 
+  public function getUSDAverage()
+  {
+    return 22.3042;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

@@ -34,4 +34,9 @@ class BAMCurrency extends AbstractCurrency
   {
     return 'fenning';
   }
+
+  public function getUSDAverage()
+  {
+    return 1.4835;
+  }
 }

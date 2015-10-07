@@ -34,4 +34,9 @@ class XPFCurrency extends AbstractCurrency
   {
     return 'centime';
   }
+
+  public function getUSDAverage()
+  {
+    return 90.5607;
+  }
 }

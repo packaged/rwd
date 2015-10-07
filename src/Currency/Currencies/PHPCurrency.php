@@ -34,4 +34,9 @@ class PHPCurrency extends AbstractCurrency
   {
     return 'centavo';
   }
+
+  public function getUSDAverage()
+  {
+    return 45.1914;
+  }
 }

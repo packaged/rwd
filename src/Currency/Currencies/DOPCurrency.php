@@ -34,4 +34,9 @@ class DOPCurrency extends AbstractCurrency
   {
     return 'centavo';
   }
+
+  public function getUSDAverage()
+  {
+    return 38.0045;
+  }
 }

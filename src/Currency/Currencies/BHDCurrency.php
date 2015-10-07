@@ -34,4 +34,9 @@ class BHDCurrency extends AbstractCurrency
   {
     return 'fils';
   }
+
+  public function getUSDAverage()
+  {
+    return 0.377;
+  }
 }

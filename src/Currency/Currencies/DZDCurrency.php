@@ -34,4 +34,9 @@ class DZDCurrency extends AbstractCurrency
   {
     return 'centime';
   }
+
+  public function getUSDAverage()
+  {
+    return 76.2678;
+  }
 }

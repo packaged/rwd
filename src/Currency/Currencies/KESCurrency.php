@@ -34,4 +34,9 @@ class KESCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 80.9417;
+  }
 }

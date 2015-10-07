@@ -35,6 +35,11 @@ class RONCurrency extends AbstractCurrency
     return 'bani';
   }
 
+  public function getUSDAverage()
+  {
+    return 3.1168;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

@@ -34,4 +34,9 @@ class ESPCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 126.2124;
+  }
 }

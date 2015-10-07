@@ -34,4 +34,9 @@ class GMDCurrency extends AbstractCurrency
   {
     return 'butut';
   }
+
+  public function getUSDAverage()
+  {
+    return 30.4805;
+  }
 }

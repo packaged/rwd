@@ -34,4 +34,9 @@ class MZNCurrency extends AbstractCurrency
   {
     return ' ';
   }
+
+  public function getUSDAverage()
+  {
+    return 29.0311;
+  }
 }

@@ -35,6 +35,11 @@ class RUBCurrency extends AbstractCurrency
     return 'kopeck';
   }
 
+  public function getUSDAverage()
+  {
+    return 33.0248;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

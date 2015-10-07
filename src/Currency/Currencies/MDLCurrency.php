@@ -34,4 +34,9 @@ class MDLCurrency extends AbstractCurrency
   {
     return ' ';
   }
+
+  public function getUSDAverage()
+  {
+    return 12.7922;
+  }
 }

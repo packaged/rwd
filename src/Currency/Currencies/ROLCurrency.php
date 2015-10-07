@@ -35,6 +35,11 @@ class ROLCurrency extends AbstractCurrency
     return 'bani';
   }
 
+  public function getUSDAverage()
+  {
+    return 31167.537;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

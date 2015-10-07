@@ -34,4 +34,9 @@ class ETBCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 14.7179;
+  }
 }

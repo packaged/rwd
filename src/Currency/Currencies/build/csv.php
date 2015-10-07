@@ -38,7 +38,7 @@ class {{alpha}}Currency extends AbstractCurrency
 
   public function getUSDAverage()
   {
-    return (float){{fixed}};
+    return {{fixed}};
   }{{methods}}
 }
 ';
@@ -59,6 +59,8 @@ $thousandMethod = '
 $json = json_decode(file_get_contents('currency.json'));
 $names = $json->Names;
 $symbols = [];
+
+$historical = json_decode(file_get_contents('historical.json'));
 
 if(($handle = fopen("symbols.csv", "r")) !== false)
 {
@@ -109,7 +111,21 @@ if(($handle = fopen("Untitled.csv", "r")) !== false)
       }
     }
 
-    $fixed = 'USD';
+    $fixed = 1;
+    if(isset($historical->$alpha))
+    {
+      $rates = [];
+      foreach($historical->$alpha as $year => $yearData)
+      {
+        $year = ltrim($year, '*');
+        if($year > 2005) // Use 10 Year Average
+        {
+          $rates[] = $yearData->bid;
+          $rates[] = $yearData->ask;
+        }
+      }
+      $fixed = round(array_sum($rates) / count($rates), 4);
+    }
 
     $file = str_replace(
       [

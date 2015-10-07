@@ -34,4 +34,9 @@ class MNTCurrency extends AbstractCurrency
   {
     return 'mongo';
   }
+
+  public function getUSDAverage()
+  {
+    return 1414.3628;
+  }
 }

@@ -35,6 +35,11 @@ class MURCurrency extends AbstractCurrency
     return 'cent';
   }
 
+  public function getUSDAverage()
+  {
+    return 30.9028;
+  }
+
   public function getDecimalSeparator()
   {
     return '#';

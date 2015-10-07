@@ -34,4 +34,9 @@ class MYRCurrency extends AbstractCurrency
   {
     return 'sen';
   }
+
+  public function getUSDAverage()
+  {
+    return 3.3537;
+  }
 }

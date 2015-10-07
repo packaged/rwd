@@ -34,4 +34,9 @@ class EURCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 0.7586;
+  }
 }

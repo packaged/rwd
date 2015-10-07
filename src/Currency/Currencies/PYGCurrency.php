@@ -34,4 +34,9 @@ class PYGCurrency extends AbstractCurrency
   {
     return 'centimo';
   }
+
+  public function getUSDAverage()
+  {
+    return 4720.0836;
+  }
 }

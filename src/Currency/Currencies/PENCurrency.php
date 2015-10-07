@@ -34,4 +34,9 @@ class PENCurrency extends AbstractCurrency
   {
     return 'centimo';
   }
+
+  public function getUSDAverage()
+  {
+    return 2.9232;
+  }
 }

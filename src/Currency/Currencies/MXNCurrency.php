@@ -34,4 +34,9 @@ class MXNCurrency extends AbstractCurrency
   {
     return 'centavo';
   }
+
+  public function getUSDAverage()
+  {
+    return 12.6365;
+  }
 }

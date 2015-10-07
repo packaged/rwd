@@ -34,4 +34,9 @@ class PABCurrency extends AbstractCurrency
   {
     return 'centesimo';
   }
+
+  public function getUSDAverage()
+  {
+    return 1;
+  }
 }

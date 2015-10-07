@@ -34,4 +34,9 @@ class BEFCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 30.5999;
+  }
 }

@@ -34,4 +34,9 @@ class PGKCurrency extends AbstractCurrency
   {
     return 'toea';
   }
+
+  public function getUSDAverage()
+  {
+    return 2.579;
+  }
 }

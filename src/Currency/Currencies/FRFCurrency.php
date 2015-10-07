@@ -34,4 +34,9 @@ class FRFCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 4.9758;
+  }
 }

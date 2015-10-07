@@ -35,6 +35,11 @@ class LBPCurrency extends AbstractCurrency
     return 'piastre';
   }
 
+  public function getUSDAverage()
+  {
+    return 1506.9681;
+  }
+
   public function getDecimalSeparator()
   {
     return '#';

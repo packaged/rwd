@@ -34,4 +34,9 @@ class JPYCurrency extends AbstractCurrency
   {
     return 'sen';
   }
+
+  public function getUSDAverage()
+  {
+    return 100.2823;
+  }
 }

@@ -34,4 +34,9 @@ class MWKCurrency extends AbstractCurrency
   {
     return 'tambala';
   }
+
+  public function getUSDAverage()
+  {
+    return 236.1009;
+  }
 }

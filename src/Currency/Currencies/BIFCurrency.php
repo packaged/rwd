@@ -34,4 +34,9 @@ class BIFCurrency extends AbstractCurrency
   {
     return 'centime';
   }
+
+  public function getUSDAverage()
+  {
+    return 1302.3249;
+  }
 }

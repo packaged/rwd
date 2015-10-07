@@ -35,6 +35,11 @@ class LTLCurrency extends AbstractCurrency
     return 'centu';
   }
 
+  public function getUSDAverage()
+  {
+    return 2.6027;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

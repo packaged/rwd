@@ -34,4 +34,9 @@ class MTLCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 0.2989;
+  }
 }

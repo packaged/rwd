@@ -34,4 +34,9 @@ class SARCurrency extends AbstractCurrency
   {
     return 'halalat';
   }
+
+  public function getUSDAverage()
+  {
+    return 3.7502;
+  }
 }

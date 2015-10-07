@@ -34,4 +34,9 @@ class SOSCurrency extends AbstractCurrency
   {
     return 'centesimi';
   }
+
+  public function getUSDAverage()
+  {
+    return 1345.6253;
+  }
 }

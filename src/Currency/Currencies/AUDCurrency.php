@@ -35,6 +35,11 @@ class AUDCurrency extends AbstractCurrency
     return 'cent';
   }
 
+  public function getUSDAverage()
+  {
+    return 1.1486;
+  }
+
   public function getThousandSeparator()
   {
     return ' ';

@@ -34,4 +34,9 @@ class FKPCurrency extends AbstractCurrency
   {
     return 'pence';
   }
+
+  public function getUSDAverage()
+  {
+    return 0.6059;
+  }
 }

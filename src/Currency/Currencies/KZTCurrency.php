@@ -34,4 +34,9 @@ class KZTCurrency extends AbstractCurrency
   {
     return 'tiyn';
   }
+
+  public function getUSDAverage()
+  {
+    return 148.9148;
+  }
 }

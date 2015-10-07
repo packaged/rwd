@@ -34,4 +34,9 @@ class KYDCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 0.8249;
+  }
 }

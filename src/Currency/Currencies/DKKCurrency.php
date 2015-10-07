@@ -35,6 +35,11 @@ class DKKCurrency extends AbstractCurrency
     return 'øre';
   }
 
+  public function getUSDAverage()
+  {
+    return 5.6531;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

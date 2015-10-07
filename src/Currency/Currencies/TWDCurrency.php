@@ -34,4 +34,9 @@ class TWDCurrency extends AbstractCurrency
   {
     return ' ';
   }
+
+  public function getUSDAverage()
+  {
+    return 31.2013;
+  }
 }

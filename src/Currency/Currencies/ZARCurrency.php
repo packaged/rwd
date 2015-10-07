@@ -35,6 +35,11 @@ class ZARCurrency extends AbstractCurrency
     return 'cent';
   }
 
+  public function getUSDAverage()
+  {
+    return 8.6075;
+  }
+
   public function getThousandSeparator()
   {
     return ' ';

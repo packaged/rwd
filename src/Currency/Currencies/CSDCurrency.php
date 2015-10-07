@@ -34,4 +34,9 @@ class CSDCurrency extends AbstractCurrency
   {
     return 'para';
   }
+
+  public function getUSDAverage()
+  {
+    return 1;
+  }
 }

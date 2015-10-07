@@ -34,4 +34,9 @@ class DEMCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 1.4836;
+  }
 }

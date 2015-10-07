@@ -34,4 +34,9 @@ class BTNCurrency extends AbstractCurrency
   {
     return 'chetrum';
   }
+
+  public function getUSDAverage()
+  {
+    return 50.8743;
+  }
 }

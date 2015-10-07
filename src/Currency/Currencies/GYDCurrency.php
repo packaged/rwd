@@ -34,4 +34,9 @@ class GYDCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 199.678;
+  }
 }

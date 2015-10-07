@@ -34,4 +34,9 @@ class DJFCurrency extends AbstractCurrency
   {
     return 'centime';
   }
+
+  public function getUSDAverage()
+  {
+    return 176.8335;
+  }
 }

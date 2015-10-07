@@ -34,4 +34,9 @@ class UZSCurrency extends AbstractCurrency
   {
     return 'tiyin';
   }
+
+  public function getUSDAverage()
+  {
+    return 1621.2802;
+  }
 }

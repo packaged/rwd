@@ -35,6 +35,11 @@ class SITCurrency extends AbstractCurrency
     return 'stotin';
   }
 
+  public function getUSDAverage()
+  {
+    return 182.4828;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

@@ -34,4 +34,9 @@ class LSLCurrency extends AbstractCurrency
   {
     return 'lisente';
   }
+
+  public function getUSDAverage()
+  {
+    return 8.6085;
+  }
 }

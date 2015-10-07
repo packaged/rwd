@@ -35,6 +35,11 @@ class HUFCurrency extends AbstractCurrency
     return ' ';
   }
 
+  public function getUSDAverage()
+  {
+    return 213.5788;
+  }
+
   public function getThousandSeparator()
   {
     return '.';

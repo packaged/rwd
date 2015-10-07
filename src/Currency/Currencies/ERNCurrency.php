@@ -34,4 +34,9 @@ class ERNCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 1;
+  }
 }

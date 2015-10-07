@@ -35,6 +35,11 @@ class NOKCurrency extends AbstractCurrency
     return 'øre';
   }
 
+  public function getUSDAverage()
+  {
+    return 6.1775;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

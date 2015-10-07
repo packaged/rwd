@@ -34,4 +34,9 @@ class TOPCurrency extends AbstractCurrency
   {
     return 'seniti';
   }
+
+  public function getUSDAverage()
+  {
+    return 1.9389;
+  }
 }

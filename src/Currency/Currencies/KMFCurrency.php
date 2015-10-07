@@ -34,4 +34,9 @@ class KMFCurrency extends AbstractCurrency
   {
     return ' ';
   }
+
+  public function getUSDAverage()
+  {
+    return 373.6237;
+  }
 }

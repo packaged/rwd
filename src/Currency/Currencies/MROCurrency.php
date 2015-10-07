@@ -34,4 +34,9 @@ class MROCurrency extends AbstractCurrency
   {
     return 'khoum';
   }
+
+  public function getUSDAverage()
+  {
+    return 278.6428;
+  }
 }

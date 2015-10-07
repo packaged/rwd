@@ -35,6 +35,11 @@ class IDRCurrency extends AbstractCurrency
     return 'sen';
   }
 
+  public function getUSDAverage()
+  {
+    return 10118.0059;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

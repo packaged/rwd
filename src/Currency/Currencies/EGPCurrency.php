@@ -34,4 +34,9 @@ class EGPCurrency extends AbstractCurrency
   {
     return 'piaster';
   }
+
+  public function getUSDAverage()
+  {
+    return 6.1635;
+  }
 }

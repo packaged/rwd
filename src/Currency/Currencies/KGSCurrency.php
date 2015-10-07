@@ -34,4 +34,9 @@ class KGSCurrency extends AbstractCurrency
   {
     return 'tyyn';
   }
+
+  public function getUSDAverage()
+  {
+    return 46.3386;
+  }
 }

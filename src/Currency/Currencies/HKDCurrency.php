@@ -34,4 +34,9 @@ class HKDCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 7.7683;
+  }
 }

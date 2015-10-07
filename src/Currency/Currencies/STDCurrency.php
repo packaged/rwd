@@ -34,4 +34,9 @@ class STDCurrency extends AbstractCurrency
   {
     return 'centimo';
   }
+
+  public function getUSDAverage()
+  {
+    return 16254.3512;
+  }
 }

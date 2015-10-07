@@ -34,4 +34,9 @@ class LAKCurrency extends AbstractCurrency
   {
     return 'at';
   }
+
+  public function getUSDAverage()
+  {
+    return 8524.2705;
+  }
 }

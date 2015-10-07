@@ -35,6 +35,11 @@ class ARSCurrency extends AbstractCurrency
     return 'centavo';
   }
 
+  public function getUSDAverage()
+  {
+    return 4.8217;
+  }
+
   public function getDecimalSeparator()
   {
     return ',';

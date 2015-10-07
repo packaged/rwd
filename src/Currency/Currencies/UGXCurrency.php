@@ -34,4 +34,9 @@ class UGXCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 2284.9225;
+  }
 }

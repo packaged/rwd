@@ -34,4 +34,9 @@ class XCDCurrency extends AbstractCurrency
   {
     return 'cent';
   }
+
+  public function getUSDAverage()
+  {
+    return 2.6896;
+  }
 }

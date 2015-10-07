@@ -34,4 +34,9 @@ class CDFCurrency extends AbstractCurrency
   {
     return 'centime';
   }
+
+  public function getUSDAverage()
+  {
+    return 763.8919;
+  }
 }

@@ -34,4 +34,9 @@ class SDDCurrency extends AbstractCurrency
   {
     return ' ';
   }
+
+  public function getUSDAverage()
+  {
+    return 334.1073;
+  }
 }

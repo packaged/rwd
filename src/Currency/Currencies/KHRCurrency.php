@@ -34,4 +34,9 @@ class KHRCurrency extends AbstractCurrency
   {
     return 'sen';
   }
+
+  public function getUSDAverage()
+  {
+    return 4066.03;
+  }
 }

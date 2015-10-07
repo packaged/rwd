@@ -34,4 +34,9 @@ class ILSCurrency extends AbstractCurrency
   {
     return 'agorot';
   }
+
+  public function getUSDAverage()
+  {
+    return 3.8324;
+  }
 }

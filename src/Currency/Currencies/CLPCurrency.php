@@ -35,6 +35,11 @@ class CLPCurrency extends AbstractCurrency
     return 'centavo';
   }
 
+  public function getUSDAverage()
+  {
+    return 532.1953;
+  }
+
   public function getThousandSeparator()
   {
     return '.';

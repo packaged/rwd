@@ -3,6 +3,11 @@ namespace Packaged\Rwd\Currency;
 
 class CurrencyHelper
 {
+  /**
+   * @param string $code
+   *
+   * @return AbstractCurrency
+   */
   public static function getCurrency($code)
   {
     $className = sprintf('\Packaged\Rwd\Currency\Currencies\%sCurrency', $code);

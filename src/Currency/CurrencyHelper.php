@@ -6,7 +6,7 @@ class CurrencyHelper
   /**
    * @param string $code
    *
-   * @return AbstractCurrency
+   * @return CurrencyInterface
    */
   public static function getCurrency($code)
   {

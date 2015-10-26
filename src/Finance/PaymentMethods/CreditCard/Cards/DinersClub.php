@@ -6,6 +6,11 @@ use Packaged\Rwd\Finance\PaymentMethods\CreditCard\CreditCardType;
 
 class DinersClub extends AbstractCreditCard
 {
+  public function getTypeName()
+  {
+    return 'Diners Club';
+  }
+
   public function getType()
   {
     return CreditCardType::DINERS_CLUB;

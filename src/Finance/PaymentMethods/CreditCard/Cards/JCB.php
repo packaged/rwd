@@ -6,6 +6,11 @@ use Packaged\Rwd\Finance\PaymentMethods\CreditCard\CreditCardType;
 
 class JCB extends AbstractCreditCard
 {
+  public function getTypeName()
+  {
+    return 'JCB';
+  }
+
   public function getType()
   {
     return CreditCardType::JCB;

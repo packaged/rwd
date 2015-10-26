@@ -6,6 +6,11 @@ use Packaged\Rwd\Finance\PaymentMethods\CreditCard\CreditCardType;
 
 class AmericanExpress extends AbstractCreditCard
 {
+  public function getTypeName()
+  {
+    return 'American Express';
+  }
+
   public function getType()
   {
     return CreditCardType::AMEX;

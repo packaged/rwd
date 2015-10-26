@@ -6,6 +6,11 @@ use Packaged\Rwd\Finance\PaymentMethods\CreditCard\CreditCardType;
 
 class Discover extends AbstractCreditCard
 {
+  public function getTypeName()
+  {
+    return 'Discover';
+  }
+
   public function getType()
   {
     return CreditCardType::DISCOVER;

@@ -112,4 +112,10 @@ interface CreditCardInterface extends PaymentMethodInterface
    * @return string
    */
   public function getType();
+
+  /**
+   * Return the name of the card type, e.g. American Express
+   * @return string
+   */
+  public function getTypeName();
 }

@@ -5,15 +5,20 @@ class CountryHelper
 {
   /**
    * @param string $code
+   * @param string $default
    *
    * @return CountryInterface
    */
-  public static function getCountry($code)
+  public static function getCountry($code, $default = null)
   {
     $className = sprintf('\Packaged\Rwd\Country\Countries\%sCountry', $code);
     if(class_exists($className))
     {
       return new $className();
+    }
+    else if($default)
+    {
+      return self::getCountry($default);
     }
     else
     {

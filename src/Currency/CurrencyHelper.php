@@ -11,12 +11,13 @@ class CurrencyHelper
    */
   public static function getCurrency($code, $default = null)
   {
+    $code = $code ?: $default;
     $className = sprintf('\Packaged\Rwd\Currency\Currencies\%sCurrency', $code);
     if(class_exists($className))
     {
       return new $className();
     }
-    else if($default !== null)
+    else if($default !== null && $code !== $default)
     {
       return self::getCurrency($default);
     }

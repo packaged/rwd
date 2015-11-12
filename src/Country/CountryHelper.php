@@ -11,12 +11,13 @@ class CountryHelper
    */
   public static function getCountry($code, $default = null)
   {
+    $code = $code ?: $default;
     $className = sprintf('\Packaged\Rwd\Country\Countries\%sCountry', $code);
     if(class_exists($className))
     {
       return new $className();
     }
-    else if($default)
+    else if($default !== null && $code !== $default)
     {
       return self::getCountry($default);
     }

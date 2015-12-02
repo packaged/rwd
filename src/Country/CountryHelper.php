@@ -26,4 +26,23 @@ class CountryHelper
       throw new \RuntimeException("$code is not a supported country");
     }
   }
+
+  public static function listAllCountries()
+  {
+    $countries = [];
+    $c = new \ReflectionClass(CountryCode::class);
+    foreach($c->getConstants() as $code)
+    {
+      try
+      {
+        $country = self::getCountry($code)->getName();
+        $countries[$code] = $country;
+      }
+      catch(\RuntimeException $e)
+      {
+      }
+    }
+    asort($countries, SORT_STRING | SORT_FLAG_CASE);
+    return $countries;
+  }
 }

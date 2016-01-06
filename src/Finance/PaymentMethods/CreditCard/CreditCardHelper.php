@@ -4,6 +4,7 @@ namespace Packaged\Rwd\Finance\PaymentMethods\CreditCard;
 use Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards\AmericanExpress;
 use Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards\DinersClub;
 use Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards\Discover;
+use Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards\Encrypted;
 use Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards\JCB;
 use Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards\MasterCard;
 use Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards\Visa;
@@ -49,6 +50,11 @@ class CreditCardHelper
       return new JCB($number);
     }
     return null;
+  }
+
+  public static function getEncrypted($encryptedData, $last4, $bin = null)
+  {
+    return new Encrypted($encryptedData, $last4, $bin);
   }
 
   public static function getType($partialNumber)

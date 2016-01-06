@@ -9,4 +9,5 @@ interface CreditCardType
   const JCB = 'jcb';
   const DISCOVER = 'discover';
   const DINERS_CLUB = 'diners';
+  const ENCRYPTED = 'encrypted';
 }

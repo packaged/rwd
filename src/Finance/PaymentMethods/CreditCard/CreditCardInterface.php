@@ -11,6 +11,20 @@ interface CreditCardInterface extends PaymentMethodInterface
   public function getCardNumber();
 
   /**
+   * First 6 Digits from the card number
+   *
+   * @return string
+   */
+  public function getBin();
+
+  /**
+   * Last 4 Digits from the card number
+   *
+   * @return string
+   */
+  public function getLast4();
+
+  /**
    * @param string $cardNumber
    *
    * @return AbstractCreditCard
@@ -115,6 +129,7 @@ interface CreditCardInterface extends PaymentMethodInterface
 
   /**
    * Return the name of the card type, e.g. American Express
+   *
    * @return string
    */
   public function getTypeName();

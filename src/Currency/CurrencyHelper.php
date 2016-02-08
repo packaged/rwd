@@ -45,7 +45,7 @@ class CurrencyHelper
       {
       }
     }
-    asort($currencies, SORT_STRING | SORT_FLAG_CASE);
+    ksort($currencies, SORT_STRING | SORT_FLAG_CASE);
     return $currencies;
   }
 }

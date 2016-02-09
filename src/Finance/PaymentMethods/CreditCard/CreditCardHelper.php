@@ -20,12 +20,16 @@ class CreditCardHelper
   {
     $number = preg_replace('/[^\d]/', '', $number);
 
+    $bin = (int)substr($number, 0, 6);
+
     //Avoid Detailed checks for invalid cards
     if(strlen($number) < 13 || self::getType($number) == null)
     {
       return null;
     }
-    else if(preg_match('/^5[1-5][0-9]{14}$/', $number))
+    else if(preg_match('/^5[1-5][0-9]{14}$/', $number)
+      || ((strlen($number) == 16) && ($bin >= 222100) && ($bin <= 272099))
+    )
     {
       return new MasterCard($number);
     }
@@ -86,6 +90,15 @@ class CreditCardHelper
             return CreditCardType::DINERS_CLUB;
           default:
             return null;
+        }
+      case 2:
+        if(($partialNumber[1] >= 2) && ($partialNumber[1] <= 7))
+        {
+          return CreditCardType::MASTER_CARD;
+        }
+        else
+        {
+          return null;
         }
       default:
         return null;

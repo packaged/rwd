@@ -31,6 +31,11 @@ class CreditCardHelperTest extends \PHPUnit_Framework_TestCase
       ['1234', null],
       ['31', null],
       ['', null],
+      ['22', CreditCardType::MASTER_CARD],
+      ['27', CreditCardType::MASTER_CARD],
+      ['2221000000000000', CreditCardType::MASTER_CARD],
+      ['2555555555555555', CreditCardType::MASTER_CARD],
+      ['2720990000000000', CreditCardType::MASTER_CARD],
     ];
   }
 }

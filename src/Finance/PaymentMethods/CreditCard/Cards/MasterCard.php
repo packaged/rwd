@@ -19,7 +19,8 @@ class MasterCard extends AbstractCreditCard
   public function isValid()
   {
     $start = (int)substr($this->_cardNumber, 0, 2);
-    if($start >= 51 && $start <= 55)
+    $bin = (int)substr($this->_cardNumber, 0, 6);
+    if(($start >= 51 && $start <= 55) || ($bin >= 222100 && $bin <= 272099))
     {
       return parent::isValid();
     }

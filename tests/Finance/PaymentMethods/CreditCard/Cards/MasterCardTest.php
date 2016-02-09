@@ -26,7 +26,9 @@ class MasterCardTest extends CreditCardTest
       ['345rergerg74', false],
       ['41111112121211121', false],
       ['09876543212345624356', false],
+      ['2221001234567896', true],
+      ['2500001234567898', true],
+      ['2720991234567894', true],
     ];
   }
-
 }

@@ -14,4 +14,5 @@ interface PaymentMethodType
   const CHAPS = 'chaps';
   const ONLINE_SERVICE = 'onlineservice';
   const TELEPHONE = 'telephone';
+  const CREDIT_NOTE = 'creditnote';
 }

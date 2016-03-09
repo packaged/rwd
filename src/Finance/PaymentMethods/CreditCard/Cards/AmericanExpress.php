@@ -16,15 +16,10 @@ class AmericanExpress extends AbstractCreditCard
     return CreditCardType::AMEX;
   }
 
-  public function isValid()
+  public function partialNumberIsValid($partialNumber)
   {
-    if((int)$this->_cardNumber[0] == 3
-      && in_array((int)$this->_cardNumber[1], [4, 7])
-    )
-    {
-      return parent::isValid();
-    }
-    return false;
+    return (int)$partialNumber[0] == 3
+    && in_array((int)$partialNumber[1], [4, 7]);;
   }
 
   public function getLengths()

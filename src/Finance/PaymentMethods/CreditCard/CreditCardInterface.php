@@ -116,6 +116,16 @@ interface CreditCardInterface extends PaymentMethodInterface
   public function isValid();
 
   /**
+   * Is this partial number (without last 4 digits) valid for this card type?
+   * Should also be able to check the full card number
+   *
+   * @param string $partialNumber
+   *
+   * @return bool
+   */
+  public function partialNumberIsValid($partialNumber);
+
+  /**
    * Array of test card numbers
    *
    * @return array

@@ -32,6 +32,11 @@ class Encrypted extends AbstractCreditCard
     return true;
   }
 
+  public function partialNumberIsValid($partialNumber)
+  {
+    return true;
+  }
+
   public function getLast4()
   {
     return $this->_last4;

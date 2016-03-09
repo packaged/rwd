@@ -16,20 +16,15 @@ class Discover extends AbstractCreditCard
     return CreditCardType::DISCOVER;
   }
 
-  public function isValid()
+  public function partialNumberIsValid($partialNumber)
   {
-    $start = (int)substr($this->_cardNumber, 0, 6);
-    $startThree = (int)substr($this->_cardNumber, 0, 3);
-    if(
-      ($start >= 622126 && $start <= 622925) ||
-      ($startThree >= 644 && $startThree <= 649) ||
-      (int)substr($this->_cardNumber, 0, 2) == 65 ||
-      (int)substr($this->_cardNumber, 0, 4) == 6011
-    )
-    {
-      return parent::isValid();
-    }
-    return false;
+    $start = (int)substr($partialNumber, 0, 6);
+    $startThree = (int)substr($partialNumber, 0, 3);
+
+    return ($start >= 622126 && $start <= 622925)
+    || ($startThree >= 644 && $startThree <= 649)
+    || ((int)substr($partialNumber, 0, 2) == 65)
+    || ((int)substr($partialNumber, 0, 4) == 6011);
   }
 
   public function getTestNumbers()

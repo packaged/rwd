@@ -16,15 +16,11 @@ class MasterCard extends AbstractCreditCard
     return CreditCardType::MASTER_CARD;
   }
 
-  public function isValid()
+  public function partialNumberIsValid($partialNumber)
   {
-    $start = (int)substr($this->_cardNumber, 0, 2);
-    $bin = (int)substr($this->_cardNumber, 0, 6);
-    if(($start >= 51 && $start <= 55) || ($bin >= 222100 && $bin <= 272099))
-    {
-      return parent::isValid();
-    }
-    return false;
+    $start = (int)substr($partialNumber, 0, 2);
+    $bin = (int)substr($partialNumber, 0, 6);
+    return ($start >= 51 && $start <= 55) || ($bin >= 222100 && $bin <= 272099);
   }
 
   public function getTestNumbers()

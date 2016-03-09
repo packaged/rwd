@@ -16,18 +16,12 @@ class DinersClub extends AbstractCreditCard
     return CreditCardType::DINERS_CLUB;
   }
 
-  public function isValid()
+  public function partialNumberIsValid($partialNumber)
   {
-    $start = (int)substr($this->_cardNumber, 0, 3);
-    if(($start >= 300 && $start <= 305) || in_array(
-        (int)substr($this->_cardNumber, 0, 2),
-        [36, 38, 39, 54, 55]
-      )
-    )
-    {
-      return parent::isValid();
-    }
-    return false;
+    $start = (int)substr($partialNumber, 0, 3);
+
+    return ($start >= 300 && $start <= 305)
+    || in_array((int)substr($partialNumber, 0, 2), [36, 38, 39, 54, 55]);
   }
 
   public function getLengths()

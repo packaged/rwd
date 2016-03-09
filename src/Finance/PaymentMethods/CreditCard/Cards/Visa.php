@@ -16,13 +16,9 @@ class Visa extends AbstractCreditCard
     return CreditCardType::VISA;
   }
 
-  public function isValid()
+  public function partialNumberIsValid($partialNumber)
   {
-    if((int)$this->_cardNumber[0] == 4)
-    {
-      return parent::isValid();
-    }
-    return false;
+    return (int)$partialNumber[0] == 4;
   }
 
   public function getTestNumbers()

@@ -192,7 +192,9 @@ abstract class AbstractCreditCard implements CreditCardInterface
   public function isValid()
   {
     $number = $this->_cardNumber;
-    if(!in_array(strlen($number), $this->getLengths()))
+    if((!in_array(strlen($number), $this->getLengths()))
+      || (!$this->partialNumberIsValid($number))
+    )
     {
       //Does not match Valid Lengths
       return false;

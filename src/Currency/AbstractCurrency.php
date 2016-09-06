@@ -23,6 +23,11 @@ abstract class AbstractCurrency implements CurrencyInterface
     return 1;
   }
 
+  public function getUSDAverageValue($value)
+  {
+    return $value * (1 / ($this->getUSDAverage()));
+  }
+
   public function format($amount, $showSymbol = true, $showCode = false)
   {
     $return = '';

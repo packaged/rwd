@@ -10,7 +10,7 @@ class Encrypted extends AbstractCreditCard
   protected $_last4;
   protected $_encryptedNumber;
 
-  public function __construct($encryptedNumber, $last4, $bin = null)
+  public function __construct($encryptedNumber, $last4 = null, $bin = null)
   {
     $this->_encryptedNumber = $encryptedNumber;
     $this->_last4 = $last4;

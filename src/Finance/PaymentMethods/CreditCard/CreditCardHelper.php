@@ -47,7 +47,9 @@ class CreditCardHelper
     return null;
   }
 
-  public static function getEncrypted($encryptedData, $last4, $bin = null)
+  public static function getEncrypted(
+    $encryptedData, $last4 = null, $bin = null
+  )
   {
     return new Encrypted($encryptedData, $last4, $bin);
   }

@@ -15,4 +15,6 @@ interface PaymentMethodType
   const ONLINE_SERVICE = 'onlineservice';
   const TELEPHONE = 'telephone';
   const CREDIT_NOTE = 'creditnote';
+  const VIRTUAL_CARD = 'virtualcard';
+  const GIFT_CARD = 'giftcard';
 }

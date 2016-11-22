@@ -10,4 +10,5 @@ interface CreditCardType
   const DISCOVER = 'discover';
   const DINERS_CLUB = 'diners';
   const ENCRYPTED = 'encrypted';
+  const UNKNOWN = 'unknown';
 }

@@ -7,6 +7,7 @@ use Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards\Discover;
 use Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards\Encrypted;
 use Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards\JCB;
 use Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards\MasterCard;
+use Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards\UnknownCard;
 use Packaged\Rwd\Finance\PaymentMethods\CreditCard\Cards\Visa;
 
 class CreditCardHelper
@@ -24,6 +25,7 @@ class CreditCardHelper
       new JCB(),
       new DinersClub(),
       new Discover(),
+      new UnknownCard(),
     ];
   }
 

@@ -22,6 +22,11 @@ abstract class AbstractCreditCard implements CreditCardInterface
     $this->setCardNumber($number);
   }
 
+  public function getTypeName()
+  {
+    return CreditCardType::getDisplayValue($this->getType());
+  }
+
   public function getPaymentType()
   {
     return PaymentMethodType::CREDIT_CARD;

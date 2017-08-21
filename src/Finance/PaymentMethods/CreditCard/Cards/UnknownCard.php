@@ -11,11 +11,6 @@ class UnknownCard extends AbstractCreditCard
     return CreditCardType::UNKNOWN;
   }
 
-  public function getTypeName()
-  {
-    return 'Credit Card';
-  }
-
   public function partialNumberIsValid($partialNumber)
   {
     return true;

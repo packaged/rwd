@@ -6,11 +6,6 @@ use Packaged\Rwd\Finance\PaymentMethods\CreditCard\CreditCardType;
 
 class MasterCard extends AbstractCreditCard
 {
-  public function getTypeName()
-  {
-    return 'Master Card';
-  }
-
   public function getType()
   {
     return CreditCardType::MASTER_CARD;

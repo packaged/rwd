@@ -6,11 +6,6 @@ use Packaged\Rwd\Finance\PaymentMethods\CreditCard\CreditCardType;
 
 class DinersClub extends AbstractCreditCard
 {
-  public function getTypeName()
-  {
-    return 'Diners Club';
-  }
-
   public function getType()
   {
     return CreditCardType::DINERS_CLUB;
@@ -21,7 +16,7 @@ class DinersClub extends AbstractCreditCard
     $start = (int)substr($partialNumber, 0, 3);
 
     return ($start >= 300 && $start <= 305)
-    || in_array((int)substr($partialNumber, 0, 2), [36, 38, 39, 54, 55]);
+      || in_array((int)substr($partialNumber, 0, 2), [36, 38, 39, 54, 55]);
   }
 
   public function getLengths()

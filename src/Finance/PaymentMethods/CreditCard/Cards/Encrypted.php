@@ -17,11 +17,6 @@ class Encrypted extends AbstractCreditCard
     $this->_bin = $bin;
   }
 
-  public function getTypeName()
-  {
-    return 'Encrypted';
-  }
-
   public function getType()
   {
     return CreditCardType::ENCRYPTED;

@@ -6,11 +6,6 @@ use Packaged\Rwd\Finance\PaymentMethods\CreditCard\CreditCardType;
 
 class AmericanExpress extends AbstractCreditCard
 {
-  public function getTypeName()
-  {
-    return 'American Express';
-  }
-
   public function getType()
   {
     return CreditCardType::AMEX;
@@ -18,8 +13,7 @@ class AmericanExpress extends AbstractCreditCard
 
   public function partialNumberIsValid($partialNumber)
   {
-    return (int)$partialNumber[0] == 3
-    && in_array((int)$partialNumber[1], [4, 7]);;
+    return (int)$partialNumber[0] == 3 && in_array((int)$partialNumber[1], [4, 7]);
   }
 
   public function getLengths()

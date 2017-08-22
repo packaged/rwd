@@ -6,11 +6,6 @@ use Packaged\Rwd\Finance\PaymentMethods\CreditCard\CreditCardType;
 
 class Visa extends AbstractCreditCard
 {
-  public function getTypeName()
-  {
-    return 'Visa';
-  }
-
   public function getType()
   {
     return CreditCardType::VISA;

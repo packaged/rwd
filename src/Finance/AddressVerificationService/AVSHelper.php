@@ -38,7 +38,7 @@ class AVSHelper
       case 'U':
         return new AVSUnavailable(
           $code,
-          'Address information unavailable. Returned if non-US.\nAVS is not available or if the AVS in a U.S. bank is not functioning properly.'
+          "Address information unavailable. Returned if non-US.\nAVS is not available or if the AVS in a U.S. bank is not functioning properly."
         );
       case 'R':
         return new AVSUnavailable($code, 'Retry - Issuer\'s System Unavailable or Timed Out.');

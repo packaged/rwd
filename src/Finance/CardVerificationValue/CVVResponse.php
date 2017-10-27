@@ -1,7 +1,7 @@
 <?php
-namespace Packaged\Rwd\Finance\AddressVerificationService;
+namespace Packaged\Rwd\Finance\CardVerificationValue;
 
-class AVSResponse implements AVSInterface
+class CVVResponse implements CVVInterface
 {
   private $_code = '';
   private $_description = '';
@@ -27,28 +27,8 @@ class AVSResponse implements AVSInterface
     return false;
   }
 
-  public function isPartial()
+  public function wasProcessed()
   {
     return false;
-  }
-
-  public function isAvailable()
-  {
-    return false;
-  }
-
-  public function isSupported()
-  {
-    return false;
-  }
-
-  public function isInternational()
-  {
-    return false;
-  }
-
-  public function isValid()
-  {
-    return true;
   }
 }

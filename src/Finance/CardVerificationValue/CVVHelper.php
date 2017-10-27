@@ -7,7 +7,7 @@ use Packaged\Rwd\Finance\CardVerificationValue\Codes\CVVNotProcessed;
 
 class CVVHelper
 {
-  public static function getAvs($code)
+  public static function getCvv($code)
   {
     $code = trim(strtoupper($code));
     switch($code)

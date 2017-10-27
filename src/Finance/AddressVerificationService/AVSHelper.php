@@ -47,6 +47,7 @@ class AVSHelper
         return new AVSUnsupported($code, 'U.S. issuing bank does not support AVS');
       case 'D':
       case 'M':
+      case 'F':
         return new AVSMatchInternational($code, 'Street Address and Postal Code match');
       case 'B':
         return new AVSPartialMatchInternational($code, 'Postal Code not verified due to incompatible formats', true);

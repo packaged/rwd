@@ -1,6 +1,11 @@
 defaults: &defaults
-  working_directory: ~/rwd
+  working_directory: ~/${CIRCLE_PROJECT_REPONAME}
   steps:
+    - run: echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
+    - run: if [ -z $APK_PACKAGES ]; then apk -U add wget $APK_PACKAGES; fi;
+    - run: if [ -z $PHP_MODULES ]; then docker-php-ext-install $PHP_MODULES; fi;
+    - run: echo "date.timezone = UTC" >> $(php --ini |grep Scan |awk '{print $NF}')/timezone.ini
+    - run: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
     - checkout
     - run: composer install -n --prefer-dist
     - run: php vendor/phpunit/phpunit/phpunit -c phpunit.xml --log-junit /tmp/test-results/phpunit/junit.xml
@@ -12,11 +17,15 @@ jobs:
   build-php56:
     <<: *defaults
     docker:
-      - image: circleci/php:5.6
+      - image: php:5.6-alpine
   build-php70:
     <<: *defaults
     docker:
-      - image: circleci/php:7.0
+      - image: php:7.0-alpine
+  build-php71:
+    <<: *defaults
+    docker:
+      - image: php:7.1-alpine
 
 workflows:
   version: 2
@@ -24,3 +33,4 @@ workflows:
     jobs:
       - build-php56
       - build-php70
+      - build-php71

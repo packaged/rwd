@@ -9,7 +9,8 @@ class CVVHelper
 {
   public static function getAvs($code)
   {
-    switch(strtoupper($code))
+    $code = trim(strtoupper($code));
+    switch($code)
     {
       case 'M':
         return new CVVMatch($code, 'CVV2 Match');

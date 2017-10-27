@@ -16,7 +16,8 @@ class AVSHelper
 {
   public static function getAvs($code)
   {
-    switch(strtoupper($code))
+    $code = trim(strtoupper($code));
+    switch($code)
     {
       case 'X':
         return new AVSMatch($code, 'Street address and 9-digit ZIP code both match');

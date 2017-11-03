@@ -41,6 +41,8 @@ class CVVHelper
           $code,
           'Transaction failed because wrong CVV2 number was entered or no CVV2 number was entered'
         );
+      default:
+        return new CVVResponse($code, "Unsupported CVV2 Response");
     }
   }
 }

@@ -111,23 +111,3 @@ class DiscoverCardChargebackReason extends ChargebackReason
     return $reason;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

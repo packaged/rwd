@@ -121,13 +121,3 @@ class MasterCardChargebackReason extends ChargebackReason
     return $reason;
   }
 }
-
-
-
-
-
-
-
-
-
-

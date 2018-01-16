@@ -188,5 +188,6 @@ class AmericanExpressChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::OTHER;
         break;
     }
+    return $reason;
   }
 }

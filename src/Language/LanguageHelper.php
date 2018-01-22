@@ -30,18 +30,18 @@ class LanguageHelper
     {
       switch(strtolower($languageCode))
       {
-        case LanguageCode::LANG_PT:
-          return 'Portuguese';
-        case LanguageCode::LANG_ES:
-          return 'Spanish';
-        case LanguageCode::LANG_IT:
-          return 'Italian';
-        case LanguageCode::LANG_FR:
-          return 'French';
-        case LanguageCode::LANG_DE:
-          return 'German';
-        case LanguageCode::LANG_EN:
-          return 'English';
+        case LanguageCode::PT:
+          return LanguageName::PT;
+        case LanguageCode::ES:
+          return LanguageName::ES;
+        case LanguageCode::IT:
+          return LanguageName::IT;
+        case LanguageCode::FR:
+          return LanguageName::FR;
+        case LanguageCode::DE:
+          return LanguageName::DE;
+        case LanguageCode::EN:
+          return LanguageName::EN;
       }
     }
     return null;
@@ -58,18 +58,18 @@ class LanguageHelper
     {
       switch(strtolower($languageCode))
       {
-        case LanguageCode::LANG_PT:
-          return 'Português';
-        case LanguageCode::LANG_ES:
-          return 'Español';
-        case LanguageCode::LANG_IT:
-          return 'Italiano';
-        case LanguageCode::LANG_FR:
-          return 'Français';
-        case LanguageCode::LANG_DE:
-          return 'Deutsche';
-        case LanguageCode::LANG_EN:
-          return 'English';
+        case LanguageCode::PT:
+          return LanguageNativeName::PT;
+        case LanguageCode::ES:
+          return LanguageNativeName::ES;
+        case LanguageCode::IT:
+          return LanguageNativeName::IT;
+        case LanguageCode::FR:
+          return LanguageNativeName::FR;
+        case LanguageCode::DE:
+          return LanguageNativeName::DE;
+        case LanguageCode::EN:
+          return LanguageNativeName::EN;
       }
     }
     return null;

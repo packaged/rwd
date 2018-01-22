@@ -19,7 +19,7 @@ class LanguageTest extends \PHPUnit_Framework_TestCase
       LanguageCode::PT => LanguageName::PT,
     ];
 
-    $this->assertEquals(true, $compare == LanguageHelper::getKeyValues());
+    $this->assertEquals($compare, LanguageHelper::getKeyValues());
   }
 
   public function testNativeKeyedValues()
@@ -33,7 +33,7 @@ class LanguageTest extends \PHPUnit_Framework_TestCase
       LanguageCode::PT => LanguageNativeName::PT,
     ];
 
-    $this->assertEquals(true, $compare == LanguageHelper::getNativeKeyValues());
+    $this->assertEquals($compare, LanguageHelper::getNativeKeyValues());
   }
 
   public function testLanguageName()
@@ -47,9 +47,9 @@ class LanguageTest extends \PHPUnit_Framework_TestCase
     $this->assertEquals(LanguageName::FR, $languageHelper::getName(LanguageCode::FR));
     $this->assertEquals(LanguageName::IT, $languageHelper::getName(LanguageCode::IT));
 
-    $this->assertEquals(null, $languageHelper::getName(null));
-    $this->assertEquals(null, $languageHelper::getName(''));
-    $this->assertEquals(null, $languageHelper::getName(' '));
+    $this->assertNull($languageHelper::getName(null));
+    $this->assertNull($languageHelper::getName(''));
+    $this->assertNull($languageHelper::getName(' '));
   }
 
   public function testNativeLanguageName()
@@ -63,9 +63,9 @@ class LanguageTest extends \PHPUnit_Framework_TestCase
     $this->assertEquals(LanguageNativeName::FR, $languageHelper::getNativeName(LanguageCode::FR));
     $this->assertEquals(LanguageNativeName::IT, $languageHelper::getNativeName(LanguageCode::IT));
 
-    $this->assertEquals(null, $languageHelper::getNativeName(null));
-    $this->assertEquals(null, $languageHelper::getNativeName(''));
-    $this->assertEquals(null, $languageHelper::getNativeName(' '));
+    $this->assertNull($languageHelper::getNativeName(null));
+    $this->assertNull($languageHelper::getNativeName(''));
+    $this->assertNull($languageHelper::getNativeName(' '));
   }
 
   public function testValidLanguages()
@@ -87,7 +87,7 @@ class LanguageTest extends \PHPUnit_Framework_TestCase
 
     foreach($testTrue as $item)
     {
-      $this->assertEquals(true, $languageHelper::isValid($item));
+      $this->assertTrue($languageHelper::isValid($item));
     }
 
     // test fails
@@ -101,7 +101,7 @@ class LanguageTest extends \PHPUnit_Framework_TestCase
 
     foreach($testFalse as $item)
     {
-      $this->assertEquals(false, $languageHelper::isValid($item));
+      $this->assertFalse($languageHelper::isValid($item));
     }
   }
 }

@@ -6,6 +6,31 @@ use Packaged\Rwd\Finance\Chargeback\ChargebackReason;
 
 class VisaChargebackReason extends ChargebackReason
 {
+  const RSN_10_1 = '10.1';
+  const RSN_10_2 = '10.2';
+  const RSN_10_3 = '10.3';
+  const RSN_10_4 = '10.4';
+  const RSN_10_5 = '10.5';
+  const RSN_11_1 = '11.1';
+  const RSN_11_2 = '11.2';
+  const RSN_11_3 = '11.3';
+  const RSN_12_1 = '12.1';
+  const RSN_12_2 = '12.2';
+  const RSN_12_3 = '12.3';
+  const RSN_12_4 = '12.4';
+  const RSN_12_5 = '12.5';
+  const RSN_12_6 = '12.6';
+  const RSN_12_7 = '12.7';
+  const RSN_13_1 = '13.1';
+  const RSN_13_2 = '13.2';
+  const RSN_13_3 = '13.3';
+  const RSN_13_4 = '13.4';
+  const RSN_13_5 = '13.5';
+  const RSN_13_6 = '13.6';
+  const RSN_13_7 = '13.7';
+  const RSN_13_8 = '13.8';
+  const RSN_13_9 = '13.9';
+
   const RSN_57 = '57';
   const RSN_62 = '62';
   const RSN_81 = '81';
@@ -34,6 +59,103 @@ class VisaChargebackReason extends ChargebackReason
     $reason = parent::create($code, $descripton, $category);
     switch($code)
     {
+
+      case self::RSN_10_1:
+        $reason->description = 'EMV Liability Shift Counterfeit Fraud';
+        $reason->category = ChargebackCategory::FRAUD;
+        break;
+      case self::RSN_10_2:
+        $reason->description = 'EMV Liability Shift Non-Counterfeit Fraud';
+        $reason->category = ChargebackCategory::FRAUD;
+        break;
+      case self::RSN_10_3:
+        $reason->description = 'Other Fraud - Card Present Environment';
+        $reason->category = ChargebackCategory::FRAUD;
+        break;
+      case self::RSN_10_4:
+        $reason->description = 'Other Fraud - Card Absent Environment';
+        $reason->category = ChargebackCategory::FRAUD;
+        break;
+      case self::RSN_10_5:
+        $reason->description = 'Visa Fraud Monitoring Program';
+        $reason->category = ChargebackCategory::FRAUD;
+        break;
+      case self::RSN_11_1:
+        $reason->description = 'Card Recovery Bulletin';
+        $reason->category = ChargebackCategory::AUTHORIZATION;
+        break;
+      case self::RSN_11_2:
+        $reason->description = 'Declined Authorisation';
+        $reason->category = ChargebackCategory::AUTHORIZATION;
+        break;
+      case self::RSN_11_3:
+        $reason->description = 'No Authorisation';
+        $reason->category = ChargebackCategory::AUTHORIZATION;
+        break;
+      case self::RSN_12_1:
+        $reason->description = 'Late Presentment';
+        $reason->category = ChargebackCategory::PROCESSING;
+        break;
+      case self::RSN_12_2:
+        $reason->description = 'Incorrect Transaction Code';
+        $reason->category = ChargebackCategory::PROCESSING;
+        break;
+      case self::RSN_12_3:
+        $reason->description = 'Incorrect Currency';
+        $reason->category = ChargebackCategory::PROCESSING;
+        break;
+      case self::RSN_12_4:
+        $reason->description = 'Incorrect Account Number';
+        $reason->category = ChargebackCategory::PROCESSING;
+        break;
+      case self::RSN_12_5:
+        $reason->description = 'Incorrect amount';
+        $reason->category = ChargebackCategory::PROCESSING;
+        break;
+      case self::RSN_12_6:
+        $reason->description = 'Duplicate Processing/Paid by other means';
+        $reason->category = ChargebackCategory::PROCESSING;
+        break;
+      case self::RSN_12_7:
+        $reason->description = 'Invalid Data';
+        $reason->category = ChargebackCategory::PROCESSING;
+        break;
+      case self::RSN_13_1:
+        $reason->description = 'Merchandise/Services Not Received';
+        $reason->category = ChargebackCategory::CONSUMER;
+        break;
+      case self::RSN_13_2:
+        $reason->description = 'Cancelled Recurring';
+        $reason->category = ChargebackCategory::CONSUMER;
+        break;
+      case self::RSN_13_3:
+        $reason->description = 'Not as Described or Defective Merchandise/Services';
+        $reason->category = ChargebackCategory::CONSUMER;
+        break;
+      case self::RSN_13_4:
+        $reason->description = 'Counterfeit Merchandise';
+        $reason->category = ChargebackCategory::CONSUMER;
+        break;
+      case self::RSN_13_5:
+        $reason->description = 'Mirepresentation';
+        $reason->category = ChargebackCategory::CONSUMER;
+        break;
+      case self::RSN_13_6:
+        $reason->description = 'Credit not Processed';
+        $reason->category = ChargebackCategory::CONSUMER;
+        break;
+      case self::RSN_13_7:
+        $reason->description = 'Cancelled Merchandise/Services';
+        $reason->category = ChargebackCategory::CONSUMER;
+        break;
+      case self::RSN_13_8:
+        $reason->description = 'Original Credit Transaction Not Accepted';
+        $reason->category = ChargebackCategory::CONSUMER;
+        break;
+      case self::RSN_13_9:
+        $reason->description = 'Non-Receipt of Cash or load transaction value';
+        $reason->category = ChargebackCategory::CONSUMER;
+        break;
       case self::RSN_57:
         $reason->description = 'Fraudulent Multiple Transactions';
         $reason->category = ChargebackCategory::FRAUD;

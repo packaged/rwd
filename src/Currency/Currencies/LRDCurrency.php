@@ -17,7 +17,7 @@ class LRDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 430;
+    return '430';
   }
 
   public function getName()

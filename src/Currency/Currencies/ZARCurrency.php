@@ -17,7 +17,7 @@ class ZARCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 710;
+    return '710';
   }
 
   public function getName()

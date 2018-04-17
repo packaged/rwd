@@ -17,7 +17,7 @@ class UZSCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 860;
+    return '860';
   }
 
   public function getName()

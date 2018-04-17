@@ -17,7 +17,7 @@ class ZWDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 716;
+    return '716';
   }
 
   public function getName()

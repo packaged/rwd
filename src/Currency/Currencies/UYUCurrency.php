@@ -17,7 +17,7 @@ class UYUCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 858;
+    return '858';
   }
 
   public function getName()

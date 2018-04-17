@@ -17,7 +17,7 @@ class MYRCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 458;
+    return '458';
   }
 
   public function getName()

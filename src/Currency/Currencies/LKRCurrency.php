@@ -17,7 +17,7 @@ class LKRCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 144;
+    return '144';
   }
 
   public function getName()

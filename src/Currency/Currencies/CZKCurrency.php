@@ -17,7 +17,7 @@ class CZKCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 203;
+    return '203';
   }
 
   public function getName()

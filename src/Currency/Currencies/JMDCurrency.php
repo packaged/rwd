@@ -17,7 +17,7 @@ class JMDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 388;
+    return '388';
   }
 
   public function getName()

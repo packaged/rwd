@@ -17,7 +17,7 @@ class SDDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 736;
+    return '736';
   }
 
   public function getName()

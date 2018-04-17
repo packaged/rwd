@@ -17,7 +17,7 @@ class MMKCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 104;
+    return '104';
   }
 
   public function getName()

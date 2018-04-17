@@ -17,7 +17,7 @@ class SOSCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 706;
+    return '706';
   }
 
   public function getName()

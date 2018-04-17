@@ -17,7 +17,7 @@ class GIPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 292;
+    return '292';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class CRCCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 188;
+    return '188';
   }
 
   public function getName()

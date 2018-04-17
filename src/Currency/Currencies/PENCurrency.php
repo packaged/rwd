@@ -17,7 +17,7 @@ class PENCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 604;
+    return '604';
   }
 
   public function getName()

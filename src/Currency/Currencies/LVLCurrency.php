@@ -17,7 +17,7 @@ class LVLCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 428;
+    return '428';
   }
 
   public function getName()

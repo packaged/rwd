@@ -17,7 +17,7 @@ class HRKCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 191;
+    return '191';
   }
 
   public function getName()

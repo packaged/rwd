@@ -17,7 +17,7 @@ class UGXCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 800;
+    return '800';
   }
 
   public function getName()

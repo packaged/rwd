@@ -18,7 +18,7 @@ class {{alpha}}Currency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return {{numeric}};
+    return \'{{numeric}}\';
   }
 
   public function getName()
@@ -91,6 +91,7 @@ if(($handle = fopen("Untitled.csv", "r")) !== false)
       continue;
     }
 
+    $numeric = str_pad($numeric, 3, "0", STR_PAD_LEFT);
     $methods = '';
 
     if(!empty($display) && strlen($display) > 2)

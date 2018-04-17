@@ -17,7 +17,7 @@ class TJSCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 972;
+    return '972';
   }
 
   public function getName()

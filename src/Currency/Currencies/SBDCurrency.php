@@ -17,7 +17,7 @@ class SBDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 90;
+    return '090';
   }
 
   public function getName()

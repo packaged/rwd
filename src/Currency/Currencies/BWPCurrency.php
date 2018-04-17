@@ -17,7 +17,7 @@ class BWPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 72;
+    return '072';
   }
 
   public function getName()

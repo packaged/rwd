@@ -17,7 +17,7 @@ class RWFCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 646;
+    return '646';
   }
 
   public function getName()

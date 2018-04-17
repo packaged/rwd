@@ -17,7 +17,7 @@ class BMDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 60;
+    return '060';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class BDTCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 50;
+    return '050';
   }
 
   public function getName()

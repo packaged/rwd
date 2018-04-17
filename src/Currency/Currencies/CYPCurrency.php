@@ -17,7 +17,7 @@ class CYPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 196;
+    return '196';
   }
 
   public function getName()

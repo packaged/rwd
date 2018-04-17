@@ -17,7 +17,7 @@ class SRDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 968;
+    return '968';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class CUPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 192;
+    return '192';
   }
 
   public function getName()

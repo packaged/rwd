@@ -17,7 +17,7 @@ class HUFCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 348;
+    return '348';
   }
 
   public function getName()

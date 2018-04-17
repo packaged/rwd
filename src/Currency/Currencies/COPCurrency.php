@@ -17,7 +17,7 @@ class COPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 170;
+    return '170';
   }
 
   public function getName()

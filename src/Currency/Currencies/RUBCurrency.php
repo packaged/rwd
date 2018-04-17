@@ -17,7 +17,7 @@ class RUBCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 643;
+    return '643';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class GYDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 328;
+    return '328';
   }
 
   public function getName()

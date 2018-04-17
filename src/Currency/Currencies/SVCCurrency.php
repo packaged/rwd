@@ -17,7 +17,7 @@ class SVCCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 222;
+    return '222';
   }
 
   public function getName()

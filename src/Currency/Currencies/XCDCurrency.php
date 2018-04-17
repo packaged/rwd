@@ -17,7 +17,7 @@ class XCDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 951;
+    return '951';
   }
 
   public function getName()

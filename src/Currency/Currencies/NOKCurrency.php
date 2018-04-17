@@ -17,7 +17,7 @@ class NOKCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 578;
+    return '578';
   }
 
   public function getName()

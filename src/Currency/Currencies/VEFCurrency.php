@@ -17,7 +17,7 @@ class VEFCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 862;
+    return '862';
   }
 
   public function getName()

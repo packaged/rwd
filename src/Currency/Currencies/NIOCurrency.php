@@ -17,7 +17,7 @@ class NIOCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 558;
+    return '558';
   }
 
   public function getName()

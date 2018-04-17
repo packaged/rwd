@@ -17,7 +17,7 @@ class AWGCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 533;
+    return '533';
   }
 
   public function getName()

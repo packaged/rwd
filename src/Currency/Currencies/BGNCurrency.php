@@ -17,7 +17,7 @@ class BGNCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 975;
+    return '975';
   }
 
   public function getName()

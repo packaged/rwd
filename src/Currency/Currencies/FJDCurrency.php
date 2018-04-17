@@ -17,7 +17,7 @@ class FJDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 242;
+    return '242';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class GMDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 270;
+    return '270';
   }
 
   public function getName()

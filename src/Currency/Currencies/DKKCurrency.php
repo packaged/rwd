@@ -17,7 +17,7 @@ class DKKCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 208;
+    return '208';
   }
 
   public function getName()

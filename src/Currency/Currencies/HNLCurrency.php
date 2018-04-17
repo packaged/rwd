@@ -17,7 +17,7 @@ class HNLCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 340;
+    return '340';
   }
 
   public function getName()

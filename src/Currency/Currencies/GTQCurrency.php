@@ -17,7 +17,7 @@ class GTQCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 320;
+    return '320';
   }
 
   public function getName()

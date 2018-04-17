@@ -17,7 +17,7 @@ class NADCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 516;
+    return '516';
   }
 
   public function getName()

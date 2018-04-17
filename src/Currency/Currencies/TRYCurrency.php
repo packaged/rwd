@@ -17,7 +17,7 @@ class TRYCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 949;
+    return '949';
   }
 
   public function getName()

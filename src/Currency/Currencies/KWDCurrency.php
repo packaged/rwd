@@ -17,7 +17,7 @@ class KWDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 414;
+    return '414';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class SKKCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 703;
+    return '703';
   }
 
   public function getName()

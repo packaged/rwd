@@ -17,7 +17,7 @@ class KPWCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 408;
+    return '408';
   }
 
   public function getName()

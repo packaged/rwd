@@ -17,7 +17,7 @@ class CADCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 124;
+    return '124';
   }
 
   public function getName()

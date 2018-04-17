@@ -17,7 +17,7 @@ class SITCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 705;
+    return '705';
   }
 
   public function getName()

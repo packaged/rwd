@@ -17,7 +17,7 @@ class AFNCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 971;
+    return '971';
   }
 
   public function getName()

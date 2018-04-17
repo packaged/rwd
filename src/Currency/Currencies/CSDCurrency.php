@@ -17,7 +17,7 @@ class CSDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 891;
+    return '891';
   }
 
   public function getName()

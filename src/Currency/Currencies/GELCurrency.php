@@ -17,7 +17,7 @@ class GELCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 981;
+    return '981';
   }
 
   public function getName()

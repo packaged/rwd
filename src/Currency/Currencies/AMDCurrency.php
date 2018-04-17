@@ -17,7 +17,7 @@ class AMDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 51;
+    return '051';
   }
 
   public function getName()

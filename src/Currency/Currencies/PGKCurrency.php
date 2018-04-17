@@ -17,7 +17,7 @@ class PGKCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 598;
+    return '598';
   }
 
   public function getName()

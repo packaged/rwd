@@ -17,7 +17,7 @@ class XPFCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 953;
+    return '953';
   }
 
   public function getName()

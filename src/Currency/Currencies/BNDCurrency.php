@@ -17,7 +17,7 @@ class BNDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 96;
+    return '096';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class LAKCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 418;
+    return '418';
   }
 
   public function getName()

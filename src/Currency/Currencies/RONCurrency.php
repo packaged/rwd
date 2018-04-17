@@ -17,7 +17,7 @@ class RONCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 946;
+    return '946';
   }
 
   public function getName()

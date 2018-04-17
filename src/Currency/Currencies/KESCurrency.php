@@ -17,7 +17,7 @@ class KESCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 404;
+    return '404';
   }
 
   public function getName()

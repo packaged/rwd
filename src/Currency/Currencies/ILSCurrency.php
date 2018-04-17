@@ -17,7 +17,7 @@ class ILSCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 376;
+    return '376';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class DJFCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 262;
+    return '262';
   }
 
   public function getName()

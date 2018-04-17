@@ -17,7 +17,7 @@ class EGPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 818;
+    return '818';
   }
 
   public function getName()

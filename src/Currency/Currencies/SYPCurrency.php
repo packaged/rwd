@@ -17,7 +17,7 @@ class SYPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 760;
+    return '760';
   }
 
   public function getName()

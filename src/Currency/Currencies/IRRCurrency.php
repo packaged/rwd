@@ -17,7 +17,7 @@ class IRRCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 364;
+    return '364';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class SZLCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 748;
+    return '748';
   }
 
   public function getName()

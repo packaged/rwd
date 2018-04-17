@@ -17,7 +17,7 @@ class LSLCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 426;
+    return '426';
   }
 
   public function getName()

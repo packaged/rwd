@@ -17,7 +17,7 @@ class ROLCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 642;
+    return '642';
   }
 
   public function getName()

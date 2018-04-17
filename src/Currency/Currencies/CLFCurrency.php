@@ -17,7 +17,7 @@ class CLFCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 990;
+    return '990';
   }
 
   public function getName()

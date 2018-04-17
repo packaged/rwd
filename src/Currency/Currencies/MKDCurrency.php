@@ -17,7 +17,7 @@ class MKDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 807;
+    return '807';
   }
 
   public function getName()

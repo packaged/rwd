@@ -17,7 +17,7 @@ class SHPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 654;
+    return '654';
   }
 
   public function getName()

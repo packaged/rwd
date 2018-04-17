@@ -17,7 +17,7 @@ class USDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 840;
+    return '840';
   }
 
   public function getName()

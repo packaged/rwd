@@ -17,7 +17,7 @@ class CVECurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 132;
+    return '132';
   }
 
   public function getName()

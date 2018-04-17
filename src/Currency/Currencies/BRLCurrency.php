@@ -17,7 +17,7 @@ class BRLCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 986;
+    return '986';
   }
 
   public function getName()

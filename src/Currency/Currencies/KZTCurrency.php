@@ -17,7 +17,7 @@ class KZTCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 398;
+    return '398';
   }
 
   public function getName()

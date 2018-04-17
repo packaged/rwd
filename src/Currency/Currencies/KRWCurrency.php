@@ -17,7 +17,7 @@ class KRWCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 410;
+    return '410';
   }
 
   public function getName()

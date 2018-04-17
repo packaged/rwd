@@ -17,7 +17,7 @@ class MNTCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 496;
+    return '496';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class ERNCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 232;
+    return '232';
   }
 
   public function getName()

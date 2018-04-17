@@ -17,7 +17,7 @@ class TMTCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 934;
+    return '934';
   }
 
   public function getName()

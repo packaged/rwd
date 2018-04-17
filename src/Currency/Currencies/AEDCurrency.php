@@ -17,7 +17,7 @@ class AEDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 784;
+    return '784';
   }
 
   public function getName()

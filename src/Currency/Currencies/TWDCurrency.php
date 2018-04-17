@@ -17,7 +17,7 @@ class TWDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 901;
+    return '901';
   }
 
   public function getName()

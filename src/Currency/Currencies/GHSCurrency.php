@@ -17,7 +17,7 @@ class GHSCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 936;
+    return '936';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class BOBCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 68;
+    return '068';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class PYGCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 600;
+    return '600';
   }
 
   public function getName()

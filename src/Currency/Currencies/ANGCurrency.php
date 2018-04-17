@@ -17,7 +17,7 @@ class ANGCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 532;
+    return '532';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class BIFCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 108;
+    return '108';
   }
 
   public function getName()

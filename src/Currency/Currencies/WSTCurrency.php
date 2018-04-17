@@ -17,7 +17,7 @@ class WSTCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 882;
+    return '882';
   }
 
   public function getName()

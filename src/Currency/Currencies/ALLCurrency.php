@@ -17,7 +17,7 @@ class ALLCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 8;
+    return '008';
   }
 
   public function getName()

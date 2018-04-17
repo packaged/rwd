@@ -17,7 +17,7 @@ class LBPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 422;
+    return '422';
   }
 
   public function getName()

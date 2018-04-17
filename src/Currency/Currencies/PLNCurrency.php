@@ -17,7 +17,7 @@ class PLNCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 985;
+    return '985';
   }
 
   public function getName()

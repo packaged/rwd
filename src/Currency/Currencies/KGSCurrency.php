@@ -17,7 +17,7 @@ class KGSCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 417;
+    return '417';
   }
 
   public function getName()

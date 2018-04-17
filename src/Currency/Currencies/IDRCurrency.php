@@ -17,7 +17,7 @@ class IDRCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 360;
+    return '360';
   }
 
   public function getName()

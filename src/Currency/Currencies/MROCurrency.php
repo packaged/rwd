@@ -17,7 +17,7 @@ class MROCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 478;
+    return '478';
   }
 
   public function getName()

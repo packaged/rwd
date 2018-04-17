@@ -17,7 +17,7 @@ class MZNCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 943;
+    return '943';
   }
 
   public function getName()

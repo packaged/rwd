@@ -17,7 +17,7 @@ class QARCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 634;
+    return '634';
   }
 
   public function getName()

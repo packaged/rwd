@@ -17,7 +17,7 @@ class JODCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 400;
+    return '400';
   }
 
   public function getName()

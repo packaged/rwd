@@ -17,7 +17,7 @@ class LYDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 434;
+    return '434';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class MGACurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 969;
+    return '969';
   }
 
   public function getName()

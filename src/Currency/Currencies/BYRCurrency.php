@@ -17,7 +17,7 @@ class BYRCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 974;
+    return '974';
   }
 
   public function getName()

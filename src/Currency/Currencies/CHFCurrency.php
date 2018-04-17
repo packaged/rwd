@@ -17,7 +17,7 @@ class CHFCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 756;
+    return '756';
   }
 
   public function getName()

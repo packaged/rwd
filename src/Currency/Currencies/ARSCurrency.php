@@ -17,7 +17,7 @@ class ARSCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 32;
+    return '032';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class MURCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 480;
+    return '480';
   }
 
   public function getName()

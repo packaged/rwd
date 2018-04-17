@@ -17,7 +17,7 @@ class DZDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 12;
+    return '012';
   }
 
   public function getName()

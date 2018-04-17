@@ -17,7 +17,7 @@ class CDFCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 976;
+    return '976';
   }
 
   public function getName()

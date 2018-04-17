@@ -17,7 +17,7 @@ class PKRCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 586;
+    return '586';
   }
 
   public function getName()

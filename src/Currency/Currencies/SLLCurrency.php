@@ -17,7 +17,7 @@ class SLLCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 694;
+    return '694';
   }
 
   public function getName()

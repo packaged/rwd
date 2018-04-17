@@ -17,7 +17,7 @@ class KHRCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 116;
+    return '116';
   }
 
   public function getName()

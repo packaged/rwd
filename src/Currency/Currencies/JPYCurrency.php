@@ -17,7 +17,7 @@ class JPYCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 392;
+    return '392';
   }
 
   public function getName()

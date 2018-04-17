@@ -17,7 +17,7 @@ class KMFCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 174;
+    return '174';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class MVRCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 462;
+    return '462';
   }
 
   public function getName()

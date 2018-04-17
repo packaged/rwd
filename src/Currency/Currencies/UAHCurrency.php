@@ -17,7 +17,7 @@ class UAHCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 980;
+    return '980';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class BZDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 84;
+    return '084';
   }
 
   public function getName()

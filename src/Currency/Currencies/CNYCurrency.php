@@ -17,7 +17,7 @@ class CNYCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 156;
+    return '156';
   }
 
   public function getName()

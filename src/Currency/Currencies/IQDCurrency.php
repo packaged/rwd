@@ -17,7 +17,7 @@ class IQDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 368;
+    return '368';
   }
 
   public function getName()

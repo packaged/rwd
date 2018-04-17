@@ -17,7 +17,7 @@ class NZDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 554;
+    return '554';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class RSDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 941;
+    return '941';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class TOPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 776;
+    return '776';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class MZMCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 508;
+    return '508';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class NGNCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 566;
+    return '566';
   }
 
   public function getName()

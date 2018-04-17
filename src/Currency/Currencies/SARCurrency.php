@@ -17,7 +17,7 @@ class SARCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 682;
+    return '682';
   }
 
   public function getName()

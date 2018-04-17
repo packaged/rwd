@@ -17,7 +17,7 @@ class MADCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 504;
+    return '504';
   }
 
   public function getName()

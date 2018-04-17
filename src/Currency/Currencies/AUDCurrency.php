@@ -17,7 +17,7 @@ class AUDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 36;
+    return '036';
   }
 
   public function getName()

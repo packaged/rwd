@@ -17,7 +17,7 @@ class BHDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 48;
+    return '048';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class BSDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 44;
+    return '044';
   }
 
   public function getName()

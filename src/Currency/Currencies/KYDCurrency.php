@@ -17,7 +17,7 @@ class KYDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 136;
+    return '136';
   }
 
   public function getName()

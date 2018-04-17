@@ -17,7 +17,7 @@ class MOPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 446;
+    return '446';
   }
 
   public function getName()

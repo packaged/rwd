@@ -17,7 +17,7 @@ class ETBCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 230;
+    return '230';
   }
 
   public function getName()

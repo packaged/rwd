@@ -17,7 +17,7 @@ class BTNCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 64;
+    return '064';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class SCRCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 690;
+    return '690';
   }
 
   public function getName()

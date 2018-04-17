@@ -17,7 +17,7 @@ class GBPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 826;
+    return '826';
   }
 
   public function getName()

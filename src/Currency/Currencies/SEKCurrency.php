@@ -17,7 +17,7 @@ class SEKCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 752;
+    return '752';
   }
 
   public function getName()

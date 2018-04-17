@@ -17,7 +17,7 @@ class MTLCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 470;
+    return '470';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class ISKCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 352;
+    return '352';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class TZSCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 834;
+    return '834';
   }
 
   public function getName()

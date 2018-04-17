@@ -17,7 +17,7 @@ class PHPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 608;
+    return '608';
   }
 
   public function getName()

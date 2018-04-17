@@ -17,7 +17,7 @@ class PABCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 590;
+    return '590';
   }
 
   public function getName()

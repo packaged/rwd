@@ -17,7 +17,7 @@ class MXNCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 484;
+    return '484';
   }
 
   public function getName()

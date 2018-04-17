@@ -17,7 +17,7 @@ class FIMCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 978;
+    return '978';
   }
 
   public function getName()

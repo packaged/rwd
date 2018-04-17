@@ -17,7 +17,7 @@ class SGDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 702;
+    return '702';
   }
 
   public function getName()

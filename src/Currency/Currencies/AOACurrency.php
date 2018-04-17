@@ -17,7 +17,7 @@ class AOACurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 973;
+    return '973';
   }
 
   public function getName()

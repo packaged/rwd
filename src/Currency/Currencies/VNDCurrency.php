@@ -17,7 +17,7 @@ class VNDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 704;
+    return '704';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class TTDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 780;
+    return '780';
   }
 
   public function getName()

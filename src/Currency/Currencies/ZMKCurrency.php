@@ -17,7 +17,7 @@ class ZMKCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 894;
+    return '894';
   }
 
   public function getName()

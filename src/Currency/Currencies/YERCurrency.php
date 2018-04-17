@@ -17,7 +17,7 @@ class YERCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 886;
+    return '886';
   }
 
   public function getName()

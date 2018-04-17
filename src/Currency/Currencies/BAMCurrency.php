@@ -17,7 +17,7 @@ class BAMCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 977;
+    return '977';
   }
 
   public function getName()

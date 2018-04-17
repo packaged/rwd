@@ -17,7 +17,7 @@ class NPRCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 524;
+    return '524';
   }
 
   public function getName()

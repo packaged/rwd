@@ -17,7 +17,7 @@ class STDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 678;
+    return '678';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class DOPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 214;
+    return '214';
   }
 
   public function getName()

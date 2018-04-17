@@ -17,7 +17,7 @@ class THBCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 764;
+    return '764';
   }
 
   public function getName()

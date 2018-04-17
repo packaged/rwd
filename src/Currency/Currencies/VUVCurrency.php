@@ -17,7 +17,7 @@ class VUVCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 548;
+    return '548';
   }
 
   public function getName()

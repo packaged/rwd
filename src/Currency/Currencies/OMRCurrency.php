@@ -17,7 +17,7 @@ class OMRCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 512;
+    return '512';
   }
 
   public function getName()

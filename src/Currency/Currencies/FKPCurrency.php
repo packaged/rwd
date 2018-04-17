@@ -17,7 +17,7 @@ class FKPCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 238;
+    return '238';
   }
 
   public function getName()

@@ -17,7 +17,7 @@ class HKDCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 344;
+    return '344';
   }
 
   public function getName()

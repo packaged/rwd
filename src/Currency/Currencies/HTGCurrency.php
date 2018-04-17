@@ -17,7 +17,7 @@ class HTGCurrency extends AbstractCurrency
 
   public function getNumericCode()
   {
-    return 332;
+    return '332';
   }
 
   public function getName()

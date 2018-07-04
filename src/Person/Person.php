@@ -342,7 +342,7 @@ class Person extends AbstractPerson
               // shift word
               array_pop($words);
               // split last part off and unshift the rest
-              array_push($words, implode('.', array_slice($subWords, 0, $subCount - $i)));
+              array_push($words, implode('.', array_slice($subWords, 0, $subCount - $i - 1)));
             }
             break;
           }

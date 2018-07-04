@@ -123,6 +123,12 @@ class Person extends AbstractPerson
 
   public function __construct($name)
   {
+    if(filter_var($name, FILTER_VALIDATE_EMAIL))
+    {
+      list($name,) = explode('@', $name, 2);
+      $name = str_replace('.', ' ', $name);
+    }
+
     $this->_rawInput = $name;
     $this->_parse();
   }
@@ -132,11 +138,11 @@ class Person extends AbstractPerson
     $words = $this->_splitWords($this->_rawInput);
 
     // suffixes
-    $words = $this->_parseProfession($words);
-    $words = $this->_parseSuffix($words);
+    $words = $this->_doParse($words, 'profession');
+    $words = $this->_doParse($words, 'suffix');
 
     // prefixes
-    $words = $this->_parsePrefix($words);
+    $words = $this->_doParse($words, 'prefix');
 
     // remainder is name
     $words = $this->_normalizeName($words);
@@ -246,9 +252,29 @@ class Person extends AbstractPerson
     return [];
   }
 
-  private function _parsePrefix($words)
+  private function _doParse($words, $partType)
   {
-    $this->_prefix = [];
+    $prefix = false;
+    switch($partType)
+    {
+      case 'prefix':
+        $wordsMethod = '_getPrefixWord';
+        $property = '_prefix';
+        $prefix = true;
+        break;
+      case 'suffix':
+        $wordsMethod = '_getNameSuffixWord';
+        $property = '_suffix';
+        break;
+      case 'profession':
+        $wordsMethod = '_getProfessionSuffixWord';
+        $property = '_profession';
+        break;
+      default:
+        return $words;
+    }
+
+    $this->{$property} = [];
 
     while(true)
     {
@@ -256,13 +282,30 @@ class Person extends AbstractPerson
       {
         break;
       }
+      $wordsUpdated = false;
 
-      $word = reset($words);
-
-      if(($replace = $this->_getPrefixWord($word)) !== null)
+      if($prefix)
       {
-        array_push($this->_prefix, $replace);
-        array_shift($words);
+        $word = reset($words);
+      }
+      else
+      {
+        $word = end($words);
+      }
+
+      if(($replace = $this->$wordsMethod($word)) !== null)
+      {
+        if($prefix)
+        {
+          array_push($this->{$property}, $replace);
+          array_shift($words);
+        }
+        else
+        {
+          array_unshift($this->{$property}, $replace);
+          array_pop($words);
+        }
+        $wordsUpdated = true;
       }
       else if(strrpos($word, '.') === false)
       {
@@ -275,112 +318,41 @@ class Person extends AbstractPerson
         $i = 0;
         while($i < $subCount)
         {
-          $subWord = implode('.', array_slice($subWords, $i, 1));
-          if(($replace = $this->_getPrefixWord($subWord)) !== null)
+          if($prefix)
           {
-            array_push($this->_prefix, $replace);
-            // shift word
-            array_shift($words);
-            // split first part off and unshift the rest
-            array_unshift($words, implode('.', array_slice($subWords, $i + 1)));
+            $subWord = implode('.', array_slice($subWords, $i, 1));
+          }
+          else
+          {
+            $subWord = implode('.', array_slice($subWords, $subCount - $i - 1));
+          }
+          if(($replace = $this->$wordsMethod($subWord)) !== null)
+          {
+            if($prefix)
+            {
+              array_push($this->{$property}, $replace);
+              // shift word
+              array_shift($words);
+              // split first part off and unshift the rest
+              array_unshift($words, implode('.', array_slice($subWords, $i + 1)));
+            }
+            else
+            {
+              array_unshift($this->{$property}, $replace);
+              // shift word
+              array_pop($words);
+              // split last part off and unshift the rest
+              array_push($words, implode('.', array_slice($subWords, 0, $subCount - $i - 1)));
+            }
+            $wordsUpdated = true;
             break;
           }
           $i++;
         }
       }
-    }
-
-    return $words;
-  }
-
-  private function _parseSuffix($words)
-  {
-    $this->_suffix = [];
-
-    while(true)
-    {
-      if(count($words) <= 0)
+      if(!$wordsUpdated)
       {
         break;
-      }
-
-      $word = end($words);
-
-      if(($replace = $this->_getNameSuffixWord($word)) !== null)
-      {
-        array_unshift($this->_suffix, $replace);
-        array_pop($words);
-      }
-      else if(strrpos($word, '.') === false)
-      {
-        break;
-      }
-      else
-      {
-        $subWords = explode('.', $word);
-        $subCount = count($subWords);
-        $i = 1;
-        while($i < $subCount)
-        {
-          $subWord = implode('.', array_slice($subWords, $subCount - $i));
-          if(($replace = $this->_getNameSuffixWord($subWord)) !== null)
-          {
-            array_unshift($this->_suffix, $replace);
-            // shift word
-            array_pop($words);
-            // split last part off and unshift the rest
-            array_push($words, implode('.', array_slice($subWords, 0, $subCount - $i)));
-            break;
-          }
-          $i++;
-        }
-      }
-    }
-
-    return $words;
-  }
-
-  private function _parseProfession($words)
-  {
-    $this->_profession = [];
-
-    while(true)
-    {
-      if(count($words) <= 0)
-      {
-        break;
-      }
-
-      $word = end($words);
-
-      if(($replace = $this->_getProfessionSuffixWord($word)) !== null)
-      {
-        array_unshift($this->_profession, $replace);
-        array_pop($words);
-      }
-      else if(strrpos($word, '.') === false)
-      {
-        break;
-      }
-      else
-      {
-        $subWords = explode('.', $word);
-        $subCount = count($subWords);
-        $i = 1;
-        while($i < $subCount)
-        {
-          $subWord = implode('.', array_slice($subWords, $subCount - $i));
-          if(($replace = $this->_getProfessionSuffixWord($subWord)) !== null)
-          {
-            array_unshift($this->_profession, $replace);
-            // shift word
-            array_pop($words);
-            // split last part off and unshift the rest
-            array_push($words, implode('.', array_slice($subWords, 0, $subCount - $i)));
-            break;
-          }
-          $i++;
-        }
       }
     }
 

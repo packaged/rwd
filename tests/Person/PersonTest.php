@@ -129,6 +129,42 @@ class PersonTest extends \PHPUnit_Framework_TestCase
           'fullName'    => 'Brooke A J Bryan',
         ],
       ],
+      [
+        'joebloggs@yahoo.com',
+        [
+          'firstName'   => 'Joebloggs',
+          'lastName'    => '',
+          'middleNames' => '',
+          'fullName'    => 'Joebloggs',
+        ],
+      ],
+      [
+        'joe.bloggs@yahoo.com',
+        [
+          'firstName'   => 'Joe',
+          'lastName'    => 'Bloggs',
+          'middleNames' => '',
+          'fullName'    => 'Joe Bloggs',
+        ],
+      ],
+      [
+        'Tomd.a. Kay',
+        [
+          'firstName'   => 'Tomd.a.',
+          'lastName'    => 'Kay',
+          'middleNames' => '',
+          'fullName'    => 'Tomd.a. Kay',
+        ],
+      ],
+      [
+        'Tomd. Kay',
+        [
+          'firstName'   => 'Tomd.',
+          'lastName'    => 'Kay',
+          'middleNames' => '',
+          'fullName'    => 'Tomd. Kay',
+        ],
+      ],
     ];
   }
 }

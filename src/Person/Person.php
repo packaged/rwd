@@ -276,14 +276,13 @@ class Person extends AbstractPerson
 
     $this->{$property} = [];
 
-    $wordCount = count($words);
-
     while(true)
     {
-      if($wordCount <= 0)
+      if(count($words) <= 0)
       {
         break;
       }
+      $wordsUpdated = false;
 
       if($prefix)
       {
@@ -306,6 +305,7 @@ class Person extends AbstractPerson
           array_unshift($this->{$property}, $replace);
           array_pop($words);
         }
+        $wordsUpdated = true;
       }
       else if(strrpos($word, '.') === false)
       {
@@ -344,16 +344,16 @@ class Person extends AbstractPerson
               // split last part off and unshift the rest
               array_push($words, implode('.', array_slice($subWords, 0, $subCount - $i - 1)));
             }
+            $wordsUpdated = true;
             break;
           }
           $i++;
         }
       }
-      if(count($words) === $wordCount)
+      if(!$wordsUpdated)
       {
         break;
       }
-      $wordCount = count($words);
     }
 
     return $words;

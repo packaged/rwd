@@ -3,101 +3,53 @@ namespace Packaged\Rwd\Language;
 
 class LanguageHelper
 {
-  static public function getConstants()
-  {
-    $languages = new \ReflectionClass(LanguageCode::class);
-    return $languages->getConstants();
-  }
-
   /**
-   * @param $languageCode
+   * @param string $code
+   * @param string $default
    *
-   * @return bool
+   * @return LanguageInterface
    */
-  static public function isValid($languageCode)
+  public static function getLanguage($code, $default = null)
   {
-    return in_array(strtolower($languageCode), self::getConstants());
-  }
-
-  /**
-   * @param $languageCode
-   *
-   * @return null|string
-   */
-  static public function getName($languageCode)
-  {
-    if($languageCode)
+    $code = $code ?: $default;
+    $code = str_replace(' ', '', ucwords(strtolower(str_replace('-', ' ', $code))));
+    $className = sprintf('\Packaged\Rwd\Language\Languages\%sLanguage', $code);
+    if(class_exists($className))
     {
-      switch(strtolower($languageCode))
-      {
-        case LanguageCode::PT:
-          return LanguageName::PT;
-        case LanguageCode::ES:
-          return LanguageName::ES;
-        case LanguageCode::IT:
-          return LanguageName::IT;
-        case LanguageCode::FR:
-          return LanguageName::FR;
-        case LanguageCode::DE:
-          return LanguageName::DE;
-        case LanguageCode::EN:
-          return LanguageName::EN;
-      }
+      return new $className();
     }
-    return null;
-  }
-
-  /**
-   * @param $languageCode
-   *
-   * @return null|string
-   */
-  static public function getNativeName($languageCode)
-  {
-    if($languageCode)
+    else if($default !== null && $code !== $default)
     {
-      switch(strtolower($languageCode))
-      {
-        case LanguageCode::PT:
-          return LanguageNativeName::PT;
-        case LanguageCode::ES:
-          return LanguageNativeName::ES;
-        case LanguageCode::IT:
-          return LanguageNativeName::IT;
-        case LanguageCode::FR:
-          return LanguageNativeName::FR;
-        case LanguageCode::DE:
-          return LanguageNativeName::DE;
-        case LanguageCode::EN:
-          return LanguageNativeName::EN;
-      }
+      return self::getLanguage($default);
     }
-    return null;
+    else
+    {
+      throw new \RuntimeException("$code is not a supported language");
+    }
   }
 
   /**
+   * @param bool $useNativeName
+   *
    * @return array
+   * @throws \ReflectionException
    */
-  static public function getKeyValues()
+  public static function listAllLanguages($useNativeName = false)
   {
     $languages = [];
-    foreach(self::getConstants() as $code)
+    $c = new \ReflectionClass(LanguageCode::class);
+    foreach($c->getConstants() as $code)
     {
-      $languages[$code] = self::getName($code);
+      try
+      {
+        $language = self::getLanguage($code);
+        $languages[$code] = $useNativeName ? $language->getNativeName() : $language->getEnglishName();
+      }
+      catch(\RuntimeException $e)
+      {
+      }
     }
-    return $languages;
-  }
-
-  /**
-   * @return array
-   */
-  static public function getNativeKeyValues()
-  {
-    $languages = [];
-    foreach(self::getConstants() as $code)
-    {
-      $languages[$code] = self::getNativeName($code);
-    }
+    asort($languages, SORT_STRING | SORT_FLAG_CASE);
     return $languages;
   }
 }

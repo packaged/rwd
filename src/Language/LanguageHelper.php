@@ -3,6 +3,10 @@ namespace Packaged\Rwd\Language;
 
 class LanguageHelper
 {
+  const RETURN_ENGLISH_NAME = 'en';
+  const RETURN_NATIVE_NAME = 'na';
+  const RETURN_OBJECT = 'ob';
+
   /**
    * @param string $code
    * @param string $default
@@ -29,21 +33,73 @@ class LanguageHelper
   }
 
   /**
-   * @param bool $useNativeName
+   * @param string $returnType
    *
    * @return array
    * @throws \ReflectionException
    */
-  public static function listAllLanguages($useNativeName = false)
+  public static function listAllLanguages($returnType = self::RETURN_ENGLISH_NAME)
+  {
+    $c = new \ReflectionClass(LanguageCode::class);
+    return self::returnLanguages($returnType, $c->getConstants());
+  }
+
+  /**
+   * @param string $returnType
+   *
+   * @return array
+   */
+  public static function commonLanguages($returnType = self::RETURN_ENGLISH_NAME)
+  {
+    return self::returnLanguages(
+      $returnType,
+      [
+        LanguageCode::CODE_EN,
+        LanguageCode::CODE_DE,
+        LanguageCode::CODE_FR,
+        LanguageCode::CODE_IT,
+        LanguageCode::CODE_EN,
+        LanguageCode::CODE_PL,
+        LanguageCode::CODE_ES,
+        LanguageCode::CODE_UK,
+        LanguageCode::CODE_RO,
+        LanguageCode::CODE_NL,
+        LanguageCode::CODE_BAR,
+        LanguageCode::CODE_HU,
+        LanguageCode::CODE_TR,
+        LanguageCode::CODE_EL,
+        LanguageCode::CODE_CS,
+        LanguageCode::CODE_PT,
+        LanguageCode::CODE_SV,
+        LanguageCode::CODE_MAN,
+        LanguageCode::CODE_HI,
+        LanguageCode::CODE_AR,
+        LanguageCode::CODE_JA,
+        LanguageCode::CODE_PA,
+      ]
+    );
+  }
+
+  protected static function returnLanguages($returnType, $codes)
   {
     $languages = [];
-    $c = new \ReflectionClass(LanguageCode::class);
-    foreach($c->getConstants() as $code)
+    foreach($codes as $code)
     {
       try
       {
         $language = self::getLanguage($code);
-        $languages[$code] = $useNativeName ? $language->getNativeName() : $language->getEnglishName();
+        switch($returnType)
+        {
+          case self::RETURN_ENGLISH_NAME:
+            $languages[$code] = $language->getEnglishName();
+            break;
+          case self::RETURN_NATIVE_NAME:
+            $languages[$code] = $language->getNativeName();
+            break;
+          case self::RETURN_OBJECT:
+            $languages[$code] = $language;
+            break;
+        }
       }
       catch(\RuntimeException $e)
       {

@@ -34,6 +34,30 @@ class ChargebackReasonHelper
       case VisaChargebackReason::RSN_75:
       case VisaChargebackReason::RSN_85:
       case VisaChargebackReason::RSN_90:
+      case VisaChargebackReason::RSN_10_1:
+      case VisaChargebackReason::RSN_10_2:
+      case VisaChargebackReason::RSN_10_3:
+      case VisaChargebackReason::RSN_10_4:
+      case VisaChargebackReason::RSN_10_5:
+      case VisaChargebackReason::RSN_11_1:
+      case VisaChargebackReason::RSN_11_2:
+      case VisaChargebackReason::RSN_11_3:
+      case VisaChargebackReason::RSN_12_1:
+      case VisaChargebackReason::RSN_12_2:
+      case VisaChargebackReason::RSN_12_3:
+      case VisaChargebackReason::RSN_12_4:
+      case VisaChargebackReason::RSN_12_5:
+      case VisaChargebackReason::RSN_12_6:
+      case VisaChargebackReason::RSN_12_7:
+      case VisaChargebackReason::RSN_13_1:
+      case VisaChargebackReason::RSN_13_2:
+      case VisaChargebackReason::RSN_13_3:
+      case VisaChargebackReason::RSN_13_4:
+      case VisaChargebackReason::RSN_13_5:
+      case VisaChargebackReason::RSN_13_6:
+      case VisaChargebackReason::RSN_13_7:
+      case VisaChargebackReason::RSN_13_8:
+      case VisaChargebackReason::RSN_13_9:
         return VisaChargebackReason::create($value);
 
       case MasterCardChargebackReason::RSN_4837:

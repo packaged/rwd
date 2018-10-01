@@ -12,7 +12,7 @@ class LoLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'ລາວ&nbsp;/ Pha xa lao';
+    return 'ລາວ / Pha xa lao';
   }
 
   public function getCode()

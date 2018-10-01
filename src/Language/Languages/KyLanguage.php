@@ -12,7 +12,7 @@ class KyLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'Kırgızca&nbsp;/ Кыргызча';
+    return 'Kırgızca / Кыргызча';
   }
 
   public function getCode()

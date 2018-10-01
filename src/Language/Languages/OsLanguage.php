@@ -7,7 +7,7 @@ class OsLanguage implements LanguageInterface
 {
   public function getEnglishName()
   {
-    return 'Ossetian&nbsp;/ Ossetic';
+    return 'Ossetian / Ossetic';
   }
 
   public function getNativeName()

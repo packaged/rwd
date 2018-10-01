@@ -7,12 +7,12 @@ class WarLanguage implements LanguageInterface
 {
   public function getEnglishName()
   {
-    return 'Waray&nbsp;/ Samar-Leyte Visayan';
+    return 'Waray / Samar-Leyte Visayan';
   }
 
   public function getNativeName()
   {
-    return 'Winaray&nbsp;/ Binisaya Lineyte-Samarnon';
+    return 'Winaray / Binisaya Lineyte-Samarnon';
   }
 
   public function getCode()

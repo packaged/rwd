@@ -68,12 +68,12 @@ class ' . $language['class'] . ' implements LanguageInterface
 {
   public function getEnglishName()
   {
-    return \'' . addslashes($language[2]) . '\';
+    return \'' . addslashes(str_replace('&nbsp;', ' ', $language[2])) . '\';
   }
 
   public function getNativeName()
   {
-    return \'' . addslashes($language[4]) . '\';
+    return \'' . addslashes(str_replace('&nbsp;', ' ', $language[4])) . '\';
   }
 
   public function getCode()

@@ -12,7 +12,7 @@ class NewLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'नेपालभाषा&nbsp;/ Newah Bhaye';
+    return 'नेपालभाषा / Newah Bhaye';
   }
 
   public function getCode()

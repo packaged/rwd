@@ -12,7 +12,7 @@ class NrmLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'Nouormand&nbsp;/ Normaund';
+    return 'Nouormand / Normaund';
   }
 
   public function getCode()

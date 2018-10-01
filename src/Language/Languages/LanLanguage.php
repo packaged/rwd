@@ -12,7 +12,7 @@ class LanLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'Leb Lango&nbsp;/ Luo';
+    return 'Leb Lango / Luo';
   }
 
   public function getCode()

@@ -12,7 +12,7 @@ class BoLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'བོད་ཡིག&nbsp;/ Bod skad';
+    return 'བོད་ཡིག / Bod skad';
   }
 
   public function getCode()

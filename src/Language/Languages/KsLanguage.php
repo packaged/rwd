@@ -12,7 +12,7 @@ class KsLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return '<span dir=\"ltr\">कश्मीरी</span>&nbsp;/ <span dir=\"rtl\">كشميري</span>';
+    return '<span dir=\"ltr\">कश्मीरी</span> / <span dir=\"rtl\">كشميري</span>';
   }
 
   public function getCode()

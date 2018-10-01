@@ -7,7 +7,7 @@ class NdsLanguage implements LanguageInterface
 {
   public function getEnglishName()
   {
-    return 'Low German&nbsp;/ Low Saxon';
+    return 'Low German / Low Saxon';
   }
 
   public function getNativeName()

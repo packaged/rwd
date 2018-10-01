@@ -12,7 +12,7 @@ class ZhYueLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return '粵語&nbsp;/ 粤语';
+    return '粵語 / 粤语';
   }
 
   public function getCode()

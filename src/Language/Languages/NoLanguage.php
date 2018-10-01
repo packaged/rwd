@@ -12,7 +12,7 @@ class NoLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'Norsk (bokmål&nbsp;/ riksmål)';
+    return 'Norsk (bokmål / riksmål)';
   }
 
   public function getCode()

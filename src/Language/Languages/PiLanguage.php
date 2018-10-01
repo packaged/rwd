@@ -12,7 +12,7 @@ class PiLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'Pāli&nbsp;/ पाऴि';
+    return 'Pāli / पाऴि';
   }
 
   public function getCode()

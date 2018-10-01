@@ -12,7 +12,7 @@ class BugLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'ᨅᨔ ᨕᨘᨁᨗ&nbsp;/ Basa Ugi';
+    return 'ᨅᨔ ᨕᨘᨁᨗ / Basa Ugi';
   }
 
   public function getCode()

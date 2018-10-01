@@ -3,21 +3,21 @@ namespace Packaged\Rwd\Language\Languages;
 
 use Packaged\Rwd\Language\LanguageInterface;
 
-class MhLanguage implements LanguageInterface
+class InhLanguage implements LanguageInterface
 {
   public function getEnglishName()
   {
-    return 'Marshallese';
+    return 'Ingush';
   }
 
   public function getNativeName()
   {
-    return 'Kajin Majel / Ebon';
+    return 'ГӀалгӀай';
   }
 
   public function getCode()
   {
-    return 'mh';
+    return 'inh';
   }
 
   public function getDirection()

@@ -12,7 +12,7 @@ class NsoLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'Sesotho sa Leboa&nbsp;/ Sepedi';
+    return 'Sesotho sa Leboa / Sepedi';
   }
 
   public function getCode()

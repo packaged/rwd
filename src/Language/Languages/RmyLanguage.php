@@ -12,7 +12,7 @@ class RmyLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'Romani&nbsp;/ रोमानी';
+    return 'Romani / रोमानी';
   }
 
   public function getCode()

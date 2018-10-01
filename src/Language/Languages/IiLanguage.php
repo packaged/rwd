@@ -12,7 +12,7 @@ class IiLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'ꆇꉙ&nbsp;/ 四川彝语';
+    return 'ꆇꉙ / 四川彝语';
   }
 
   public function getCode()

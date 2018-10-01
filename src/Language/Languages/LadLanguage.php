@@ -7,12 +7,12 @@ class LadLanguage implements LanguageInterface
 {
   public function getEnglishName()
   {
-    return 'Ladino&nbsp;/ Judeo-Spanish';
+    return 'Ladino / Judeo-Spanish';
   }
 
   public function getNativeName()
   {
-    return 'Dzhudezmo&nbsp;/ Djudeo-Espanyol';
+    return 'Dzhudezmo / Djudeo-Espanyol';
   }
 
   public function getCode()

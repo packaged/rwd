@@ -12,7 +12,7 @@ class ThLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'ไทย&nbsp;/ Phasa Thai';
+    return 'ไทย / Phasa Thai';
   }
 
   public function getCode()

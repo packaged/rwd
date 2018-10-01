@@ -12,7 +12,7 @@ class ZaLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'Cuengh&nbsp;/ Tôô&nbsp;/ 壮语';
+    return 'Cuengh / Tôô / 壮语';
   }
 
   public function getCode()

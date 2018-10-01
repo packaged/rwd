@@ -7,7 +7,7 @@ class AngLanguage implements LanguageInterface
 {
   public function getEnglishName()
   {
-    return 'Anglo-Saxon&nbsp;/ Old English';
+    return 'Anglo-Saxon & Old English';
   }
 
   public function getNativeName()

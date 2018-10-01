@@ -7,7 +7,7 @@ class WarLanguage implements LanguageInterface
 {
   public function getEnglishName()
   {
-    return 'Waray&nbsp;/ Samar-Leyte Visayan';
+    return 'Waray & Samar-Leyte Visayan';
   }
 
   public function getNativeName()

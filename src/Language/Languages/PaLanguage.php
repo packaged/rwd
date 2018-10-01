@@ -7,7 +7,7 @@ class PaLanguage implements LanguageInterface
 {
   public function getEnglishName()
   {
-    return 'Panjabi&nbsp;/ Punjabi';
+    return 'Panjabi & Punjabi';
   }
 
   public function getNativeName()

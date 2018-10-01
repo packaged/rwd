@@ -7,7 +7,7 @@ class BerLanguage implements LanguageInterface
 {
   public function getEnglishName()
   {
-    return 'Berber&nbsp;/ Tamazight';
+    return 'Berber & Tamazight';
   }
 
   public function getNativeName()

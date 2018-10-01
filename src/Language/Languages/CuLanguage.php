@@ -7,7 +7,7 @@ class CuLanguage implements LanguageInterface
 {
   public function getEnglishName()
   {
-    return 'Old Church Slavonic&nbsp;/ Old Bulgarian';
+    return 'Old Church Slavonic & Old Bulgarian';
   }
 
   public function getNativeName()

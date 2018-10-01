@@ -7,7 +7,7 @@ class MusLanguage implements LanguageInterface
 {
   public function getEnglishName()
   {
-    return 'Creek&nbsp;/ Muskogee';
+    return 'Creek & Muskogee';
   }
 
   public function getNativeName()

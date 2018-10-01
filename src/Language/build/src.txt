@@ -701,6 +701,13 @@
 |[[en:Ilokano language]]
 |
 |-
+|inh
+|Ingush
+|dir="ltr" |ltr
+|dir="ltr"  lang="inh"|ГӀалгӀай
+|[[en:Ingush language]]
+|
+|-
 |io
 |Ido
 |dir="ltr" |ltr
@@ -937,6 +944,13 @@
 |dir="ltr" |ltr
 |dir="ltr"  lang="lo"|ລາວ&nbsp;/ Pha xa lao
 |[[en:Lao language]]
+|
+|-
+|lzz
+|Laz
+|dir="ltr" |ltr
+|dir="ltr"  lang="xmf"|Lazuri / ლაზური
+|[[en:Laz language|Laz language]]
 |
 |-
 |lt
@@ -1735,6 +1749,13 @@
 |dir="ltr" |ltr
 |dir="ltr"  lang="xh"|isiXhosa
 |[[en:Xhosan language]]
+|
+|-
+|xmf
+|Megrelian
+|dir="ltr" |ltr
+|dir="ltr"  lang="xmf"|მარგალური
+|[[en:Mingrelian language|Megrelian language]]
 |
 |-
 |yi

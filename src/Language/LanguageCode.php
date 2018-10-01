@@ -109,6 +109,7 @@ interface LanguageCode
   const CODE_II = 'ii';
   const CODE_IK = 'ik';
   const CODE_ILO = 'ilo';
+  const CODE_INH = 'inh';
   const CODE_IO = 'io';
   const CODE_IS = 'is';
   const CODE_IT = 'it';
@@ -143,6 +144,7 @@ interface LanguageCode
   const CODE_LMO = 'lmo';
   const CODE_LN = 'ln';
   const CODE_LO = 'lo';
+  const CODE_LZZ = 'lzz';
   const CODE_LT = 'lt';
   const CODE_LV = 'lv';
   const CODE_MAP_BMS = 'map-bms';
@@ -257,6 +259,7 @@ interface LanguageCode
   const CODE_WO = 'wo';
   const CODE_XAL = 'xal';
   const CODE_XH = 'xh';
+  const CODE_XMF = 'xmf';
   const CODE_YI = 'yi';
   const CODE_YO = 'yo';
   const CODE_ZA = 'za';

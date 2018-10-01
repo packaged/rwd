@@ -12,7 +12,7 @@ class UgLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'Uyƣurqə&nbsp;/ <span dir=\"rtl\">ئۇيغۇرچە</span>';
+    return 'Uyƣurqə / <span dir=\"rtl\">ئۇيغۇرچە</span>';
   }
 
   public function getCode()

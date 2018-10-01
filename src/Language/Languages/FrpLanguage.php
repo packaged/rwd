@@ -7,12 +7,12 @@ class FrpLanguage implements LanguageInterface
 {
   public function getEnglishName()
   {
-    return 'Arpitan & Franco-Provençal';
+    return 'Arpitan / Franco-Provençal';
   }
 
   public function getNativeName()
   {
-    return 'Arpitan&nbsp;/ francoprovençal';
+    return 'Arpitan / francoprovençal';
   }
 
   public function getCode()

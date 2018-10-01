@@ -12,7 +12,7 @@ class ShLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'Srpskohrvatski&nbsp;/ Српскохрватски';
+    return 'Srpskohrvatski / Српскохрватски';
   }
 
   public function getCode()

@@ -12,7 +12,7 @@ class MhLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'Kajin Majel&nbsp;/ Ebon';
+    return 'Kajin Majel / Ebon';
   }
 
   public function getCode()

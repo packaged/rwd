@@ -12,7 +12,7 @@ class OjLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return 'ᐊᓂᔑᓈᐯᒧᐎᓐ&nbsp;/ Anishinaabemowin';
+    return 'ᐊᓂᔑᓈᐯᒧᐎᓐ / Anishinaabemowin';
   }
 
   public function getCode()

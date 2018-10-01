@@ -12,7 +12,7 @@ class KuLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return '<span dir=\"ltr\">Kurdî</span>&nbsp;/ <span dir=\"rtl\">كوردی</span>';
+    return '<span dir=\"ltr\">Kurdî</span> / <span dir=\"rtl\">كوردی</span>';
   }
 
   public function getCode()

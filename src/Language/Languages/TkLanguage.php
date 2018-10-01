@@ -12,7 +12,7 @@ class TkLanguage implements LanguageInterface
 
   public function getNativeName()
   {
-    return '<span dir=\"ltr\">Туркмен</span>&nbsp;/ <span dir=\"rtl\">تركمن</span>';
+    return '<span dir=\"ltr\">Туркмен</span> / <span dir=\"rtl\">تركمن</span>';
   }
 
   public function getCode()

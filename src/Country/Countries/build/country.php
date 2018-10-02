@@ -48,6 +48,8 @@ $iso2 = 'ISO3166-1-Alpha-2';
 $iso3 = 'ISO3166-1-Alpha-3';
 $isoCode = 'ISO3166-1-numeric';
 
+$dialingCodes = [];
+
 foreach($countries as $country)
 {
 
@@ -73,5 +75,47 @@ foreach($countries as $country)
     $template
   );
 
+  if(!isset($dialingCodes[(int)$country->Dial]))
+  {
+    $dialingCodes[(int)$country->Dial] = [];
+  }
+  $dialingCodes[(int)$country->Dial][$country->WMO] = $country->$iso2;
+  ksort($dialingCodes[(int)$country->Dial]);
+
   file_put_contents('../' . $country->$iso2 . 'Country.php', $file);
 }
+
+krsort($dialingCodes);
+
+$codes = [];
+foreach($dialingCodes as $dialCode => $countryCode)
+{
+  $codes[] = str_pad($dialCode, 3) . " => '" . implode(',', $countryCode) . "'";
+}
+
+$file = '<?php
+namespace Packaged\Rwd\Country;
+
+class DialingCodes
+{
+  const LOOKUP = [
+    ' . implode(",\n    ", $codes) . ',
+  ];
+  
+  /**
+   * @param $dialingCode
+   *
+   * @return array
+   */
+  public static function getCountries($dialingCode)
+  {
+    if(isset(self::LOOKUP[$dialingCode]))
+    {
+      return explode(\',\', self::LOOKUP[$dialingCode]);
+    }
+    return null;
+  }
+}
+';
+
+file_put_contents('../../DialingCodes.php', $file);

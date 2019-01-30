@@ -38,8 +38,7 @@ class CurrencyHelper
     {
       try
       {
-        $currency = self::getCurrency($code)->getName();
-        $currencies[$code] = $currency;
+        $currencies[$code] = self::getCurrency($code)->getName();
       }
       catch(\RuntimeException $e)
       {
@@ -47,5 +46,19 @@ class CurrencyHelper
     }
     ksort($currencies, SORT_STRING | SORT_FLAG_CASE);
     return $currencies;
+  }
+
+  /**
+   * @return string[]
+   */
+  public static function commonCurrencies()
+  {
+    return [
+      'USD' => self::getCurrency('USD')->getName(),
+      'GBP' => self::getCurrency('GBP')->getName(),
+      'EUR' => self::getCurrency('EUR')->getName(),
+      'AUD' => self::getCurrency('AUD')->getName(),
+      'CAD' => self::getCurrency('CAD')->getName(),
+    ];
   }
 }

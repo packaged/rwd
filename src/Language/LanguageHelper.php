@@ -1,11 +1,67 @@
 <?php
 namespace Packaged\Rwd\Language;
 
+use function asort;
+use function class_exists;
+use function sprintf;
+use function str_replace;
+use function strtolower;
+use function ucwords;
+use const SORT_FLAG_CASE;
+use const SORT_STRING;
+
 class LanguageHelper
 {
   const RETURN_ENGLISH_NAME = 'en';
   const RETURN_NATIVE_NAME = 'na';
   const RETURN_OBJECT = 'ob';
+
+  /**
+   * @param string $returnType
+   *
+   * @return array
+   * @throws \ReflectionException
+   */
+  public static function listAllLanguages($returnType = self::RETURN_ENGLISH_NAME)
+  {
+    $c = new \ReflectionClass(LanguageCode::class);
+    return self::returnLanguages($returnType, $c->getConstants());
+  }
+
+  /**
+   * @param       $returnType
+   * @param array $codes Array of language codes to loop through
+   *
+   * @return array
+   */
+  public static function returnLanguages($returnType, array $codes)
+  {
+    $languages = [];
+    foreach($codes as $code)
+    {
+      try
+      {
+        $language = self::getLanguage($code);
+        switch($returnType)
+        {
+          case self::RETURN_ENGLISH_NAME:
+            $languages[$code] = $language->getEnglishName();
+            break;
+          case self::RETURN_NATIVE_NAME:
+            $languages[$code] = $language->getNativeName();
+            break;
+          case self::RETURN_OBJECT:
+            $languages[$code] = $language;
+            break;
+        }
+      }
+      catch(\RuntimeException $e)
+      {
+      }
+    }
+    asort($languages, SORT_STRING | SORT_FLAG_CASE);
+    return $languages;
+  }
 
   /**
    * @param string $code
@@ -30,18 +86,6 @@ class LanguageHelper
     {
       throw new \RuntimeException("$code is not a supported language");
     }
-  }
-
-  /**
-   * @param string $returnType
-   *
-   * @return array
-   * @throws \ReflectionException
-   */
-  public static function listAllLanguages($returnType = self::RETURN_ENGLISH_NAME)
-  {
-    $c = new \ReflectionClass(LanguageCode::class);
-    return self::returnLanguages($returnType, $c->getConstants());
   }
 
   /**
@@ -78,34 +122,5 @@ class LanguageHelper
         LanguageCode::CODE_PA,
       ]
     );
-  }
-
-  protected static function returnLanguages($returnType, $codes)
-  {
-    $languages = [];
-    foreach($codes as $code)
-    {
-      try
-      {
-        $language = self::getLanguage($code);
-        switch($returnType)
-        {
-          case self::RETURN_ENGLISH_NAME:
-            $languages[$code] = $language->getEnglishName();
-            break;
-          case self::RETURN_NATIVE_NAME:
-            $languages[$code] = $language->getNativeName();
-            break;
-          case self::RETURN_OBJECT:
-            $languages[$code] = $language;
-            break;
-        }
-      }
-      catch(\RuntimeException $e)
-      {
-      }
-    }
-    asort($languages, SORT_STRING | SORT_FLAG_CASE);
-    return $languages;
   }
 }

@@ -43,7 +43,7 @@ class EURCurrency extends AbstractCurrency
 
   protected $_countryCode;
 
-  public function setCountry(CountryCode $code)
+  public function setCountry($code)
   {
     $this->_countryCode = $code;
     return $this;

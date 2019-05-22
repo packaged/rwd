@@ -1,4 +1,5 @@
 <?php
+die('Some currencies manually updated');
 $template = '<?php
 namespace Packaged\Rwd\Currency\Currencies;
 

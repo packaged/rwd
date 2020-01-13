@@ -40,10 +40,16 @@ class {{iso2}}Country implements CountryInterface
   {
     return \'{{currency}}\';
   }
+
+  public function isInEurope()
+  {
+    return \'{{currency}}\';
+  }
 }
 ';
 
-$countries = json_decode(file_get_contents('country.json'));
+//TODO: Use the additional information available in restcountries
+$countries = json_decode(file_get_contents('https://restcountries.eu/rest/v2/all'));
 $iso2 = 'ISO3166-1-Alpha-2';
 $iso3 = 'ISO3166-1-Alpha-3';
 $isoCode = 'ISO3166-1-numeric';

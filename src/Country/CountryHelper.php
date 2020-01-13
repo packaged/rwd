@@ -106,4 +106,9 @@ class CountryHelper
     }
     return false;
   }
+
+  public static function isEUCountry(CountryInterface $country)
+  {
+    return static::isCode($country, ...self::$_euCodes);
+  }
 }

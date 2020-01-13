@@ -99,7 +99,7 @@ class CountryHelper
   {
     foreach($countryCode as $code)
     {
-      if($country->getCurrencyCode() === $code)
+      if($country->getIso2() === $code)
       {
         return true;
       }

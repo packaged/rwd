@@ -94,4 +94,16 @@ class CountryHelper
     asort($countries, SORT_STRING | SORT_FLAG_CASE);
     return $countries;
   }
+
+  public static function isCode(CountryInterface $country, ...$countryCode)
+  {
+    foreach($countryCode as $code)
+    {
+      if($country->getCurrencyCode() === $code)
+      {
+        return true;
+      }
+    }
+    return false;
+  }
 }

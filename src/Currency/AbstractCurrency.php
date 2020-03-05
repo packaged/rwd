@@ -33,18 +33,20 @@ abstract class AbstractCurrency implements CurrencyInterface
 
   public function format($amount, $showSymbol = true, $showCode = false)
   {
-    return str_replace(
-      [
-        '{symbol}',
-        '{number}',
-        '{code}',
-      ],
-      [
-        $showSymbol ? $this->getSymbol() : '',
-        $this->numberFormat($amount),
-        $showCode ? $this->getCode() : '',
-      ],
-      $this->_getRenderFormat($amount)
+    return trim(
+      str_replace(
+        [
+          '{symbol}',
+          '{number}',
+          '{code}',
+        ],
+        [
+          $showSymbol ? $this->getSymbol() : '',
+          $this->numberFormat($amount),
+          $showCode ? $this->getCode() : '',
+        ],
+        $this->_getRenderFormat($amount)
+      )
     );
   }
 

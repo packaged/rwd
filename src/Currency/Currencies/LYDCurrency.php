@@ -5,6 +5,11 @@ use Packaged\Rwd\Currency\AbstractCurrency;
 
 class LYDCurrency extends AbstractCurrency
 {
+  public function getDecimalCount()
+  {
+    return 3;
+  }
+  
   public function getSymbol()
   {
     return 'LYD';

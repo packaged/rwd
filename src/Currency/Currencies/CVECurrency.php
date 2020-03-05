@@ -5,6 +5,11 @@ use Packaged\Rwd\Currency\AbstractCurrency;
 
 class CVECurrency extends AbstractCurrency
 {
+  public function getDecimalCount()
+  {
+    return  ;
+  }
+  
   public function getSymbol()
   {
     return 'CVE';

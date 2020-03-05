@@ -5,6 +5,11 @@ use Packaged\Rwd\Currency\AbstractCurrency;
 
 class IQDCurrency extends AbstractCurrency
 {
+  public function getDecimalCount()
+  {
+    return 3;
+  }
+  
   public function getSymbol()
   {
     return 'IQD';

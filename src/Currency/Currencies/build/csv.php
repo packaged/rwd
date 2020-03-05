@@ -7,6 +7,11 @@ use Packaged\Rwd\Currency\AbstractCurrency;
 
 class {{alpha}}Currency extends AbstractCurrency
 {
+  public function getDecimalCount()
+  {
+    return {{decimal}};
+  }
+  
   public function getSymbol()
   {
     return \'{{symbol}}\';

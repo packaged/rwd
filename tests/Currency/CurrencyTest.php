@@ -22,6 +22,6 @@ class CurrencyTest extends \PHPUnit_Framework_TestCase
     $this->assertEquals('£123.00', $gbp->format(123));
 
     $jpy = CurrencyHelper::getCurrency('JPY');
-    $this->assertEquals('¥123.00', $jpy->format(123));
+    $this->assertEquals('¥123', $jpy->format(123));
   }
 }

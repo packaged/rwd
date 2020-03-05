@@ -5,6 +5,11 @@ use Packaged\Rwd\Currency\AbstractCurrency;
 
 class MVRCurrency extends AbstractCurrency
 {
+  public function getDecimalCount()
+  {
+    return 2;
+  }
+  
   public function getSymbol()
   {
     return 'MVR';

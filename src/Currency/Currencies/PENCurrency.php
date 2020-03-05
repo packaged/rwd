@@ -5,6 +5,11 @@ use Packaged\Rwd\Currency\AbstractCurrency;
 
 class PENCurrency extends AbstractCurrency
 {
+  public function getDecimalCount()
+  {
+    return 2;
+  }
+  
   public function getSymbol()
   {
     return 'S/.';

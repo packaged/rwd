@@ -5,6 +5,11 @@ use Packaged\Rwd\Currency\AbstractCurrency;
 
 class KWDCurrency extends AbstractCurrency
 {
+  public function getDecimalCount()
+  {
+    return 3;
+  }
+  
   public function getSymbol()
   {
     return 'KWD';

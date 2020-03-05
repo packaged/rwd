@@ -5,6 +5,11 @@ use Packaged\Rwd\Currency\AbstractCurrency;
 
 class KMFCurrency extends AbstractCurrency
 {
+  public function getDecimalCount()
+  {
+    return 0;
+  }
+  
   public function getSymbol()
   {
     return 'KMF';

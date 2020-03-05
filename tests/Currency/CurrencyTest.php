@@ -15,4 +15,13 @@ class CurrencyTest extends \PHPUnit_Framework_TestCase
     $this->assertEquals(1, $jpy->getUSDAverageValue($jpy->getUSDAverage()));
     $this->assertEquals(1.994, $jpy->getUSDAverageValue(200), '', 0.001);
   }
+
+  public function testCurrencyFormat()
+  {
+    $gbp = CurrencyHelper::getCurrency('GBP');
+    $this->assertEquals('£123.00', $gbp->format(123));
+
+    $jpy = CurrencyHelper::getCurrency('JPY');
+    $this->assertEquals('¥123.00', $jpy->format(123));
+  }
 }

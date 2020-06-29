@@ -66,4 +66,9 @@ abstract class AbstractCurrency implements CurrencyInterface
       $this->getThousandSeparator()
     );
   }
+
+  public function __toString()
+  {
+    return $this->getCode();
+  }
 }

@@ -10,4 +10,9 @@ abstract class AbstractRegionalLanguage extends AbstractLanguage implements Regi
   {
     return $this->getCode() . '-' . $this->getRegionCode();
   }
+
+  public function __toString()
+  {
+    return $this->getFullCode();
+  }
 }

@@ -62,9 +62,10 @@ foreach($languages as $code => $language)
   $fileTemplate = '<?php
 namespace Packaged\Rwd\Language\Languages;
 
+use Packaged\Rwd\Language\AbstractLanguage;
 use Packaged\Rwd\Language\LanguageInterface;
 
-class ' . $language['class'] . ' implements LanguageInterface
+class ' . $language['class'] . ' extends AbstractLanguage
 {
   public function getEnglishName()
   {

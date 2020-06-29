@@ -1,9 +1,10 @@
 <?php
 namespace Packaged\Rwd\Language\Languages;
 
+use Packaged\Rwd\Language\AbstractLanguage;
 use Packaged\Rwd\Language\LanguageInterface;
 
-class MgLanguage implements LanguageInterface
+class MgLanguage extends AbstractLanguage
 {
   public function getEnglishName()
   {

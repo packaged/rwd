@@ -36,4 +36,5 @@ class RegionalLanguage extends AbstractRegionalLanguage implements RegionalLangu
   {
     return $this->_regionCode;
   }
+
 }

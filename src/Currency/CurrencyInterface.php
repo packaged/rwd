@@ -20,4 +20,6 @@ interface CurrencyInterface
   public function getMajorUnit();
 
   public function getMinorUnit();
+
+  public function format($amount, $showSymbol = true, $showCode = false);
 }

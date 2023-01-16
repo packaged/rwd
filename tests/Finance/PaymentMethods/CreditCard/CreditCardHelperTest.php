@@ -3,8 +3,9 @@ namespace Packaged\Tests\Rwd\Finance\PaymentMethods\CreditCard;
 
 use Packaged\Rwd\Finance\PaymentMethods\CreditCard\CreditCardHelper;
 use Packaged\Rwd\Finance\PaymentMethods\CreditCard\CreditCardType;
+use PHPUnit\Framework\TestCase;
 
-class CreditCardHelperTest extends \PHPUnit_Framework_TestCase
+class CreditCardHelperTest extends TestCase
 {
   /**
    * @param $number

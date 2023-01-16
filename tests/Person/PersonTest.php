@@ -2,8 +2,9 @@
 namespace Packaged\Tests\Rwd\Person;
 
 use Packaged\Rwd\Person\Person;
+use PHPUnit\Framework\TestCase;
 
-class PersonTest extends \PHPUnit_Framework_TestCase
+class PersonTest extends TestCase
 {
   /**
    * @dataProvider data
@@ -140,6 +141,24 @@ class PersonTest extends \PHPUnit_Framework_TestCase
       ],
       [
         'joe.bloggs@yahoo.com',
+        [
+          'firstName'   => 'Joe',
+          'lastName'    => 'Bloggs',
+          'middleNames' => '',
+          'fullName'    => 'Joe Bloggs',
+        ],
+      ],
+      [
+        'joe.bloggs123@mytest.com',
+        [
+          'firstName'   => 'Joe',
+          'lastName'    => 'Bloggs',
+          'middleNames' => '',
+          'fullName'    => 'Joe Bloggs',
+        ],
+      ],
+      [
+        'joe123bloggs@mytest.com',
         [
           'firstName'   => 'Joe',
           'lastName'    => 'Bloggs',

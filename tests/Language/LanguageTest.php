@@ -3,8 +3,9 @@ namespace Packaged\Tests\Rwd\Language;
 
 use Packaged\Rwd\Language\LanguageHelper;
 use Packaged\Rwd\Language\Languages\EnLanguage;
+use PHPUnit\Framework\TestCase;
 
-class LanguageTest extends \PHPUnit_Framework_TestCase
+class LanguageTest extends TestCase
 {
   public function testUsdCurrencyValue()
   {

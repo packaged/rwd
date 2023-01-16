@@ -148,6 +148,24 @@ class PersonTest extends \PHPUnit_Framework_TestCase
         ],
       ],
       [
+        'joe.bloggs123@mytest.com',
+        [
+          'firstName'   => 'Joe',
+          'lastName'    => 'Bloggs',
+          'middleNames' => '',
+          'fullName'    => 'Joe Bloggs',
+        ],
+      ],
+      [
+        'joe123bloggs@mytest.com',
+        [
+          'firstName'   => 'Joe',
+          'lastName'    => 'Bloggs',
+          'middleNames' => '',
+          'fullName'    => 'Joe Bloggs',
+        ],
+      ],
+      [
         'Tomd.a. Kay',
         [
           'firstName'   => 'Tomd.a.',

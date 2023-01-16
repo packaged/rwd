@@ -126,7 +126,7 @@ class Person extends AbstractPerson
     if(filter_var($name, FILTER_VALIDATE_EMAIL))
     {
       list($name,) = explode('@', $name, 2);
-      $name = str_replace('.', ' ', $name);
+      $name = preg_replace('/[^a-zA-Z]/', ' ', $name);
     }
 
     $this->_rawInput = $name;

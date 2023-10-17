@@ -32,6 +32,7 @@ class CountryHelper
     CountryCode::CODE_SE,
     CountryCode::CODE_SI,
     CountryCode::CODE_SK,
+    CountryCode::CODE_XK,
   ];
 
   /**

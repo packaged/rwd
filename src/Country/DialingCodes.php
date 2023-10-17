@@ -83,6 +83,7 @@ class DialingCodes
     387 => 'BA',
     386 => 'SI',
     385 => 'HR',
+    383 => 'XK',
     382 => 'ME',
     381 => 'RS',
     380 => 'UA',

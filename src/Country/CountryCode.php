@@ -251,4 +251,5 @@ interface CountryCode
   const CODE_YE = 'YE';
   const CODE_ZM = 'ZM';
   const CODE_ZW = 'ZW';
+  const CODE_XK = 'XK';
 }

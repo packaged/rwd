@@ -13,3 +13,4 @@ jobs:
         with:
           configuration: ./phpunit.xml
           php_version: 7.4
+          version: 8.5

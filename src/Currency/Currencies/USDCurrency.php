@@ -9,7 +9,7 @@ class USDCurrency extends AbstractCurrency
   {
     return 2;
   }
-  
+
   public function getSymbol()
   {
     return '$';
@@ -45,7 +45,7 @@ class USDCurrency extends AbstractCurrency
     return 1;
   }
 
-  protected function _getRenderFormat($amount)
+  protected function _getRenderFormat($amount, $showCode = false)
   {
     $format = parent::_getRenderFormat(0);
     if($amount < 0)

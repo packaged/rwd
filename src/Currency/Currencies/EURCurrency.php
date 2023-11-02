@@ -10,7 +10,7 @@ class EURCurrency extends AbstractCurrency
   {
     return 2;
   }
-  
+
   public function getSymbol()
   {
     return '€';
@@ -54,7 +54,7 @@ class EURCurrency extends AbstractCurrency
     return $this;
   }
 
-  protected function _getRenderFormat($amount)
+  protected function _getRenderFormat($amount, $showCode = false)
   {
     switch($this->_countryCode)
     {
@@ -65,7 +65,11 @@ class EURCurrency extends AbstractCurrency
       case CountryCode::CODE_PT;
       case CountryCode::CODE_ES;
         $return = $amount < 0 ? '-' : '';
-        $return .= '{number} {symbol} {code}';
+        $return .= '{number} {symbol}';
+        if($showCode)
+        {
+          $return .= ' {code}';
+        }
         return $return;
     }
     return parent::_getRenderFormat($amount);

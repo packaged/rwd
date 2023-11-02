@@ -50,10 +50,16 @@ abstract class AbstractCurrency implements CurrencyInterface
     );
   }
 
-  protected function _getRenderFormat($amount)
+  protected function _getRenderFormat($amount, $showCode = false)
   {
     $return = $amount < 0 ? '-' : '';
-    $return .= '{symbol}{number} {code}';
+    $return .= '{symbol}{number}';
+
+    if($showCode)
+    {
+      $return .= ' {code}';
+    }
+
     return $return;
   }
 

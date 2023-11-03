@@ -54,7 +54,7 @@ class EURCurrency extends AbstractCurrency
     return $this;
   }
 
-  protected function _getRenderFormat($amount, $showCode = false)
+  protected function _getRenderFormat($amount, $showCode = true)
   {
     switch($this->_countryCode)
     {

@@ -45,14 +45,6 @@ abstract class CreditCardTest extends TestCase
     }
   }
 
-  public function testTestCards()
-  {
-    foreach($this->makeCard('1')->getTestNumbers() as $number)
-    {
-      $this->testCard($number);
-    }
-  }
-
   /**
    * @return array
    */

@@ -69,6 +69,10 @@ class Person extends AbstractPerson
 
   private function _smartUcWords($string)
   {
+    if($string === null)
+    {
+      return '';
+    }
     // if whole string is uppercase, lowercase first
     if($string == strtoupper($string))
     {
@@ -125,7 +129,7 @@ class Person extends AbstractPerson
   {
     if(filter_var($name, FILTER_VALIDATE_EMAIL))
     {
-      list($name,) = explode('@', $name, 2);
+      [$name,] = explode('@', $name, 2);
       $name = preg_replace('/[^a-zA-Z]/', ' ', $name);
     }
 

@@ -167,6 +167,15 @@ class PersonTest extends TestCase
         ],
       ],
       [
+        'joe_smith@mytest.com',
+        [
+          'firstName'   => 'Joe',
+          'lastName'    => 'Smith',
+          'middleNames' => '',
+          'fullName'    => 'Joe Smith',
+        ],
+      ],
+      [
         'Tomd.a. Kay',
         [
           'firstName'   => 'Tomd.a.',

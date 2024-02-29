@@ -45,7 +45,7 @@ abstract class AbstractCurrency implements CurrencyInterface
           $this->numberFormat(abs($amount)),
           $showCode ? $this->getCode() : '',
         ],
-        $this->_getRenderFormat($amount, $showCode)
+        $this->_getRenderFormat($amount, $showCode && $this->getCode())
       )
     );
   }

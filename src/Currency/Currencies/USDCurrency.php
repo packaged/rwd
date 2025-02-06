@@ -45,9 +45,9 @@ class USDCurrency extends AbstractCurrency
     return 1;
   }
 
-  protected function _getRenderFormat($amount)
+  protected function _getRenderFormat($amount, $showCode = true)
   {
-    $format = parent::_getRenderFormat(0);
+    $format = parent::_getRenderFormat(0, $showCode);
     if($amount < 0)
     {
       $format = '(' . $format . ')';

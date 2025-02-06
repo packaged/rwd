@@ -75,11 +75,9 @@ class DiscoverCardChargebackReason extends ChargebackReason
   const RSN_UA38 = 'UA38';
   const RSN_UA99 = 'UA99';
 
-  public static function create(
-    $code, $descripton = '', $category = ChargebackCategory::OTHER
-  )
+  public static function create($code, $description = '', $category = ChargebackCategory::OTHER)
   {
-    $reason = parent::create($code, $descripton, $category);
+    $reason = parent::create($code, $description, $category);
     switch($code)
     {
       case self::RSN_5:

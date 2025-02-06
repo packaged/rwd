@@ -9,16 +9,16 @@ class ChargebackReason implements ChargebackReasonInterface
 
   /**
    * @param        $code
-   * @param string $descripton
+   * @param string $description
    * @param string $category
    *
    * @return ChargebackReason
    */
-  public static function create($code, $descripton = '', $category = ChargebackCategory::OTHER)
+  public static function create($code, $description = '', $category = ChargebackCategory::OTHER)
   {
     $reason = new self();
     $reason->code = $code;
-    $reason->description = $descripton;
+    $reason->description = $description;
     $reason->category = $category;
     return $reason;
   }

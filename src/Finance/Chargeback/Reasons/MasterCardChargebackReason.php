@@ -28,9 +28,9 @@ class MasterCardChargebackReason extends ChargebackReason
   const RSN_4859 = '4859';
   const RSN_4860 = '4860';
 
-  public static function create($code, $descripton = '', $category = ChargebackCategory::OTHER)
+  public static function create($code, $description = '', $category = ChargebackCategory::OTHER)
   {
-    $reason = parent::create($code, $descripton, $category);
+    $reason = parent::create($code, $description, $category);
     switch($code)
     {
       case self::RSN_4837:

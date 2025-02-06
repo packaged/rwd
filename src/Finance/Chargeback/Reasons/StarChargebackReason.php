@@ -19,7 +19,6 @@ class StarChargebackReason extends ChargebackReason
     $reason = parent::create($code, $description, $category);
     switch($code)
     {
-
       case self::RSN_20:
         $reason->description = 'Authorization';
         $reason->category = ChargebackCategory::AUTHORIZATION;

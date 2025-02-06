@@ -18,7 +18,6 @@ class PulseChargebackReason extends ChargebackReason
     $reason = parent::create($code, $description, $category);
     switch($code)
     {
-
       case self::RSN_4537:
         $reason->description = 'Card Present Transaction';
         $reason->category = ChargebackCategory::FRAUD;

@@ -59,7 +59,6 @@ class VisaChargebackReason extends ChargebackReason
     $reason = parent::create($code, $description, $category);
     switch($code)
     {
-
       case self::RSN_10_1:
         $reason->description = 'EMV Liability Shift Counterfeit Fraud';
         $reason->category = ChargebackCategory::FRAUD;

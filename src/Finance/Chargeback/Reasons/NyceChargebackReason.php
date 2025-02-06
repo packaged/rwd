@@ -15,7 +15,6 @@ class NyceChargebackReason extends ChargebackReason
     $reason = parent::create($code, $description, $category);
     switch($code)
     {
-
       case self::RSN_CC:
         $reason->description = 'Chip Counterfeit';
         $reason->category = ChargebackCategory::FRAUD;

@@ -2,6 +2,7 @@
 namespace Packaged\Rwd\Finance\Chargeback;
 
 use Packaged\Rwd\Finance\Chargeback\Reasons\AmericanExpressChargebackReason;
+use Packaged\Rwd\Finance\Chargeback\Reasons\DinersChargebackReason;
 use Packaged\Rwd\Finance\Chargeback\Reasons\DiscoverCardChargebackReason;
 use Packaged\Rwd\Finance\Chargeback\Reasons\MasterCardChargebackReason;
 use Packaged\Rwd\Finance\Chargeback\Reasons\NyceChargebackReason;
@@ -154,6 +155,13 @@ class ChargebackReasonHelper
       case PulseChargebackReason::RSN_4867:
       case PulseChargebackReason::RSN_4868:
         return PulseChargebackReason::create($value);
+
+      case DinersChargebackReason::RSN_C41:
+      case DinersChargebackReason::RSN_C42:
+      case DinersChargebackReason::RSN_C46:
+      case DinersChargebackReason::RSN_C53:
+      case DinersChargebackReason::RSN_C54:
+        return DinersChargebackReason::create($value);
 
       case StarChargebackReason::RSN_20:
       case StarChargebackReason::RSN_30:

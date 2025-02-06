@@ -4,6 +4,7 @@ namespace Packaged\Rwd\Finance\Chargeback;
 use Packaged\Rwd\Finance\Chargeback\Reasons\AmericanExpressChargebackReason;
 use Packaged\Rwd\Finance\Chargeback\Reasons\DiscoverCardChargebackReason;
 use Packaged\Rwd\Finance\Chargeback\Reasons\MasterCardChargebackReason;
+use Packaged\Rwd\Finance\Chargeback\Reasons\NyceChargebackReason;
 use Packaged\Rwd\Finance\Chargeback\Reasons\VisaChargebackReason;
 
 class ChargebackReasonHelper
@@ -140,6 +141,10 @@ class ChargebackReasonHelper
       case AmericanExpressChargebackReason::RSN_FR4:
       case AmericanExpressChargebackReason::RSN_FR6:
         return AmericanExpressChargebackReason::create($value);
+
+      case NyceChargebackReason::RSN_CC:
+      case NyceChargebackReason::RSN_UF:
+        return NyceChargebackReason::create($value);
     }
 
     return ChargebackReason::create($value, 'Unknown Reason');

@@ -42,9 +42,9 @@ class AmericanExpressChargebackReason extends ChargebackReason
   const RSN_FR4 = 'FR4';
   const RSN_FR6 = 'FR6';
 
-  public static function create($code, $descripton = '', $category = ChargebackCategory::OTHER)
+  public static function create($code, $description = '', $category = ChargebackCategory::OTHER)
   {
-    $reason = parent::create($code, $descripton, $category);
+    $reason = parent::create($code, $description, $category);
     switch($code)
     {
       case self::RSN_UA01:

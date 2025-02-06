@@ -72,7 +72,7 @@ class EURCurrency extends AbstractCurrency
         }
         return $return;
     }
-    return parent::_getRenderFormat($amount);
+    return parent::_getRenderFormat($amount, $showCode);
   }
 
 }

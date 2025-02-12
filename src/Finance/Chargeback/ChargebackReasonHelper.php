@@ -145,22 +145,53 @@ class ChargebackReasonHelper
       case AmericanExpressChargebackReason::RSN_FR6:
         return AmericanExpressChargebackReason::create($value);
 
-      case NyceChargebackReason::RSN_CC:
-      case NyceChargebackReason::RSN_UF:
+      case NyceChargebackReason::RSN_CC;
+      case NyceChargebackReason::RSN_UF;
+      case NyceChargebackReason::RSN_A2;
+      case NyceChargebackReason::RSN_CF;
+      case NyceChargebackReason::RSN_A5;
+      case NyceChargebackReason::RSN_A6;
+      case NyceChargebackReason::RSN_A1;
+      case NyceChargebackReason::RSN_A3;
+      case NyceChargebackReason::RSN_A4;
+      case NyceChargebackReason::RSN_A7;
         return NyceChargebackReason::create($value);
 
-      case PulseChargebackReason::RSN_4537:
-      case PulseChargebackReason::RSN_4752:
-      case PulseChargebackReason::RSN_4866:
-      case PulseChargebackReason::RSN_4867:
-      case PulseChargebackReason::RSN_4868:
+      case PulseChargebackReason::RSN_4537;
+      case PulseChargebackReason::RSN_4752;
+      case PulseChargebackReason::RSN_4866;
+      case PulseChargebackReason::RSN_4867;
+      case PulseChargebackReason::RSN_4868;
+      case PulseChargebackReason::RSN_4512;
+      case PulseChargebackReason::RSN_4590;
+      case PulseChargebackReason::RSN_4532;
+      case PulseChargebackReason::RSN_4542;
+      case PulseChargebackReason::RSN_4550;
+      case PulseChargebackReason::RSN_4586;
+      case PulseChargebackReason::RSN_4541;
+      case PulseChargebackReason::RSN_4553;
+      case PulseChargebackReason::RSN_4555;
+      case PulseChargebackReason::RSN_4560;
+      case PulseChargebackReason::RSN_4865;
         return PulseChargebackReason::create($value);
 
-      case DinersChargebackReason::RSN_C41:
-      case DinersChargebackReason::RSN_C42:
-      case DinersChargebackReason::RSN_C46:
-      case DinersChargebackReason::RSN_C53:
-      case DinersChargebackReason::RSN_C54:
+      case DinersChargebackReason::RSN_C41;
+      case DinersChargebackReason::RSN_C42;
+      case DinersChargebackReason::RSN_C46;
+      case DinersChargebackReason::RSN_C53;
+      case DinersChargebackReason::RSN_C54;
+      case DinersChargebackReason::RSN_A02;
+      case DinersChargebackReason::RSN_A06;
+      case DinersChargebackReason::RSN_B24;
+      case DinersChargebackReason::RSN_B25;
+      case DinersChargebackReason::RSN_B26;
+      case DinersChargebackReason::RSN_B27;
+      case DinersChargebackReason::RSN_D61;
+      case DinersChargebackReason::RSN_D67;
+      case DinersChargebackReason::RSN_D62;
+      case DinersChargebackReason::RSN_D66;
+      case DinersChargebackReason::RSN_D69;
+      case DinersChargebackReason::RSN_D70;
         return DinersChargebackReason::create($value);
 
       case StarChargebackReason::RSN_20:

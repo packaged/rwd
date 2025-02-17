@@ -14,7 +14,7 @@ class ChargebackReasonHelper
 {
   public static function fromCode($value)
   {
-    switch($value)
+    switch ($value)
     {
       case VisaChargebackReason::RSN_57:
       case VisaChargebackReason::RSN_62:
@@ -143,6 +143,29 @@ class ChargebackReasonHelper
       case AmericanExpressChargebackReason::RSN_FR2:
       case AmericanExpressChargebackReason::RSN_FR4:
       case AmericanExpressChargebackReason::RSN_FR6:
+
+      case AmericanExpressChargebackReason::RSN_4507:
+      case AmericanExpressChargebackReason::RSN_4512:
+      case AmericanExpressChargebackReason::RSN_4513:
+      case AmericanExpressChargebackReason::RSN_4515:
+      case AmericanExpressChargebackReason::RSN_4516:
+      case AmericanExpressChargebackReason::RSN_4517:
+      case AmericanExpressChargebackReason::RSN_4521:
+      case AmericanExpressChargebackReason::RSN_4523:
+      case AmericanExpressChargebackReason::RSN_4527:
+      case AmericanExpressChargebackReason::RSN_4530:
+      case AmericanExpressChargebackReason::RSN_4534:
+      case AmericanExpressChargebackReason::RSN_4536:
+      case AmericanExpressChargebackReason::RSN_4540:
+      case AmericanExpressChargebackReason::RSN_4544:
+      case AmericanExpressChargebackReason::RSN_4553:
+      case AmericanExpressChargebackReason::RSN_4554:
+      case AmericanExpressChargebackReason::RSN_4750:
+      case AmericanExpressChargebackReason::RSN_4752:
+      case AmericanExpressChargebackReason::RSN_4754:
+      case AmericanExpressChargebackReason::RSN_4755:
+      case AmericanExpressChargebackReason::RSN_4763:
+      case AmericanExpressChargebackReason::RSN_4798:
         return AmericanExpressChargebackReason::create($value);
 
       case NyceChargebackReason::RSN_CC;

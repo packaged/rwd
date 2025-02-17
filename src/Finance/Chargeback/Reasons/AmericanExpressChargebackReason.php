@@ -42,10 +42,34 @@ class AmericanExpressChargebackReason extends ChargebackReason
   const RSN_FR4 = 'FR4';
   const RSN_FR6 = 'FR6';
 
+  // AUSTRALIAN MERCHANT CHARGEBACK REASON CODES
+  const RSN_4507 = '4507';
+  const RSN_4512 = '4512';
+  const RSN_4513 = '4513';
+  const RSN_4515 = '4515';
+  const RSN_4516 = '4516';
+  const RSN_4517 = '4517';
+  const RSN_4521 = '4521';
+  const RSN_4523 = '4523';
+  const RSN_4527 = '4527';
+  const RSN_4530 = '4530';
+  const RSN_4534 = '4534';
+  const RSN_4536 = '4536';
+  const RSN_4540 = '4540';
+  const RSN_4544 = '4544';
+  const RSN_4553 = '4553';
+  const RSN_4554 = '4554';
+  const RSN_4750 = '4750';
+  const RSN_4752 = '4752';
+  const RSN_4754 = '4754';
+  const RSN_4755 = '4755';
+  const RSN_4763 = '4763';
+  const RSN_4798 = '4798';
+
   public static function create($code, $description = '', $category = ChargebackCategory::OTHER)
   {
     $reason = parent::create($code, $description, $category);
-    switch($code)
+    switch ($code)
     {
       case self::RSN_UA01:
         $reason->description = 'Fraud – Card Present Transaction';
@@ -186,6 +210,95 @@ class AmericanExpressChargebackReason extends ChargebackReason
       case self::RSN_FR6:
         $reason->description = 'Partial Immediate Chargeback Program';
         $reason->category = ChargebackCategory::OTHER;
+        break;
+
+      case self::RSN_4507:
+        $reason->description = 'Incorrect Transaction Amount Or Primary Account Number (PAN) Presented';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4512:
+        $reason->description = 'Multiple Processing';
+        $reason->category = ChargebackCategory::PROCESSING;
+        break;
+      case self::RSN_4513:
+        $reason->description = 'Credit Not Presented';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4515:
+        $reason->description = 'Paid Through Other Means';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4516:
+        $reason->description = 'Request For Support Not Fulfilled';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4517:
+        $reason->description = 'Request For Support Illegible / Incomplete';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4521:
+        $reason->description = 'Invalid Authorisation';
+        $reason->category = ChargebackCategory::AUTHORIZATION;
+        break;
+      case self::RSN_4523:
+        $reason->description = 'Unassigned Card Member Account Number';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4527:
+        $reason->description = 'Missing Imprint';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4530:
+        $reason->description = 'Currency Discrepancy';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4534:
+        $reason->description = 'Multiple ROCs';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4536:
+        $reason->description = 'Late Presentment';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4540:
+        $reason->description = 'Card Not Present';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4544:
+        $reason->description = 'Cancellation Of Recurring Goods / Services';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4553:
+        $reason->description = 'Not As Described Or Defective Merchandise';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4554:
+        $reason->description = 'Goods And Services Not Received';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4750:
+        $reason->description = 'Car Rental Charge Non Qualified or Unsubstantiated';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4752:
+        $reason->description = 'Credit / Debit Presentment Error';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4754:
+        $reason->description = 'Local Regulatory / Legal Dispute';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4755:
+        $reason->description = 'No Valid Authorisation';
+        $reason->category = ChargebackCategory::AUTHORIZATION;
+        break;
+      case self::RSN_4763:
+        $reason->description = 'Fraud Full Recourse';
+        $reason->category = ChargebackCategory::FRAUD;
+        break;
+      case self::RSN_4798:
+        $reason->description = 'Fraud Liability Shift – Counterfeit';
+        $reason->category = ChargebackCategory::FRAUD;
         break;
     }
     return $reason;

@@ -221,7 +221,7 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::PROCESSING;
         break;
       case self::RSN_IS:
-        $reason->description = 'Fraud - Invalid Card Signature';
+        $reason->description = 'Invalid Card Signature';
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_LP:
@@ -281,11 +281,11 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA01:
-        $reason->description = 'Fraud – Card Present Transaction';
+        $reason->description = 'Card Present Transaction';
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA02:
-        $reason->description = 'Fraud – Card Not Present Transaction';
+        $reason->description = 'Card Not Present Transaction';
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA03:
@@ -293,11 +293,11 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::PROCESSING;
         break;
       case self::RSN_UA05:
-        $reason->description = 'Fraud – Chip Counterfeit Transaction';
+        $reason->description = 'Chip Counterfeit Transaction';
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA06:
-        $reason->description = 'Fraud – Chip and PIN Transaction';
+        $reason->description = 'Chip and PIN Transaction';
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA10:
@@ -317,27 +317,27 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA21:
-        $reason->description = 'Fraud - keyed transactions - no signature';
+        $reason->description = 'Keyed transactions - no signature';
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA22:
-        $reason->description = 'Fraud - keyed transactions - wrong signature';
+        $reason->description = 'Keyed transactions - wrong signature';
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA23:
-        $reason->description = 'Fraud - illegible card imprint';
+        $reason->description = 'Illegible card imprint';
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA28:
-        $reason->description = 'Fraud - illegible documentation';
+        $reason->description = 'Illegible documentation';
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA30:
-        $reason->description = 'Fraud - no proof of delivery';
+        $reason->description = 'No proof of delivery';
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA31:
-        $reason->description = 'Fraud - no valid proof of delivery';
+        $reason->description = 'No valid proof of delivery';
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA32:
@@ -345,7 +345,7 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::AUTHORIZATION;
         break;
       case self::RSN_UA38:
-        $reason->description = 'Fraud - merchant provided illegible documentation';
+        $reason->description = 'Merchant provided illegible documentation';
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA99:

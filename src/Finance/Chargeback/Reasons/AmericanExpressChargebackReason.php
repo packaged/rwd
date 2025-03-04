@@ -72,7 +72,7 @@ class AmericanExpressChargebackReason extends ChargebackReason
     switch ($code)
     {
       case self::RSN_UA01:
-        $reason->description = 'Fraud – Card Present Transaction';
+        $reason->description = 'Card Present Transaction';
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_F10:

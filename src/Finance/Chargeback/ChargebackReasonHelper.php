@@ -9,9 +9,12 @@ use Packaged\Rwd\Finance\Chargeback\Reasons\NyceChargebackReason;
 use Packaged\Rwd\Finance\Chargeback\Reasons\PulseChargebackReason;
 use Packaged\Rwd\Finance\Chargeback\Reasons\StarChargebackReason;
 use Packaged\Rwd\Finance\Chargeback\Reasons\VisaChargebackReason;
+use ReflectionClass;
 
 class ChargebackReasonHelper
 {
+  const UNKNOWN_REASON = 'Unknown Reason';
+
   public static function fromCode($value)
   {
     switch ($value)
@@ -226,6 +229,47 @@ class ChargebackReasonHelper
         return StarChargebackReason::create($value);
     }
 
-    return ChargebackReason::create($value, 'Unknown Reason');
+    return ChargebackReason::create($value, self::UNKNOWN_REASON);
+  }
+
+  public static function isValid($code): bool
+  {
+    $reason = self::fromCode($code);
+    return $reason->getDescription() !== self::UNKNOWN_REASON;
+  }
+
+  public static function getKeyedValues(): array
+  {
+    $brands = [
+      AmericanExpressChargebackReason::class,
+      DinersChargebackReason::class,
+      DiscoverCardChargebackReason::class,
+      MasterCardChargebackReason::class,
+      NyceChargebackReason::class,
+      PulseChargebackReason::class,
+      StarChargebackReason::class,
+      VisaChargebackReason::class,
+    ];
+
+    $return = [];
+    foreach($brands as $brand)
+    {
+      $reflection = new ReflectionClass($brand);
+
+      $brandVals = array_values($reflection->getConstants());
+      foreach($brandVals as $value)
+      {
+        $rsn = static::fromCode($value);
+        $return[$value] = sprintf(
+          "%s: %s: %s (%s)",
+          $rsn->getCode(),
+          ucwords($rsn->getCategory()),
+          $rsn->getDescription(),
+          substr($reflection->getShortName(), 0, -16), // Trim "ChargebackReason"
+        );
+      }
+    }
+    ksort($return, SORT_NATURAL);
+    return $return;
   }
 }

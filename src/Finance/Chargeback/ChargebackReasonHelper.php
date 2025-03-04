@@ -17,7 +17,7 @@ class ChargebackReasonHelper
 
   public static function fromCode($value)
   {
-    switch($value)
+    switch ($value)
     {
       case VisaChargebackReason::RSN_57:
       case VisaChargebackReason::RSN_62:

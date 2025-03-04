@@ -265,7 +265,7 @@ class ChargebackReasonHelper
           $rsn->getCode(),
           ucwords($rsn->getCategory()),
           $rsn->getDescription(),
-          substr($reflection->getShortName(), 0, -16),
+          substr($reflection->getShortName(), 0, -16), // Trim "ChargebackReason"
         );
       }
     }

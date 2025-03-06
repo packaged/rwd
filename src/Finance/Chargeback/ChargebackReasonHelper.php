@@ -17,7 +17,7 @@ class ChargebackReasonHelper
 
   public static function fromCode($value)
   {
-    switch ($value)
+    switch($value)
     {
       case VisaChargebackReason::RSN_57:
       case VisaChargebackReason::RSN_62:
@@ -41,6 +41,7 @@ class ChargebackReasonHelper
       case VisaChargebackReason::RSN_75:
       case VisaChargebackReason::RSN_85:
       case VisaChargebackReason::RSN_90:
+
       case VisaChargebackReason::RSN_10_1:
       case VisaChargebackReason::RSN_10_2:
       case VisaChargebackReason::RSN_10_3:
@@ -90,25 +91,74 @@ class ChargebackReasonHelper
       case MasterCardChargebackReason::RSN_4860:
         return MasterCardChargebackReason::create($value);
 
-      case DiscoverCardChargebackReason::RSN_UA01:
-      case DiscoverCardChargebackReason::RSN_UA02:
-      case DiscoverCardChargebackReason::RSN_UA05:
-      case DiscoverCardChargebackReason::RSN_UA06:
-      case DiscoverCardChargebackReason::RSN_AT:
-      case DiscoverCardChargebackReason::RSN_IN:
-      case DiscoverCardChargebackReason::RSN_LP:
-      case DiscoverCardChargebackReason::RSN_5:
-      case DiscoverCardChargebackReason::RSN_AA:
-      case DiscoverCardChargebackReason::RSN_AP:
-      case DiscoverCardChargebackReason::RSN_AW:
-      case DiscoverCardChargebackReason::RSN_CD:
-      case DiscoverCardChargebackReason::RSN_DP:
-      case DiscoverCardChargebackReason::RSN_NF:
-      case DiscoverCardChargebackReason::RSN_PM:
-      case DiscoverCardChargebackReason::RSN_RG:
-      case DiscoverCardChargebackReason::RSN_RM:
-      case DiscoverCardChargebackReason::RSN_RN2:
-      case DiscoverCardChargebackReason::RSN_DC:
+      case DiscoverCardChargebackReason::RSN_16;
+      case DiscoverCardChargebackReason::RSN_3041;
+      case DiscoverCardChargebackReason::RSN_4534;
+      case DiscoverCardChargebackReason::RSN_4541;
+      case DiscoverCardChargebackReason::RSN_4553;
+      case DiscoverCardChargebackReason::RSN_4555;
+      case DiscoverCardChargebackReason::RSN_4752;
+      case DiscoverCardChargebackReason::RSN_4755;
+      case DiscoverCardChargebackReason::RSN_4866;
+      case DiscoverCardChargebackReason::RSN_5;
+      case DiscoverCardChargebackReason::RSN_5621;
+      case DiscoverCardChargebackReason::RSN_6005;
+      case DiscoverCardChargebackReason::RSN_6021;
+      case DiscoverCardChargebackReason::RSN_6040;
+      case DiscoverCardChargebackReason::RSN_6041;
+      case DiscoverCardChargebackReason::RSN_7;
+      case DiscoverCardChargebackReason::RSN_7010;
+      case DiscoverCardChargebackReason::RSN_7030;
+      case DiscoverCardChargebackReason::RSN_8002;
+      case DiscoverCardChargebackReason::RSN_AA;
+      case DiscoverCardChargebackReason::RSN_AL;
+      case DiscoverCardChargebackReason::RSN_AP;
+      case DiscoverCardChargebackReason::RSN_AT;
+      case DiscoverCardChargebackReason::RSN_AW;
+      case DiscoverCardChargebackReason::RSN_C08;
+      case DiscoverCardChargebackReason::RSN_CA;
+      case DiscoverCardChargebackReason::RSN_CD;
+      case DiscoverCardChargebackReason::RSN_CR;
+      case DiscoverCardChargebackReason::RSN_DA;
+      case DiscoverCardChargebackReason::RSN_DC;
+      case DiscoverCardChargebackReason::RSN_DP;
+      case DiscoverCardChargebackReason::RSN_DP1;
+      case DiscoverCardChargebackReason::RSN_EX;
+      case DiscoverCardChargebackReason::RSN_IC;
+      case DiscoverCardChargebackReason::RSN_IN;
+      case DiscoverCardChargebackReason::RSN_IS;
+      case DiscoverCardChargebackReason::RSN_LP;
+      case DiscoverCardChargebackReason::RSN_N;
+      case DiscoverCardChargebackReason::RSN_NA;
+      case DiscoverCardChargebackReason::RSN_NC;
+      case DiscoverCardChargebackReason::RSN_NF;
+      case DiscoverCardChargebackReason::RSN_P;
+      case DiscoverCardChargebackReason::RSN_PM;
+      case DiscoverCardChargebackReason::RSN_RG;
+      case DiscoverCardChargebackReason::RSN_RM;
+      case DiscoverCardChargebackReason::RSN_RN;
+      case DiscoverCardChargebackReason::RSN_RN2;
+      case DiscoverCardChargebackReason::RSN_SV;
+      case DiscoverCardChargebackReason::RSN_TF;
+      case DiscoverCardChargebackReason::RSN_TNM;
+      case DiscoverCardChargebackReason::RSN_UA01;
+      case DiscoverCardChargebackReason::RSN_UA02;
+      case DiscoverCardChargebackReason::RSN_UA03;
+      case DiscoverCardChargebackReason::RSN_UA05;
+      case DiscoverCardChargebackReason::RSN_UA06;
+      case DiscoverCardChargebackReason::RSN_UA10;
+      case DiscoverCardChargebackReason::RSN_UA11;
+      case DiscoverCardChargebackReason::RSN_UA12;
+      case DiscoverCardChargebackReason::RSN_UA20;
+      case DiscoverCardChargebackReason::RSN_UA21;
+      case DiscoverCardChargebackReason::RSN_UA22;
+      case DiscoverCardChargebackReason::RSN_UA23;
+      case DiscoverCardChargebackReason::RSN_UA28;
+      case DiscoverCardChargebackReason::RSN_UA30;
+      case DiscoverCardChargebackReason::RSN_UA31;
+      case DiscoverCardChargebackReason::RSN_UA32;
+      case DiscoverCardChargebackReason::RSN_UA38;
+      case DiscoverCardChargebackReason::RSN_UA99;
         return DiscoverCardChargebackReason::create($value);
 
       case AmericanExpressChargebackReason::RSN_UA01:

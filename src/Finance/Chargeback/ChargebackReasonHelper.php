@@ -276,6 +276,13 @@ class ChargebackReasonHelper
       case StarChargebackReason::RSN_50:
       case StarChargebackReason::RSN_60:
       case StarChargebackReason::RSN_65:
+
+      case StarChargebackReason::RSN_2000:
+      case StarChargebackReason::RSN_3000:
+      case StarChargebackReason::RSN_4000:
+      case StarChargebackReason::RSN_5000:
+      case StarChargebackReason::RSN_6000:
+      case StarChargebackReason::RSN_6500:
         return StarChargebackReason::create($value);
     }
 

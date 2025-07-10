@@ -290,24 +290,7 @@ class ChargebackReasonHelper
       case StarChargebackReason::RSN_6500:
         return StarChargebackReason::create($value);
 
-      case AccelChargebackReason::RSN_7:
-      case AccelChargebackReason::RSN_8:
-      case AccelChargebackReason::RSN_12:
-      case AccelChargebackReason::RSN_31:
-      case AccelChargebackReason::RSN_34:
-      case AccelChargebackReason::RSN_37:
       case AccelChargebackReason::RSN_41:
-      case AccelChargebackReason::RSN_42:
-      case AccelChargebackReason::RSN_46:
-      case AccelChargebackReason::RSN_49:
-      case AccelChargebackReason::RSN_50:
-      case AccelChargebackReason::RSN_53:
-      case AccelChargebackReason::RSN_54:
-      case AccelChargebackReason::RSN_55:
-      case AccelChargebackReason::RSN_59:
-      case AccelChargebackReason::RSN_60:
-      case AccelChargebackReason::RSN_70:
-      case AccelChargebackReason::RSN_71:
         return AccelChargebackReason::create($value);
     }
 

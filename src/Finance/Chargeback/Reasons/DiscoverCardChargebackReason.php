@@ -12,10 +12,14 @@ class DiscoverCardChargebackReason extends ChargebackReason
   const RSN_3041 = '3041';
   const RSN_4534 = '4534';
   const RSN_4541 = '4541';
+  const RSN_4542 = '4542';
   const RSN_4553 = '4553';
   const RSN_4555 = '4555';
+  const RSN_4586 = '4586';
   const RSN_4752 = '4752';
+  const RSN_4753 = '4753';
   const RSN_4755 = '4755';
+  const RSN_4865 = '4865';
   const RSN_4866 = '4866';
   const RSN_5621 = '5621';
   const RSN_6005 = '6005';

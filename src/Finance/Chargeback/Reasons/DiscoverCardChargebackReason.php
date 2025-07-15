@@ -13,6 +13,11 @@ class DiscoverCardChargebackReason extends ChargebackReason
   const RSN_4534 = '4534';
   const RSN_4541 = '4541';
   const RSN_4542 = '4542';
+  const RSN_4550 = '4550';
+  const RSN_4762 = '4762';
+  const RSN_4863 = '4863';
+  const RSN_4864 = '4864';
+  const RSN_4867 = '4867';
   const RSN_4553 = '4553';
   const RSN_4555 = '4555';
   const RSN_4586 = '4586';
@@ -353,6 +358,42 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA99:
+        $reason->description = 'Not compliant and not classifiable';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4542:
+        $reason->description = 'Late Presentation';
+        $reason->category = ChargebackCategory::FRAUD;
+        break;
+      case self::RSN_4586:
+        $reason->description = 'Failed to complete AVS';
+        $reason->category = ChargebackCategory::AUTHORIZATION;
+        break;
+      case self::RSN_4753:
+        $reason->description = 'Merchant provided illegible documentation';
+        $reason->category = ChargebackCategory::FRAUD;
+        break;
+      case self::RSN_4865:
+        $reason->description = 'Not compliant and not classifiable';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4550:
+        $reason->description = 'Not compliant and not classifiable';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4762:
+        $reason->description = 'Not compliant and not classifiable';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4863:
+        $reason->description = 'Not compliant and not classifiable';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4864:
+        $reason->description = 'Not compliant and not classifiable';
+        $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4867:
         $reason->description = 'Not compliant and not classifiable';
         $reason->category = ChargebackCategory::OTHER;
         break;

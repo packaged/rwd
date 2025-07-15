@@ -90,6 +90,7 @@ class DiscoverCardChargebackReason extends ChargebackReason
     switch($code)
     {
       case self::RSN_5:
+      case self::RSN_4762:
         $reason->description = 'Good Faith Investigation';
         $reason->category = ChargebackCategory::CONSUMER;
         break;
@@ -178,10 +179,12 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::CONSUMER;
         break;
       case self::RSN_AT:
-        $reason->description = 'Authorization Noncompliance';
+      case self::RSN_4863:
+        $reason->description = 'Authorization Non-compliance';
         $reason->category = ChargebackCategory::AUTHORIZATION;
         break;
       case self::RSN_AW:
+      case self::RSN_4586:
         $reason->description = 'Altered Amount';
         $reason->category = ChargebackCategory::PROCESSING;
         break;
@@ -194,6 +197,7 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_CD:
+      case self::RSN_4550:
         $reason->description = 'Credit / Debit Posted Incorrectly';
         $reason->category = ChargebackCategory::PROCESSING;
         break;
@@ -250,7 +254,8 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::OTHER;
         break;
       case self::RSN_NF:
-        $reason->description = 'Non - Receipt of Cash from ATM';
+      case self::RSN_4864:
+        $reason->description = 'Non receipt of Cash from ATM';
         $reason->category = ChargebackCategory::CONSUMER;
         break;
       case self::RSN_P:
@@ -258,6 +263,7 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_PM:
+      case self::RSN_4865:
         $reason->description = 'Paid by Other Means';
         $reason->category = ChargebackCategory::PROCESSING;
         break;
@@ -306,6 +312,7 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA06:
+      case self::RSN_4867:
         $reason->description = 'Chip and PIN Transaction';
         $reason->category = ChargebackCategory::FRAUD;
         break;
@@ -365,37 +372,9 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->description = 'Late Presentation';
         $reason->category = ChargebackCategory::FRAUD;
         break;
-      case self::RSN_4586:
-        $reason->description = 'Failed to complete AVS';
-        $reason->category = ChargebackCategory::AUTHORIZATION;
-        break;
       case self::RSN_4753:
-        $reason->description = 'Merchant provided illegible documentation';
-        $reason->category = ChargebackCategory::FRAUD;
-        break;
-      case self::RSN_4865:
-        $reason->description = 'Not compliant and not classifiable';
-        $reason->category = ChargebackCategory::OTHER;
-        break;
-      case self::RSN_4550:
-        $reason->description = 'Not compliant and not classifiable';
-        $reason->category = ChargebackCategory::OTHER;
-        break;
-      case self::RSN_4762:
-        $reason->description = 'Not compliant and not classifiable';
-        $reason->category = ChargebackCategory::OTHER;
-        break;
-      case self::RSN_4863:
-        $reason->description = 'Not compliant and not classifiable';
-        $reason->category = ChargebackCategory::OTHER;
-        break;
-      case self::RSN_4864:
-        $reason->description = 'Not compliant and not classifiable';
-        $reason->category = ChargebackCategory::OTHER;
-        break;
-      case self::RSN_4867:
-        $reason->description = 'Not compliant and not classifiable';
-        $reason->category = ChargebackCategory::OTHER;
+        $reason->description = 'Invalid Cardholder Number';
+        $reason->category = ChargebackCategory::CONSUMER;
         break;
     }
     return $reason;

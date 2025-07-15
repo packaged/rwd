@@ -1,6 +1,7 @@
 <?php
 namespace Packaged\Rwd\Finance\Chargeback;
 
+use Packaged\Rwd\Finance\Chargeback\Reasons\AccelChargebackReason;
 use Packaged\Rwd\Finance\Chargeback\Reasons\AmericanExpressChargebackReason;
 use Packaged\Rwd\Finance\Chargeback\Reasons\DinersChargebackReason;
 use Packaged\Rwd\Finance\Chargeback\Reasons\DiscoverCardChargebackReason;
@@ -97,6 +98,10 @@ class ChargebackReasonHelper
       case DiscoverCardChargebackReason::RSN_4541;
       case DiscoverCardChargebackReason::RSN_4553;
       case DiscoverCardChargebackReason::RSN_4555;
+      case DiscoverCardChargebackReason::RSN_4542;
+      case DiscoverCardChargebackReason::RSN_4586;
+      case DiscoverCardChargebackReason::RSN_4865;
+      case DiscoverCardChargebackReason::RSN_4753;
       case DiscoverCardChargebackReason::RSN_4752;
       case DiscoverCardChargebackReason::RSN_4755;
       case DiscoverCardChargebackReason::RSN_4866;
@@ -284,6 +289,9 @@ class ChargebackReasonHelper
       case StarChargebackReason::RSN_6000:
       case StarChargebackReason::RSN_6500:
         return StarChargebackReason::create($value);
+
+      case AccelChargebackReason::RSN_41:
+        return AccelChargebackReason::create($value);
     }
 
     return ChargebackReason::create($value, self::UNKNOWN_REASON);

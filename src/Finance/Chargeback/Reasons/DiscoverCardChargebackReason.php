@@ -12,11 +12,20 @@ class DiscoverCardChargebackReason extends ChargebackReason
   const RSN_3041 = '3041';
   const RSN_4534 = '4534';
   const RSN_4541 = '4541';
+  const RSN_4542 = '4542';
+  const RSN_4550 = '4550';
   const RSN_4553 = '4553';
   const RSN_4555 = '4555';
+  const RSN_4586 = '4586';
   const RSN_4752 = '4752';
+  const RSN_4753 = '4753';
   const RSN_4755 = '4755';
+  const RSN_4762 = '4762';
+  const RSN_4863 = '4863';
+  const RSN_4864 = '4864';
+  const RSN_4865 = '4865';
   const RSN_4866 = '4866';
+  const RSN_4867 = '4867';
   const RSN_5621 = '5621';
   const RSN_6005 = '6005';
   const RSN_6021 = '6021';
@@ -36,8 +45,8 @@ class DiscoverCardChargebackReason extends ChargebackReason
   const RSN_CR = 'CR';
   const RSN_DA = 'DA';
   const RSN_DC = 'DC';
-  const RSN_DP = 'DP';
   const RSN_DP1 = 'DP1';
+  const RSN_DP = 'DP';
   const RSN_EX = 'EX';
   const RSN_IC = 'IC';
   const RSN_IN = 'IN';
@@ -51,8 +60,8 @@ class DiscoverCardChargebackReason extends ChargebackReason
   const RSN_PM = 'PM';
   const RSN_RG = 'RG';
   const RSN_RM = 'RM';
-  const RSN_RN = 'RN';
   const RSN_RN2 = 'RN2';
+  const RSN_RN = 'RN';
   const RSN_SV = 'SV';
   const RSN_TF = 'TF';
   const RSN_TNM = 'TNM';
@@ -81,6 +90,7 @@ class DiscoverCardChargebackReason extends ChargebackReason
     switch($code)
     {
       case self::RSN_5:
+      case self::RSN_4762:
         $reason->description = 'Good Faith Investigation';
         $reason->category = ChargebackCategory::CONSUMER;
         break;
@@ -169,10 +179,12 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::CONSUMER;
         break;
       case self::RSN_AT:
-        $reason->description = 'Authorization Noncompliance';
+      case self::RSN_4863:
+        $reason->description = 'Authorization Non-compliance';
         $reason->category = ChargebackCategory::AUTHORIZATION;
         break;
       case self::RSN_AW:
+      case self::RSN_4586:
         $reason->description = 'Altered Amount';
         $reason->category = ChargebackCategory::PROCESSING;
         break;
@@ -185,6 +197,7 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_CD:
+      case self::RSN_4550:
         $reason->description = 'Credit / Debit Posted Incorrectly';
         $reason->category = ChargebackCategory::PROCESSING;
         break;
@@ -241,7 +254,8 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::OTHER;
         break;
       case self::RSN_NF:
-        $reason->description = 'Non - Receipt of Cash from ATM';
+      case self::RSN_4864:
+        $reason->description = 'Non receipt of Cash from ATM';
         $reason->category = ChargebackCategory::CONSUMER;
         break;
       case self::RSN_P:
@@ -249,6 +263,7 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_PM:
+      case self::RSN_4865:
         $reason->description = 'Paid by Other Means';
         $reason->category = ChargebackCategory::PROCESSING;
         break;
@@ -297,6 +312,7 @@ class DiscoverCardChargebackReason extends ChargebackReason
         $reason->category = ChargebackCategory::FRAUD;
         break;
       case self::RSN_UA06:
+      case self::RSN_4867:
         $reason->description = 'Chip and PIN Transaction';
         $reason->category = ChargebackCategory::FRAUD;
         break;
@@ -351,6 +367,14 @@ class DiscoverCardChargebackReason extends ChargebackReason
       case self::RSN_UA99:
         $reason->description = 'Not compliant and not classifiable';
         $reason->category = ChargebackCategory::OTHER;
+        break;
+      case self::RSN_4542:
+        $reason->description = 'Late Presentation';
+        $reason->category = ChargebackCategory::FRAUD;
+        break;
+      case self::RSN_4753:
+        $reason->description = 'Invalid Cardholder Number';
+        $reason->category = ChargebackCategory::CONSUMER;
         break;
     }
     return $reason;

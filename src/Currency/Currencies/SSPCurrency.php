@@ -3,7 +3,7 @@ namespace Packaged\Rwd\Currency\Currencies;
 
 use Packaged\Rwd\Currency\AbstractCurrency;
 
-class SDDCurrency extends AbstractCurrency
+class SSPCurrency extends AbstractCurrency
 {
   public function getDecimalCount()
   {
@@ -12,36 +12,36 @@ class SDDCurrency extends AbstractCurrency
   
   public function getSymbol()
   {
-    return 'SDD';
+    return 'SS£';
   }
 
   public function getCode()
   {
-    return 'SDD';
+    return 'SSP';
   }
 
   public function getNumericCode()
   {
-    return '736';
+    return '728';
   }
 
   public function getName()
   {
-    return 'Sudanese Dinar';
+    return 'South Sudanese Pound';
   }
 
   public function getMajorUnit()
   {
-    return 'dinar';
+    return 'pound';
   }
 
   public function getMinorUnit()
   {
-    return ' ';
+    return 'piastre';
   }
 
   public function getUSDAverage()
   {
-    return 334.1073;
+    return 0.000221;
   }
 }

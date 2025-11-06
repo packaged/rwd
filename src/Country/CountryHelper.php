@@ -44,6 +44,10 @@ class CountryHelper
   public static function getCountry($code, $default = null)
   {
     $code = $code ?: $default;
+    if(is_string($code))
+    {
+      $code = strtoupper($code);
+    }
     $className = sprintf('\Packaged\Rwd\Country\Countries\%sCountry', $code);
     if(class_exists($className))
     {

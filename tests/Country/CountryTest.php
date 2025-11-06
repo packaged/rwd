@@ -9,6 +9,9 @@ class CountryTest extends TestCase
 {
   public function testCountry()
   {
+    $us = CountryHelper::getCountry('US');
+    self::assertEquals('United States', $us->getName());
+
     $us = CountryHelper::getCountry('us');
     self::assertEquals('United States', $us->getName());
   }

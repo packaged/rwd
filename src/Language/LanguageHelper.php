@@ -72,7 +72,7 @@ class LanguageHelper
   public static function getLanguage($code, $default = null)
   {
     $code = $code ?: $default;
-    $code = str_replace(' ', '', ucwords(strtolower(str_replace('-', ' ', $code))));
+    $code = str_replace(' ', '', ucwords(strtolower(str_replace('-', ' ', (string)$code))));
     $className = sprintf('\Packaged\Rwd\Language\Languages\%sLanguage', $code);
     if(class_exists($className))
     {

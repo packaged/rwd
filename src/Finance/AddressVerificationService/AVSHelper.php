@@ -16,7 +16,7 @@ class AVSHelper
 {
   public static function getAvs($code)
   {
-    $code = trim(strtoupper($code));
+    $code = trim(strtoupper((string)$code));
     switch($code)
     {
       case 'X':

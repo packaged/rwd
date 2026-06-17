@@ -69,6 +69,10 @@ class Person extends AbstractPerson
 
   private function _smartUcWords($string)
   {
+    if($string === null)
+    {
+      return '';
+    }
     // if whole string is uppercase, lowercase first
     if($string == strtoupper($string))
     {
@@ -129,7 +133,7 @@ class Person extends AbstractPerson
       $name = preg_replace('/[^a-zA-Z]/', ' ', $name);
     }
 
-    $this->_rawInput = $name;
+    $this->_rawInput = (string)$name;
     $this->_parse();
   }
 

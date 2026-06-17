@@ -19,7 +19,7 @@ abstract class AbstractPerson
   {
     foreach($this->_compoundFragments as $fragment)
     {
-      if(strtolower($word) == strtolower($fragment))
+      if(strtolower((string)$word) == strtolower((string)$fragment))
       {
         return true;
       }

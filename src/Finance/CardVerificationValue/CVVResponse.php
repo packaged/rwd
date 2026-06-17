@@ -8,8 +8,8 @@ class CVVResponse implements CVVInterface
 
   public function __construct($code, $description)
   {
-    $this->_code = strtoupper($code);
-    $this->_description = trim($description);
+    $this->_code = strtoupper((string)$code);
+    $this->_description = trim((string)$description);
   }
 
   public function getCode()

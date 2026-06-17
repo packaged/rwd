@@ -9,7 +9,7 @@ class CVVHelper
 {
   public static function getCvv($code)
   {
-    $code = trim(strtoupper($code));
+    $code = trim(strtoupper((string)$code));
     switch($code)
     {
       case 'M':

@@ -11,13 +11,13 @@ class CurrencyHelper
    */
   public static function getCurrency($code, $default = null)
   {
-    $code = $code ?: $default;
+    $code = strtoupper(trim((string)($code ?: $default)));
     $className = sprintf('\Packaged\Rwd\Currency\Currencies\%sCurrency', $code);
     if(class_exists($className))
     {
       return new $className();
     }
-    else if($default !== null && $code !== $default)
+    else if($default !== null && $code !== strtoupper(trim((string)$default)))
     {
       return self::getCurrency($default);
     }
@@ -36,6 +36,7 @@ class CurrencyHelper
     $c = new \ReflectionClass(CurrencyCode::class);
     foreach($c->getConstants() as $code)
     {
+      $code = strtoupper(trim((string)$code));
       try
       {
         $currencies[$code] = self::getCurrency($code)->getName();

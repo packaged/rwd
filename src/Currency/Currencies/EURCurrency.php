@@ -58,12 +58,12 @@ class EURCurrency extends AbstractCurrency
   {
     switch($this->_countryCode)
     {
-      case CountryCode::CODE_AT;
-      case CountryCode::CODE_FI;
-      case CountryCode::CODE_FR;
-      case CountryCode::CODE_DE;
-      case CountryCode::CODE_PT;
-      case CountryCode::CODE_ES;
+      case CountryCode::CODE_AT:
+      case CountryCode::CODE_FI:
+      case CountryCode::CODE_FR:
+      case CountryCode::CODE_DE:
+      case CountryCode::CODE_PT:
+      case CountryCode::CODE_ES:
         $return = $amount < 0 ? '-' : '';
         $return .= '{number} {symbol}';
         if($showCode)
